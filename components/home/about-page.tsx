@@ -30,7 +30,7 @@ const AboutPage = () => {
          <div className="flex pt-6">
             <p className="text-xl w-full mt-5">
                Passionate about both machine learning and full-stack web
-               development, I'm a versatile tech enthusiast dedicated to
+               development, I&apos;m a versatile tech enthusiast dedicated to
                crafting innovative solutions. With a foundation in machine
                learning algorithms and a flair for front-end and back-end
                technologies, I thrive on blending data-driven insights with
