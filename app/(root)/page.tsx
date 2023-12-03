@@ -7,6 +7,7 @@ export default function Home() {
          <LandingPage/>
          <Separator/>
          <AboutPage/>
+         <Separator/>
       </main>
    );
 }
