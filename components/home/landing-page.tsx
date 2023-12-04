@@ -6,7 +6,7 @@ const LandingPage = () => {
    return (
       <div className="w-full flex items-center justify-center px-28">
          <div className="h-full w-full text-7xl pr-16">
-            <span className="text-yellow-500">Hi</span>, I am
+            <span className="text-custom-accent">Hi</span>, I am
             <span className="block font-bold">Arjun Varshney</span>
             <p className="text-2xl pt-5">
                Tech enthusiast skilled in machine learning and full-stack web
@@ -15,11 +15,11 @@ const LandingPage = () => {
             <div className="flex gap-2 pt-8">
                <Button
                   variant={"outline"}
-                  className="font-bold text-black dark:text-white border-2 border-yellow-400 hover:bg-yellow-500"
+                  className="font-bold text-black dark:text-white border-2 border-custom-accent hover:bg-custom-accent hover:scale-95 active:scale-100"
                >
                   Contact me
                </Button>
-               <Button className="flex gap-1.5 items-center justify-center bg-yellow-500 text-black hover:bg-yellow-600 font-bold">
+               <Button className="flex gap-1.5 items-center justify-center bg-custom-accent text-black hover:scale-95 active:scale-100 hover:bg-custom-accent font-bold">
                   Resume
                   <ExternalLink className="h-4 w-4" />
                </Button>
@@ -31,7 +31,7 @@ const LandingPage = () => {
                width={500}
                src={"/my-photo.webp"}
                alt="Profile Photo"
-               className="rounded-full border-8 border-yellow-500"
+               className="rounded-full border-8 border-custom-accent"
             />
          </div>
       </div>

@@ -44,6 +44,8 @@ body,
       --ring: 222.2 84% 4.9%;
 
       --radius: 0.5rem;
+
+      --custom-accent: #eab308;
    }
 
    .dark {

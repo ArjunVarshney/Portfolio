@@ -126,6 +126,7 @@ const AboutPage = () => {
 
    const about_description =
       "Passionate about both machine learning and full-stack web development, I'm a versatile tech enthusiast dedicated to crafting innovative solutions. With a foundation in machine learning algorithms and a flair for front-end and back-end technologies, I thrive on blending data-driven insights with seamless user experiences. My aim is to create impactful applications that transcend boundaries and simplify complexities.";
+
    return (
       <div className="container min-h-[calc(100vh-100px)] w-full flex flex-col items-center !px-28 !pt-16 mb-12">
          <Heading title="About" />
@@ -133,7 +134,7 @@ const AboutPage = () => {
             <p className="text-[24px] w-full mt-5 leading-9 pr-5">
                {about_description}
             </p>
-            <div className="w-full bg-yellow-500 rounded-lg py-5">
+            <div className="w-full bg-custom-accent rounded-lg py-5">
                <h3 className="font-bold ml-5 mb-2 text-2xl">Education</h3>
                {education_status.reverse().map((edu) => (
                   <div
@@ -164,7 +165,7 @@ const AboutPage = () => {
                         {skill.level * 10}%
                      </span>
                      <div
-                        className="absolute top-0 bottom-0 left-0 bg-yellow-500/30 -z-10"
+                        className="absolute top-0 bottom-0 left-0 bg-custom-accent opacity-30 -z-10"
                         style={{
                            width: `${skill.level * 10}%`,
                         }}
@@ -176,16 +177,16 @@ const AboutPage = () => {
          <div className="flex w-full gap-5">
             {Object.keys(skills).map((skillHead) => (
                <div
-                  className="w-full bg-yellow-500 rounded-lg py-5"
+                  className="w-full bg-custom-accent rounded-lg py-5"
                   key={skillHead}
                >
-                  <h3 className="font-bold ml-5 mb-2 text-2xl capitalize">
+                  <h3 className="font-bold ml-5 text-2xl capitalize">
                      {skillHead}
                   </h3>
                   <div className="flex flex-col mt-3">
                      {skills[skillHead].map((skill) => (
                         <div
-                           className="mx-5 my-1 bg-background p-3 rounded-lg relative overflow-hidden z-10 font-semibold border border-black"
+                           className="mx-5 my-1 bg-background p-3 rounded-lg relative overflow-hidden z-10 font-semibold border border-black dark:border-white"
                            key={skill.name}
                         >
                            {skill.name}
