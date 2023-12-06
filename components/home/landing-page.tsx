@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const LandingPage = () => {
    return (
-      <div className="w-full flex items-center justify-center px-28">
-         <div className="h-full w-full text-7xl pr-16">
+      <div className="container w-full h-[calc(100vh-100px)] flex items-center justify-center !px-28 !pt-0">
+         <div className="w-full text-7xl pr-16">
             <span className="text-custom-accent">Hi</span>, I am
             <span className="block font-bold">Arjun Varshney</span>
             <p className="text-2xl pt-5">
@@ -25,7 +25,7 @@ const LandingPage = () => {
                </Button>
             </div>
          </div>
-         <div className="w-full max-w-[400px] flex items-center justify-center h-[calc(100vh-100px)]">
+         <div className="w-full max-w-[400px] flex items-center justify-center h-full">
             <Image
                height={500}
                width={500}
