@@ -31,18 +31,17 @@ const AboutPage = () => {
 
    const field_skills = [
       {
+         icon: "/icons/machine-learning.svg",
          name: "Machine learning",
          level: 4,
       },
       {
+         icon: "/icons/deep-learning.svg",
          name: "Deep learning",
          level: 3,
       },
       {
-         name: "Exploratory Data analysis",
-         level: 3,
-      },
-      {
+         icon: "/icons/web-dev.svg",
          name: "Full stack web development",
          level: 4,
       },
@@ -84,6 +83,7 @@ const AboutPage = () => {
          <div className="flex w-full gap-1 flex-col mb-6 mt-2">
             {field_skills.map((skill) => (
                <Skill
+                  icon={skill.icon}
                   name={skill.name}
                   level={skill.level}
                   key={skill.name + skill.level}

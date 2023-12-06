@@ -1,0 +1,43 @@
+[
+   {
+      "name": "Body Works",
+      "description": "A website with an expansive fitness-oriented website featuring a diverse assortment of exercises and workout routines harvested through meticulous web scraping techniques. This platform offers an extensive collection tailored for various fitness levels. Additionally, facilitated API access with limitless requests, allowing seamless integration for fitness applications and research initiatives.",
+      "type": "website",
+      "tags": ["Web-scraping", "Fullstack", "Typescript"],
+      "website_link": "https://body-works.vercel.app/",
+      "git_link": "https://github.com/ArjunVarshney/Body-works",
+      "commits": "https://api.github.com/repos/ArjunVarshney/Body-works/commits",
+      "tech_stack": {
+         "data-collection": ["Puppeteer"],
+         "data-processing": ["Javascript"],
+         "frontend": ["Next js", "tailwind", "shadcn"],
+         "backend": ["Node js", "Next js", "JSON database"],
+         "languages": ["Typescript", "JSON"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Puppeteer",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         "/project-screenshots/body-works/1.png",
+         "/project-screenshots/body-works/2.png",
+         "/project-screenshots/body-works/3.png",
+         "/project-screenshots/body-works/4.png",
+         "/project-screenshots/body-works/5.png",
+         "/project-screenshots/body-works/6.png",
+         "/project-screenshots/body-works/7.png",
+         "/project-screenshots/body-works/8.png",
+         "/project-screenshots/body-works/9.png",
+         "/project-screenshots/body-works/10.png",
+         "/project-screenshots/body-works/11.png",
+         "/project-screenshots/body-works/12.png",
+         "/project-screenshots/body-works/13.png",
+         "/project-screenshots/body-works/14.png",
+         "/project-screenshots/body-works/15.png"
+      ]
+   }
+]
