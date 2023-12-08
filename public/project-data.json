@@ -2,16 +2,31 @@
    {
       "name": "Body Works",
       "description": "A website with an expansive fitness-oriented website featuring a diverse assortment of exercises and workout routines harvested through meticulous web scraping techniques. This platform offers an extensive collection tailored for various fitness levels. Additionally, facilitated API access with limitless requests, allowing seamless integration for fitness applications and research initiatives.",
+      "featured_image": "/project-screenshots/body-works/11.png",
       "type": "website",
-      "tags": ["Web-scraping", "Fullstack", "Typescript"],
-      "website_link": "https://body-works.vercel.app/",
-      "git_link": "https://github.com/ArjunVarshney/Body-works",
-      "commits": "https://api.github.com/repos/ArjunVarshney/Body-works/commits",
+      "tags": {
+         "based-on": ["Web-scraping", "Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "Other": ["Content Website"]
+      },
+      "website_link": ["https://body-works.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Body-works"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Body-works/commits"
+      ],
+      "features": [
+         "Comprehensive Exercise Database: Curated a vast collection of exercises and workout routines from the web.",
+         "API Accessibility: Enabled API access for developers to integrate exercise data into other applications.",
+         "Responsive and Fast Performance: Ensured responsive design and optimized performance across devices for swift user interaction.",
+         "Search and Filtering: Integrated robust search functionality and filtering options, enabling users to quickly find specific exercises or routines according to their preferences.",
+         "Categorized Content: Organized exercises into categories (such as strength, cardio, flexibility) and levels (beginner, intermediate, advanced) for easy browsing and selection.",
+         "Interactive UI/UX Design: Developed an intuitive, user-friendly interface for seamless exploration."
+      ],
       "tech_stack": {
          "data-collection": ["Puppeteer"],
          "data-processing": ["Javascript"],
          "frontend": ["Next js", "tailwind", "shadcn"],
-         "backend": ["Node js", "Next js", "JSON database"],
+         "backend": ["Node js", "Next js", "JSON database", "Clerk"],
          "languages": ["Typescript", "JSON"]
       },
       "most_used_packages": [
@@ -23,21 +38,452 @@
          "Query-string"
       ],
       "images": [
-         "/project-screenshots/body-works/1.png",
-         "/project-screenshots/body-works/2.png",
-         "/project-screenshots/body-works/3.png",
-         "/project-screenshots/body-works/4.png",
-         "/project-screenshots/body-works/5.png",
-         "/project-screenshots/body-works/6.png",
-         "/project-screenshots/body-works/7.png",
-         "/project-screenshots/body-works/8.png",
-         "/project-screenshots/body-works/9.png",
-         "/project-screenshots/body-works/10.png",
-         "/project-screenshots/body-works/11.png",
-         "/project-screenshots/body-works/12.png",
-         "/project-screenshots/body-works/13.png",
-         "/project-screenshots/body-works/14.png",
-         "/project-screenshots/body-works/15.png"
+         [
+            "/project-screenshots/body-works/1.png",
+            "/project-screenshots/body-works/2.png",
+            "/project-screenshots/body-works/3.png",
+            "/project-screenshots/body-works/4.png",
+            "/project-screenshots/body-works/5.png",
+            "/project-screenshots/body-works/6.png",
+            "/project-screenshots/body-works/7.png",
+            "/project-screenshots/body-works/8.png",
+            "/project-screenshots/body-works/9.png",
+            "/project-screenshots/body-works/10.png",
+            "/project-screenshots/body-works/11.png",
+            "/project-screenshots/body-works/12.png",
+            "/project-screenshots/body-works/13.png",
+            "/project-screenshots/body-works/14.png",
+            "/project-screenshots/body-works/15.png"
+         ]
+      ]
+   },
+   {
+      "name": "Discord Clone",
+      "description": "This project mirrors the functionality of Discord, offering seamless text, voice, and video chat functionalities along with channels, server management, and user authentication. Leveraged technologies to ensure a fully operational and user-friendly platform, demonstrating expertise in modern web development, APIs, and user-interface design. (Some functionality may not work as I used free tier for some services like video call and voice call from livekit and authentication using clerk)",
+      "featured_image": "/project-screenshots/discord-clone/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "MySQL", "Nextjs"],
+         "Other": ["Socket IO", "Clone Website"]
+      },
+      "website_link": ["https://discord-clone-production-731f.up.railway.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/discord-clone"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/discord-clone/commits"
+      ],
+      "features": [
+         "Text, Voice, and Video Chat: Offers both real-time text and voice chat functionalities, along with video calling capabilities for a diverse range of communication options.",
+         "Servers and Channels: Organizes communication into servers, which contain multiple channels for specific topics, discussions, or interests, allowing users to navigate conversations easily.",
+         "Direct Messaging: Facilitates one-on-one direct messaging between users, enabling private conversations separate from the server channels.",
+         "Role and Permission Management: Provides server administrators with tools to assign roles, manage permissions, and customize user access within servers and channels.",
+         "File Sharing and Media Embedding: Enables file sharing and embedding of media files (images, videos, links) directly within chat channels for easy sharing and viewing.",
+         "Screen Sharing and Streaming: Allows users to share their screen or stream games and other content in real-time to others in the voice channels.",
+         "Community and Server Features: Provides community features like emojis, reactions, server discovery, and server boosting to enhance engagement within communities."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "shadcn", "emoji-mart"],
+         "backend": [
+            "Node js",
+            "Next js",
+            "MySQL",
+            "Prisma",
+            "Socket IO",
+            "Livekit",
+            "Clerk"
+         ],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Socket IO",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         [
+            "/project-screenshots/discord-clone/1.png",
+            "/project-screenshots/discord-clone/2.png",
+            "/project-screenshots/discord-clone/3.png",
+            "/project-screenshots/discord-clone/4.png",
+            "/project-screenshots/discord-clone/5.png",
+            "/project-screenshots/discord-clone/6.png",
+            "/project-screenshots/discord-clone/7.png",
+            "/project-screenshots/discord-clone/8.png",
+            "/project-screenshots/discord-clone/9.png",
+            "/project-screenshots/discord-clone/10.png",
+            "/project-screenshots/discord-clone/11.png"
+         ]
+      ]
+   },
+   {
+      "name": "Everything Store",
+      "description": "Crafted a sophisticated e-commerce ecosystem encompassing separate client and admin applications. The client app delivers seamless shopping experiences, intuitive product browsing, secure transactions, and personalized user accounts. Meanwhile, the admin app provides robust inventory management, order processing, analytics, and user management functionalities. This comprehensive solution exhibits expertise in full-stack development, emphasizing user-centric design, scalability, and efficient backend administration for a thriving e-commerce venture.",
+      "featured_image": "/project-screenshots/everything-store-client/3.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "MySQL", "Nextjs"],
+         "Other": ["Ecommerce Website"]
+      },
+      "website_link": [
+         "https://everything-store-admin.vercel.app/",
+         "https://ever-store.vercel.app/"
+      ],
+      "git_link": [
+         "https://github.com/ArjunVarshney/Everything-Store-admin",
+         "https://github.com/ArjunVarshney/Everything-store-client"
+      ],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Everything-Store-admin/commits",
+         "https://api.github.com/repos/ArjunVarshney/Everything-store-client/commits"
+      ],
+      "features": [
+         "Intuitive User Interface (UI): Offers a clean and user-friendly interface, enabling easy navigation and seamless browsing of products and categories.",
+         "Mobile Responsiveness: Ensures the website is optimized for mobile devices, providing a consistent and enjoyable shopping experience across various screen sizes.",
+         "Product Search and Filtering: Implements robust search functionality and filtering options, allowing customers to easily find products based on categories, brands, price range, sizes, and other attributes.",
+         "Store Management: Allows easy management of multiple stores from a centralized dashboard, enabling administrators to oversee different storefronts efficiently.",
+         "Category Management: Provides tools to create, edit, and organize product categories, streamlining the navigation and structure of the website.",
+         "Product and Variants Management: Enables the addition, editing, and removal of products and their variants (sizes, colors, etc.) with ease, ensuring updated and comprehensive offerings.",
+         "Inventory Tracking: Facilitates inventory management, displaying stock levels, alerts for low inventory, and restocking options to avoid product shortages.",
+         "Order Processing: Displays order details, status updates, and allows for easy order fulfillment",
+         "Sales Analytics: Provides insights into sales performance, revenue trends, and popular products through interactive charts and graphs.",
+         "Promotional Billboards: Offers customizable sections on the website to highlight promotions, new arrivals, or featured products, attracting customer attention and increasing sales."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "shadcn"],
+         "backend": ["Node js", "Next js", "MySQL", "Prisma", "Clerk"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Axios",
+         "Query-string",
+         "Stripe"
+      ],
+      "images": [
+         [
+            "/project-screenshots/everything-store-admin/1.png",
+            "/project-screenshots/everything-store-admin/2.png",
+            "/project-screenshots/everything-store-admin/3.png",
+            "/project-screenshots/everything-store-admin/4.png",
+            "/project-screenshots/everything-store-admin/5.png",
+            "/project-screenshots/everything-store-admin/6.png",
+            "/project-screenshots/everything-store-admin/7.png",
+            "/project-screenshots/everything-store-admin/8.png",
+            "/project-screenshots/everything-store-admin/9.png",
+            "/project-screenshots/everything-store-admin/10.png",
+            "/project-screenshots/everything-store-admin/11.png"
+         ],
+         [
+            "/project-screenshots/everything-store-client/1.png",
+            "/project-screenshots/everything-store-client/2.png",
+            "/project-screenshots/everything-store-client/3.png",
+            "/project-screenshots/everything-store-client/4.png",
+            "/project-screenshots/everything-store-client/5.png",
+            "/project-screenshots/everything-store-client/6.png"
+         ]
+      ]
+   },
+   {
+      "name": "Jsontohtml-render",
+      "description": "Convert JSON into HTML with ease using the \"jsontohtml-render\" npm package. This lightweight library allows you to transform JSON data into HTML tags and structures, making it simple to generate dynamic HTML to preview a json or any object in your JavaScript applications.",
+      "featured_image": "/project-screenshots/jsontohtml-render/2.png",
+      "type": "package",
+      "tags": {
+         "based-on": ["Package development"],
+         "language": ["Typescript"],
+         "other": ["Utility"]
+      },
+      "npm_link": ["https://www.npmjs.com/package/jsontohtml-render"],
+      "git_link": ["https://github.com/ArjunVarshney/jsontohtml-render"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/jsontohtml-render/commits"
+      ],
+      "features": [
+         "Customizable Rendering: Allows full customization of HTML output including colors, background, and indentation, tailoring the display to user preferences.",
+         "Interactive Styling Options: Enables users to personalize various elements like text colors, background colors, font size and font styles for enhanced readability and aesthetics.",
+         "Configurable Line Numbers: Offers the flexibility to toggle line numbers on/off, providing a cleaner or more informative rendering based on user choice.",
+         "Retraction Functionality: Provides retractable sections or objects, allowing collapsible content for improved organization and readability of nested structures.",
+         "Versatile Object Rendering: Capable of rendering complex JavaScript objects, arrays, and nested data structures into HTML for clear visualization and comprehension.",
+         "Framework Compatibility: Seamlessly integrates with popular frameworks like React, Vue.js, Angular, and others, ensuring cross-framework support for rendering JS objects to HTML.",
+         "Vanilla HTML and CSS Support: Works efficiently with traditional HTML and CSS setups, providing flexibility for developers working without frameworks",
+         "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
+      ],
+      "images": [
+         [
+            "/project-screenshots/jsontohtml-render/1.png",
+            "/project-screenshots/jsontohtml-render/2.png"
+         ]
+      ]
+   },
+   {
+      "name": "pdf-ops",
+      "description": "This node js package is able to perform various pdf tasks as desired and is able to save the resultant pdf as a new file or return a file Buffer.",
+      "featured_image": "/project-screenshots/pdf-ops/1.png",
+      "type": "package",
+      "tags": {
+         "based-on": ["Package development"],
+         "language": ["Typescript"],
+         "other": ["Utility"]
+      },
+      "npm_link": ["https://www.npmjs.com/package/pdf-ops"],
+      "git_link": ["https://github.com/ArjunVarshney/pdf-ops"],
+      "commits": ["https://api.github.com/repos/ArjunVarshney/pdf-ops/commits"],
+      "features": [
+         "Multi-functional PDF Operations: Conduct various PDF operations including splitting, merging, rotating, resizing, margin addition, and image-to-PDF conversion, offering diverse functionalities for PDF manipulation.",
+         "Versatile PDF Source Compatibility: Accepts various input sources such as File, Blob, PdfDocument (pdf-lib), Uint8Array, or ArrayBuffer, ensuring compatibility with multiple file formats and structures.",
+         "User-Friendly Interface:Simple API and methods for smooth integration and usage, ensuring accessibility for developers across different skill levels.",
+         "Clearance and Reset Capability:Provides functionality to clear and reinitialize stored PDFs in the object, ensuring a clean slate for new operations or reinitialization when required.",
+         "Efficient Client-Side Processing:Enables rapid PDF processing directly on the client-side, minimizing network latency and ensuring swift operations, thereby enhancing user experience and responsiveness during PDF manipulation.",
+         "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
+      ],
+      "images": [
+         [
+            "/project-screenshots/pdf-ops/1.png",
+            "/project-screenshots/pdf-ops/2.png"
+         ]
+      ]
+   },
+   {
+      "name": "PDFz",
+      "description": "Pdfz is a powerful and user-friendly web application built on top of the \"pdf-ops\" npm package, designed to streamline PDF operations effortlessly on the client side. With Pdfz, you can easily perform a wide range of PDF-related tasks, from merging and splitting to rotating and converting images to pdfs. Whether you're a developer looking for an easy way to integrate PDF functionality into your project or a non-technical user in need of a simple PDF tool, Pdfz has you covered.",
+      "featured_image": "/project-screenshots/pdfz/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "Other": ["Utility Website"]
+      },
+      "website_link": ["https://pdfz-phi.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/PDFz"],
+      "commits": ["https://api.github.com/repos/ArjunVarshney/PDFz/commits"],
+      "features": [
+         "Split PDFs: Slit pdfs into single or range specified pages",
+         "Merge PDFs: Merge complete pdfs or with range specifications",
+         "Rotate PDFs: Rotate the whole pdf or selected pages of that pdf",
+         "Resize PDFs: Change the page size of the whole pdf or of selected pages",
+         "Add Margin to the PDFs: Add margin on all side or on a selected side of the pdf",
+         "Convert images to Pdf: Droping images directly into the input box converts them into pdfs providing seamless experience",
+         "User-Friendly Interface: Pdfz offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website",
+         "Developer-Friendly: Developers can also use the functionality provided by Pdfz programmatically through the \"pdf-ops\" npm package."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "daisyUI"],
+         "backend": ["Node js", "Next js"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "pdf-ops",
+         "Tailwind",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         [
+            "/project-screenshots/pdfz/1.png",
+            "/project-screenshots/pdfz/2.png",
+            "/project-screenshots/pdfz/3.png",
+            "/project-screenshots/pdfz/4.png",
+            "/project-screenshots/pdfz/5.png"
+         ]
+      ]
+   },
+   {
+      "name": "Speed-type",
+      "description": "Speed-type is a web-based typing practice tool designed to improve typing speed and accuracy. Offering a user-friendly interface, it provides various customizable tests, including words, and sentences. Users can track their performance metrics, such as words per minute (WPM), accuracy, and keystrokes, allowing for focused practice sessions.",
+      "featured_image": "/project-screenshots/pdfz/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "Other": ["Utility Website"]
+      },
+      "website_link": ["https://speed-type-mu.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Speed-Type"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Speed-Type/commits"
+      ],
+      "features": [
+         "Versatile Typing Tests: Offers various typing tests including words, sentences, and quotes, catering to different skill levels and preferences.",
+         "Customizable Settings: Allows customization of test duration, difficulty levels, and themes, enabling users to tailor practice sessions according to their proficiency and preferences.",
+         "Real-Time Performance Metrics: Provides real-time statistics on words per minute (WPM), accuracy percentage, and keystrokes, aiding in tracking progress and identifying areas for improvement.",
+         "User-Friendly Interface: Speed-Type offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website",
+         "Responsive Design: Optimized for various devices and screen sizes, allowing users to practice typing seamlessly on desktops, laptops, tablets, or smartphones.",
+         "Progress Tracking: Saves user history and progress, enabling users to review past performance and monitor improvement over time."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "daisyUI"],
+         "backend": ["Node js", "Next js"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": ["Next js", "Tailwind", "Axios", "Query-string"],
+      "images": [
+         [
+            "/project-screenshots/pdfz/1.png",
+            "/project-screenshots/pdfz/2.png",
+            "/project-screenshots/pdfz/3.png",
+            "/project-screenshots/pdfz/4.png",
+            "/project-screenshots/pdfz/5.png"
+         ]
+      ]
+   },
+   {
+      "name": "Auto-racer",
+      "description": "I developed a browser-based game leveraging HTML, CSS, and JavaScript, allowing users to play against an AI opponent. The AI was trained using a neural network, crafted entirely from scratch without external libraries. This project not only showcases the game's interactive features but also highlights my development skills in creating an independent AI system.",
+      "featured_image": "/project-screenshots/auto-racer/1.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Artificial intelligence", "Reinforcement learning"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "Other": ["Canvas", "Game Website"]
+      },
+      "website_link": ["https://auto-racer.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Self-Driving-Car"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Self-Driving-Car/commits"
+      ],
+      "features": [
+         "Gameplay Against AI: Offers users the opportunity to play an engaging game against an AI opponent directly on the website.",
+         "Handcrafted Neural Network: Utilizes a neural network developed from scratch, showcasing your expertise in AI and neural network design without relying on existing libraries.",
+         "HTML, CSS, JS Implementation: Built entirely using HTML, CSS, and JavaScript, demonstrating proficiency in front-end web development technologies.",
+         "Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones."
+      ],
+      "tech_stack": {
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["No Packages Used"],
+      "images": [["/project-screenshots/auto-racer/1.png"]]
+   },
+   {
+      "name": "College-portal-scraper",
+      "description": "We all are familiar with the user friendliness that our college portal provides us (it sucks)😐. Therefore, I made a program to scrape the portal and display it onto a notion page that solves the problem of clicking an endless stream of pointless buttons and navigating our way through the menus to see our attendance and view our marks.",
+      "featured_image": "/project-screenshots/college-portal-scraper/1.png",
+      "type": "utility",
+      "tags": {
+         "based-on": ["Web-scraping"],
+         "language": ["Javascript"],
+         "Other": ["Utility", "Automation Hack", "Notion API"]
+      },
+      "git_link": ["https://github.com/ArjunVarshney/College-Portal-Scraper"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/College-Portal-Scraper/commits"
+      ],
+      "features": [
+         "Automated Data Retrieval: Scrapes and extracts attendance records and marks from the college portal automatically, eliminating the need for manual navigation through the portal.",
+         "Notion Integration: Integrates seamlessly with Notion, a popular productivity tool, allowing users to display the extracted data directly onto a Notion page for easy access and visualization.",
+         "Easy Setup Process: Provides a step-by-step guide for setup, including cloning the repository, installing necessary npm modules, and configuring the Notion integration and page structure.",
+         "Data Export: Generates a data.json file containing the extracted data, enabling users to utilize this data for other purposes if needed."
+      ],
+      "tech_stack": {
+         "frameworks": ["Puppeteer"],
+         "languages": ["Javascript"]
+      },
+      "most_used_packages": ["Puppeteer", "notionhq"],
+      "images": [["/project-screenshots/college-portal-scraper/1.png"]]
+   },
+   {
+      "name": "Text-editor",
+      "description": "This is a basic text editor which can be used to take notes and print it also. I have used quill in this application for formatting the text in the editor box. The text stores in the local storage in realtime hence when reloaded, the data restores. I find this editor very usefull for my- self as it acts as a notepad to write my ideas and it is very minimal as well.",
+      "featured_image": "/project-screenshots/text-editor/1.png",
+      "type": "website",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["React", "HTML", "CSS", "Javascript"],
+         "Other": ["Utility Website"]
+      },
+      "website_link": ["https://text-editr.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Text-Editor"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Text-Editor/commits"
+      ],
+      "features": [
+         "Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for better note organization.",
+         "Local Storage: Saves notes in real-time to the local storage, ensuring that data persists even after page reloads or when revisiting the website, allowing users to resume their work seamlessly.",
+         "Minimalistic Design: Features a minimalist user interface, keeping distractions at bay and focusing solely on the note-taking aspect, providing a clutter-free environment for writing.",
+         "Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones.",
+         "Print Functionality: Provides the option to print the notes directly from the editor, enabling users to produce physical copies of their written content if required."
+      ],
+      "tech_stack": {
+         "frontend": ["React"],
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["React", "Quill"],
+      "images": [
+         [
+            "/project-screenshots/text-editor/1.png",
+            "/project-screenshots/text-editor/2.png"
+         ]
+      ]
+   },
+   {
+      "name": "Snake Game",
+      "description": "My rendition of the classic Snake game brings back nostalgic fun while offering a modern twist. With sleek graphics and smooth controls, this game challenges players to navigate a hungry snake through a pixelated world.",
+      "featured_image": "/project-screenshots/snake-game/1.png",
+      "type": "website",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "Other": ["Game Website"]
+      },
+      "website_link": ["https://growing-snake.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Snake-game"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Snake-game/commits"
+      ],
+      "features": [
+         "Intuitive Controls: Easily maneuver the snake with simple controls for an immersive gaming experience.",
+         "Addictive Gameplay: Enjoy an engaging game that progressively gets more challenging as the snake grows longer.",
+         "Vibrant Visuals: Explore a vibrant, retro-themed environment that adds a touch of nostalgia to the gaming experience.",
+         "Compatibility: Play across multiple platforms, whether it's on a web browser or mobile device, ensuring accessibility for all users."
+      ],
+      "tech_stack": {
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["No Packages Used"],
+      "images": [
+         [
+            "/project-screenshots/snake-game/1.png",
+            "/project-screenshots/snake-game/2.png"
+         ]
+      ]
+   },
+   {
+      "name": "Photography website",
+      "description": "Basic static website that is a photography website",
+      "featured_image": "/project-screenshots/photography-website/2.png",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "Other": ["Content Website"]
+      },
+      "website_link": ["https://arjunvarshney.github.io/Photography-website/"],
+      "git_link": ["https://github.com/ArjunVarshney/Photography-website"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Photography-website/commits"
+      ],
+      "features": [
+         "This is a static website that I made in my initial web development journey to practice HTML, CSS, JS."
+      ],
+      "tech_stack": {
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["No Packages Used"],
+      "images": [
+         [
+            "/project-screenshots/photography-website/1.png",
+            "/project-screenshots/photography-website/2.png",
+            "/project-screenshots/photography-website/3.png",
+            "/project-screenshots/photography-website/4.png"
+         ]
       ]
    }
 ]
