@@ -388,6 +388,51 @@
       "images": [["/project-screenshots/college-portal-scraper/1.png"]]
    },
    {
+      "name": "Your-Norm",
+      "description": "This is a complex blog application which allows user to post content, comment on it and also update or delete it. This platform offers an extensive range of features, including user-friendly editing tools, interactive commenting systems, and seamless sharing options. This also provides a responsive design ensures an optimal reading experience across all devices.",
+      "featured_image": "/project-screenshots/your-norm/1.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["React", "CSS", "Javascript"],
+         "Other": ["Content Website", "Docker", "Google_auth"]
+      },
+      "website_link": ["/"],
+      "git_link": ["https://github.com/ArjunVarshney/YOUR-NORM"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/YOUR-NORM/commits"
+      ],
+      "features": [
+         "Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for commenting, writing posts and also customizing their about section.",
+         "Text-to-speech: Enables users to convert written text into speech with customizable voices, language support, and speed controls, fostering accessibility and convenience.",
+         "User Profiles:Displays user profiles, including detailed information about each user, enabling public visibility and interaction among users within the platform.",
+         "Save for later: Permits users to save blog posts for future reference or reading through a bookmark or save feature, ensuring easy access to preferred content at a later time.",
+         "Activity monitoring: Presents a comprehensive overview of user activity, consolidating likes, comments, and other interactions in a centralized location for easy tracking and review.",
+         "Security Measures: Implements robust security measures to protect user data and ensure a safe browsing experience.",
+         "Responsive Design: Ensures an optimal reading experience on all devices, including mobile phones, tablets, and desktops."
+      ],
+      "tech_stack": {
+         "frontend": ["React"],
+         "backend": ["Express", "MongoDB", "Nodejs"],
+         "containerization": ["Docker"],
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["React", "Quill", "Express", "mongoose"],
+      "images": [
+         [
+            "/project-screenshots/your-norm/1.png",
+            "/project-screenshots/your-norm/2.png",
+            "/project-screenshots/your-norm/3.png",
+            "/project-screenshots/your-norm/4.png",
+            "/project-screenshots/your-norm/5.png",
+            "/project-screenshots/your-norm/6.png",
+            "/project-screenshots/your-norm/7.png",
+            "/project-screenshots/your-norm/8.png",
+            "/project-screenshots/your-norm/9.png"
+         ]
+      ]
+   },
+   {
       "name": "Text-editor",
       "description": "This is a basic text editor which can be used to take notes and print it also. I have used quill in this application for formatting the text in the editor box. The text stores in the local storage in realtime hence when reloaded, the data restores. I find this editor very usefull for my- self as it acts as a notepad to write my ideas and it is very minimal as well.",
       "featured_image": "/project-screenshots/text-editor/1.png",
@@ -485,5 +530,17 @@
             "/project-screenshots/photography-website/4.png"
          ]
       ]
+   },
+   {
+      "name": "Wine Quality Prediction",
+      "description": "Machine learning model to predict the quality of the wine based of various parameters like acidity, sugar, density, etc.",
+      "featured_image": "/ai/wine-quality-prediction.png",
+      "tags": {
+         "based-on": ["Machine learning", "Data analysis"],
+         "language": ["Python"],
+         "Other": ["Scikit-learn", "Matplotlib", "Flask"]
+      },
+      "git_link": [""],
+      "most_used_packages": ["Scikit-learn", "Matplotlib", "Flask", "Pickle"]
    }
 ]
