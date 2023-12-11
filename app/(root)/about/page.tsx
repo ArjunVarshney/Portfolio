@@ -7,7 +7,7 @@ const AboutPage = () => {
       {
          name: "High School",
          from: "The Modern School",
-         start: "2016",
+         start: "2017",
          end: "2019",
          grades: "94%",
       },
@@ -245,12 +245,12 @@ const AboutPage = () => {
                {hobbies.map((hobby) => (
                   <div
                      key={hobby.name}
-                     className=" h-48 w-48 relative z-10 grid place-items-center"
+                     className=" h-48 w-48 relative z-10 grid place-items-center rounded-lg"
                   >
                      <span className="z-0 text-foreground text-2xl font-semibold text-center">
                         {hobby.name}
                      </span>
-                     <div className="absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-40 border rounded-lg overflow-hidden">
+                     <div className="background !opacity-40 border rounded-lg overflow-hidden">
                         <Image
                            src={hobby.image}
                            height={200}

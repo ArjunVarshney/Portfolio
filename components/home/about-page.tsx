@@ -9,7 +9,7 @@ const AboutPage = () => {
       {
          name: "High School",
          from: "The Modern School",
-         start: "2016",
+         start: "2017",
          end: "2019",
          grades: "94%",
       },

@@ -13,6 +13,21 @@ body,
    @apply max-w-3xl lg:max-w-none xl:max-w-[1400px] mx-auto p-2 sm:p-4 pt-6;
 }
 
+.background-parent {
+   @apply relative overflow-hidden z-10;
+}
+
+.background {
+   @apply absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-30;
+}
+
+.btn {
+   @apply bg-foreground/95 text-background flex items-center justify-center py-2 px-4 text-sm font-medium rounded-md hover:opacity-90 active:opacity-100 transition;
+}
+.btn-outline {
+   @apply bg-background text-foreground border border-muted-foreground/30 flex items-center justify-center py-2 px-4 text-sm font-medium rounded-md hover:bg-muted active:bg-background transition;
+}
+
 @layer base {
    :root {
       --background: 0 0% 100%;

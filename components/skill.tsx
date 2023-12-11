@@ -36,14 +36,14 @@ const Skill = ({
             {level_text[level - 1]}
          </span>
          <div
-            className="absolute top-0 bottom-0 left-0 -z-10 opacity-30"
+            className="background"
             style={{
                background: level_color[level - 1],
                width: `${level * 20}%`,
             }}
          ></div>
          <div
-            className="absolute top-0 bottom-0 left-0 -z-10 opacity-30 bg-custom-accent"
+            className="background bg-custom-accent"
             style={{
                width: `${level * 20}%`,
             }}
