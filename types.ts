@@ -62,10 +62,20 @@ interface Model {
    dataset: string;
    git_link: string[];
    most_used_packages: string[];
-   inputs: InputType[];
+   inputs?: InputType[];
    examples: {
       [key: string]: number | string;
    }[];
 }
 
-export type Project = BasicInfo & (Website | Package | Utility | Model);
+interface Analysis {
+   type: "analysis";
+   feature_description: { [key: string]: string };
+   ipynb_json: string;
+   dataset: string;
+   git_link: string[];
+   most_used_packages: string[];
+}
+
+export type Project = BasicInfo &
+   (Website | Package | Utility | Model | Analysis);

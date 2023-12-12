@@ -10,16 +10,9 @@ import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { color } from "@/constants/colors";
 
 const ProjectCard = ({ project }: { project: Project }) => {
-   const color = {
-      website: "bg-amber-600",
-      package: "bg-red-600",
-      model: "bg-blue-600",
-      utility: "bg-purple-600",
-      analysis: "bg-orange-600",
-   };
-
    return (
       <Link href={"/projects/" + project.project_url}>
          <Card>

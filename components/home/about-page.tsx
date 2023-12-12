@@ -3,6 +3,7 @@ import Heading from "../ui/heading";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Skill from "../skill";
+import KnowMore from "../ui/know-more-btn";
 
 const AboutPage = () => {
    const education_status = [
@@ -90,12 +91,7 @@ const AboutPage = () => {
                />
             ))}
          </div>
-         <Link
-            className="text-lg font-semibold px-5 p-4 bg-custom-accent text-black mt-4 rounded-lg w-full text-center hover:scale-[99%] hover:opacity-90 transition active:scale-100 active:opacity-100"
-            href={"/about"}
-         >
-            Know more about me
-         </Link>
+         <KnowMore href="/about" title="Know more about me" />
       </div>
    );
 };

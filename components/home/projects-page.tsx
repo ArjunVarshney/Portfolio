@@ -2,6 +2,7 @@ import projectData from "@/public/project-data.json";
 import Heading from "../ui/heading";
 import ProjectCard from "../projects/project-card";
 import { Project } from "@/types";
+import KnowMore from "../ui/know-more-btn";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -18,11 +19,12 @@ const ProjectsPage = () => {
    return (
       <div className="container !px-28 my-24">
          <Heading title="Projects" />
-         <div className="grid grid-cols-3 gap-5 mt-8">
+         <div className="grid grid-cols-3 gap-5 my-8">
             {featuredProjects.map((project) => (
                <ProjectCard project={project} key={project.project_url} />
             ))}
          </div>
+         <KnowMore href="/projects" title="View all projects" />
       </div>
    );
 };
