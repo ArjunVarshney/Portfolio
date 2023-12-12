@@ -2,8 +2,6 @@ import ProjectCard from "@/components/projects/project-card";
 import Heading from "@/components/ui/heading";
 import projectData from "@/public/project-data.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
-import { color } from "@/constants/colors";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -16,37 +14,25 @@ const ProjectsPage = () => {
             <TabsList className="mr-auto gap-2 h-[unset] p-2">
                <TabsTrigger
                   value="All"
-                  className={cn(
-                     color["utility"],
-                     "border-2 border-purple-600 px-4 py-1"
-                  )}
+                  className="border-2 border-purple-600 bg-purple-600 px-4 py-1"
                >
                   All
                </TabsTrigger>
                <TabsTrigger
                   value="Website"
-                  className={cn(
-                     color["website"],
-                     "border-2 border-amber-600 px-4 py-1"
-                  )}
+                  className="border-2 border-amber-600 bg-amber-600 px-4 py-1"
                >
                   Website
                </TabsTrigger>
                <TabsTrigger
                   value="Packages/Utility"
-                  className={cn(
-                     color["package"],
-                     "border-2 border-red-600 px-4 py-1"
-                  )}
+                  className="border-2 border-red-600 bg-red-600 px-4 py-1"
                >
                   Packages/Utility
                </TabsTrigger>
                <TabsTrigger
                   value="Models/Analysis"
-                  className={cn(
-                     color["model"],
-                     "border-2 border-blue-600 px-4 py-1"
-                  )}
+                  className="border-2 border-blue-600 bg-blue-600 px-4 py-1"
                >
                   Models/Analysis
                </TabsTrigger>
