@@ -1,0 +1,32 @@
+[
+   {
+      "name": "Typescript",
+      "color": "#2563eb",
+      "logo": "/icons/typescript.svg"
+   },
+   {
+      "name": "Javascript",
+      "color": "#ca8a04",
+      "logo": "/icons/javascript.svg"
+   },
+   {
+      "name": "Python",
+      "color": "#ca8a04",
+      "logo": "/icons/python.svg"
+   },
+   {
+      "name": "JSON",
+      "color": "#3a8f29",
+      "logo": "/icons/json.svg"
+   },
+   {
+      "name": "Next js",
+      "color": "#1f2937",
+      "logo": "/icons/next-js.svg"
+   },
+   {
+      "name": "Tailwind",
+      "color": "#0284c7",
+      "logo": "/icons/tailwind.svg"
+   }
+]

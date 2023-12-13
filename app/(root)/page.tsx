@@ -1,5 +1,4 @@
 import AboutPage from "@/components/home/about-page";
-import BlogsPage from "@/components/home/blogs-page";
 import ContactPage from "@/components/home/contact-page";
 import LandingPage from "@/components/home/landing-page";
 import ProjectsPage from "@/components/home/projects-page";
@@ -13,8 +12,6 @@ export default function Home() {
          <AboutPage />
          <Separator />
          <ProjectsPage />
-         <Separator />
-         <BlogsPage />
          <Separator />
          <ContactPage />
       </main>

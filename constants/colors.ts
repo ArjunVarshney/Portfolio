@@ -1,7 +1,7 @@
 export const color = {
-   website: "bg-amber-600",
-   package: "bg-red-600",
-   model: "bg-blue-600",
-   utility: "bg-purple-600",
-   analysis: "bg-orange-600",
+   website: "#d97706",
+   package: "#dc2626",
+   model: "#2563eb",
+   utility: "#9333ea",
+   analysis: "#ea580c",
 };

@@ -20,10 +20,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
                <CardTitle className="mb-2 flex justify-between">
                   <span className="truncate pb-0.5">{project.name}</span>
                   <Badge
-                     className={cn(
-                        "capitalize text-white",
-                        color[project.type]
-                     )}
+                     className="capitalize text-white"
+                     style={{ background: color[project.type] }}
                   >
                      {project.type}
                   </Badge>

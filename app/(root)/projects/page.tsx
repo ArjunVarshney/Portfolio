@@ -2,6 +2,7 @@ import ProjectCard from "@/components/projects/project-card";
 import Heading from "@/components/ui/heading";
 import projectData from "@/public/project-data.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { color } from "@/constants/colors";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -11,28 +12,47 @@ const ProjectsPage = () => {
       <div className="container !px-28 !pt-16 mb-12">
          <Heading title="Projects" />
          <Tabs defaultValue="All" className="w-full mt-5 flex flex-col mb-5">
-            <TabsList className="mr-auto gap-2 h-[unset] p-2">
+            <TabsList className="mr-auto gap-2 h-[unset] p-2 pl-20 relative bg-muted-foreground/10">
+               <div className="font-semibold text-lg text-foreground absolute top-0 bottom-0 left-0 bg-foreground/10 p-3 px-4 flex items-center justify-center rounded-l">
+                  Filter
+               </div>
                <TabsTrigger
                   value="All"
-                  className="border-2 border-purple-600 bg-purple-600 px-4 py-1"
+                  className="border-2 px-4 py-1"
+                  style={{
+                     borderColor: color["utility"],
+                     backgroundColor: color["utility"],
+                  }}
                >
                   All
                </TabsTrigger>
                <TabsTrigger
                   value="Website"
-                  className="border-2 border-amber-600 bg-amber-600 px-4 py-1"
+                  className="border-2 px-4 py-1"
+                  style={{
+                     borderColor: color["website"],
+                     backgroundColor: color["website"],
+                  }}
                >
                   Website
                </TabsTrigger>
                <TabsTrigger
                   value="Packages/Utility"
-                  className="border-2 border-red-600 bg-red-600 px-4 py-1"
+                  className="border-2 px-4 py-1"
+                  style={{
+                     borderColor: color["package"],
+                     backgroundColor: color["package"],
+                  }}
                >
                   Packages/Utility
                </TabsTrigger>
                <TabsTrigger
                   value="Models/Analysis"
-                  className="border-2 border-blue-600 bg-blue-600 px-4 py-1"
+                  className="border-2 px-4 py-1"
+                  style={{
+                     borderColor: color["model"],
+                     backgroundColor: color["model"],
+                  }}
                >
                   Models/Analysis
                </TabsTrigger>
