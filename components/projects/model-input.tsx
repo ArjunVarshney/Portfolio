@@ -5,29 +5,32 @@ import { Slider } from "../ui/slider";
 import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
 import { useState } from "react";
+import axios from "axios";
 
 const ModelInput = ({
    inputs,
    examples,
+   api,
 }: {
    inputs: InputType[];
    examples: { [key: string]: string | number }[];
+   api: string;
 }) => {
    let defaultValue: { [key: string]: string | number } = {};
+   const [value, setValue] = useState(defaultValue);
+   const [result, setResult] = useState(undefined);
 
    inputs.forEach((parameter) => {
       defaultValue[parameter.name] = parameter.default || 0;
    });
 
-   const onRun = () => {
-      console.log(value);
+   const onRun = async () => {
+      setResult(await axios.post(api, value));
    };
 
    const onReset = () => {
       setValue(defaultValue);
    };
-
-   const [value, setValue] = useState(defaultValue);
    return (
       <div className="flex gap-5">
          <div className="mt-5 p-4 background-parent w-full rounded-lg">
@@ -102,7 +105,9 @@ const ModelInput = ({
                ))}
             </div>
             <div className="p-6 bg-foreground text-background grid place-items-center rounded-lg text-2xl flex-1">
-               Result
+               {result === undefined
+                  ? "Click Run for Results"
+                  : JSON.stringify(result)}
             </div>
          </div>
       </div>

@@ -62,6 +62,7 @@ interface Model {
    ipynb_json: string;
    dataset: string;
    git_link: string[];
+   api?: string;
    most_used_packages: string[];
    inputs?: InputType[];
    examples: {

@@ -28,6 +28,42 @@ body,
    @apply bg-background text-foreground border border-muted-foreground/30 flex items-center justify-center py-2 pl-4 pr-5 text-sm font-medium rounded-md hover:bg-muted active:bg-background transition;
 }
 
+.markdown h1 {
+   @apply text-3xl pt-8;
+}
+
+.markdown h2 {
+   @apply text-2xl pt-8;
+}
+
+.markdown h3 {
+   @apply text-xl pt-8;
+}
+
+.code {
+   @apply border border-gray-300 bg-gray-100 mt-5 p-3 w-full;
+}
+
+.output {
+   @apply mt-1 w-full break-words overflow-x-auto text-sm;
+}
+
+img.output {
+   @apply max-w-2xl;
+}
+
+table.dataset thead tr th,
+table.dataset tbody tr td,
+.output thead tr th,
+.output tbody tr td {
+   @apply border border-black/20 text-left;
+}
+
+.output thead tr th,
+table.dataset thead tr th {
+   @apply bg-gray-200;
+}
+
 @layer base {
    :root {
       --background: 0 0% 100%;

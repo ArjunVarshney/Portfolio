@@ -554,8 +554,8 @@
          "residual sugar": "Amount of sugar left after fermentation.",
          "citric acid": "It is weak organic acid, found in citrus fruits naturally.",
          "chlorides": "Amount of salt present in wine.",
-         "free sulphur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
-         "total sulphur dioxide": "Total So2 present in the alcohol.",
+         "free supfur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
+         "total supfur dioxide": "Total So2 present in the alcohol.",
          "pH": "In wine pH is used for checking acidity.",
          "density": "The weight of the alcohol per ml.",
          "sulphates": "Added sulfites preserve freshness and protect wine from oxidation, and bacteria.",
@@ -573,6 +573,7 @@
       "git_link": [
          "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/wine-quality-prediction/model.ipynb"
       ],
+      "api": "https://ml-model-7la3.onrender.com/wine-quality",
       "most_used_packages": ["Scikit-learn", "Matplotlib", "Pickle"],
       "inputs": [
          {
@@ -608,7 +609,7 @@
             "placeholder": "A number between 0 and 1"
          },
          {
-            "name": "free sulphur dioxide",
+            "name": "free supfur dioxide",
             "type": "slider",
             "min": 1,
             "max": 70,
@@ -616,7 +617,7 @@
             "placeholder": "A number between 1 and 70"
          },
          {
-            "name": "total sulphur dioxide",
+            "name": "total supfur dioxide",
             "type": "slider",
             "min": 1,
             "max": 300,
@@ -662,8 +663,8 @@
             "volatile acidity": 0.47,
             "citric acid": 0.27,
             "chlorides": 0.058,
-            "free sulphur dioxide": 18.0,
-            "total sulphur dioxide": 38.0,
+            "free sulfur dioxide": 18.0,
+            "total sulfur dioxide": 38.0,
             "density": 0.99518,
             "pH": 3.16,
             "sulphates": 0.85,
@@ -674,8 +675,8 @@
             "volatile acidity": 0.47,
             "citric acid": 0.27,
             "chlorides": 0.058,
-            "free sulphur dioxide": 18.0,
-            "total sulphur dioxide": 38.0,
+            "free supfur dioxide": 18.0,
+            "total supfur dioxide": 38.0,
             "density": 0.99518,
             "pH": 3.16,
             "sulphates": 0.85,
@@ -686,8 +687,8 @@
             "volatile acidity": 0.47,
             "citric acid": 0.27,
             "chlorides": 0.058,
-            "free sulphur dioxide": 18.0,
-            "total sulphur dioxide": 38.0,
+            "free supfur dioxide": 18.0,
+            "total supfur dioxide": 38.0,
             "density": 0.99518,
             "pH": 3.16,
             "sulphates": 0.85,
@@ -705,8 +706,8 @@
          "residual sugar": "Amount of sugar left after fermentation.",
          "citric acid": "It is weak organic acid, found in citrus fruits naturally.",
          "chlorides": "Amount of salt present in wine.",
-         "free sulphur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
-         "total sulphur dioxide": "Total So2 present in the alcohol.",
+         "free supfur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
+         "total supfur dioxide": "Total So2 present in the alcohol.",
          "pH": "In wine pH is used for checking acidity.",
          "density": "The weight of the alcohol per ml.",
          "sulphates": "Added sulfites preserve freshness and protect wine from oxidation, and bacteria.",

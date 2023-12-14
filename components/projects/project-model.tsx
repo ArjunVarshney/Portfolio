@@ -9,6 +9,8 @@ import tech from "@/public/tech.json";
 import projectData from "@/public/project-data.json";
 import { Slider } from "@/components/ui/slider";
 import ModelInput from "./model-input";
+import Notebook from "./model-notebook";
+import Dataset from "./model-dataset";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -132,58 +134,60 @@ const ModelPage = ({ project }: { project: Project }) => {
                   )
                )}
          </ul>
-         <div className="mt-5">
-            <div className="flex justify-between items-center py-2.5 px-3 background-parent rounded-lg">
-               <div className="background bg-custom-accent !opacity-30 dark:!opacity-10" />
-               <h3 className="text-lg font-semibold capitalize">Files</h3>
-               <div className="flex gap-2">
+         {project.type === "model" && (
+            <div className="mt-5">
+               <div className="flex justify-between items-center py-2.5 px-3 background-parent rounded-lg">
+                  <div className="background bg-custom-accent !opacity-30 dark:!opacity-10" />
+                  <h3 className="text-lg font-semibold capitalize">Files</h3>
                   <div className="flex gap-2">
-                     <Dialog>
-                        <DialogTrigger>
-                           <div className="pl-2 pr-3 py-1 text-white rounded-lg capitalize font-medium flex items-center bg-orange-600">
-                              <Image
-                                 src={"/icons/jupyter.svg"}
-                                 height={50}
-                                 width={50}
-                                 alt={"logo"}
-                                 className="h-5 w-5 invert grayscale-0 mr-2 rounded-sm"
-                              />
-                              Notebook
-                           </div>
-                        </DialogTrigger>
-                        <DialogContent className="w-[90vw] max-w-none h-[90vh]">
-                           <ScrollArea className="h-full rounded">
-                              Note book data
-                           </ScrollArea>
-                        </DialogContent>
-                     </Dialog>
-                  </div>
-                  <div className="flex gap-2">
-                     <Dialog>
-                        <DialogTrigger>
-                           <div className="pl-2 pr-3 py-1 text-white rounded-lg capitalize font-medium flex items-center bg-green-600">
-                              <Image
-                                 src={"/icons/dataset.svg"}
-                                 height={50}
-                                 width={50}
-                                 alt={"logo"}
-                                 className="h-5 w-5 invert grayscale-0 mr-2 rounded-sm"
-                              />
-                              Dataset
-                           </div>
-                        </DialogTrigger>
-                        <DialogContent className="w-[90vw] max-w-none h-[90vh]">
-                           <ScrollArea className="h-full rounded">
-                              Dataset
-                           </ScrollArea>
-                        </DialogContent>
-                     </Dialog>
+                     <div className="flex gap-2">
+                        <Dialog>
+                           <DialogTrigger>
+                              <div className="pl-2 pr-3 py-1 text-white rounded-lg capitalize font-medium flex items-center bg-orange-600">
+                                 <Image
+                                    src={"/icons/jupyter.svg"}
+                                    height={50}
+                                    width={50}
+                                    alt={"logo"}
+                                    className="h-5 w-5 invert grayscale-0 mr-2 rounded-sm"
+                                 />
+                                 Notebook
+                              </div>
+                           </DialogTrigger>
+                           <DialogContent className="w-[90vw] max-w-none h-[90vh]">
+                              <Notebook nb={project.ipynb_json} />
+                           </DialogContent>
+                        </Dialog>
+                     </div>
+                     <div className="flex gap-2">
+                        <Dialog>
+                           <DialogTrigger>
+                              <div className="pl-2 pr-3 py-1 text-white rounded-lg capitalize font-medium flex items-center bg-green-600">
+                                 <Image
+                                    src={"/icons/dataset.svg"}
+                                    height={50}
+                                    width={50}
+                                    alt={"logo"}
+                                    className="h-5 w-5 invert grayscale-0 mr-2 rounded-sm"
+                                 />
+                                 Dataset
+                              </div>
+                           </DialogTrigger>
+                           <DialogContent className="w-[90vw] max-w-none h-[90vh]">
+                              <Dataset data_link={project.dataset} />
+                           </DialogContent>
+                        </Dialog>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-         {project.type === "model" && project.inputs && (
-            <ModelInput inputs={project.inputs} examples={project.examples} />
+         )}
+         {project.type === "model" && project.inputs && project.api && (
+            <ModelInput
+               inputs={project.inputs}
+               examples={project.examples}
+               api={project.api}
+            />
          )}
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>
          <div>
