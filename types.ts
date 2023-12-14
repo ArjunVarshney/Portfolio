@@ -43,17 +43,18 @@ interface Utility {
 
 interface BasicInput {
    name: string;
+   default?: string | number;
    placeholder?: string;
 }
 
-interface NumberInput {
-   type: "number";
+interface SliderInput {
+   type: "slider";
    min?: number;
    max?: number;
    step?: number;
 }
 
-export type InputType = BasicInput & NumberInput;
+export type InputType = BasicInput & SliderInput;
 
 interface Model {
    type: "model";
