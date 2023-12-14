@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { cn } from "@/lib/utils";
 import { csvToHTML } from "@/lib/csvToHTML";
+import CircularProgress from "../ui/spinner";
 
 const Roboto = Roboto_Mono({
    subsets: ["latin"],
@@ -12,16 +13,28 @@ const Roboto = Roboto_Mono({
 
 const Dataset = ({ data_link }: { data_link: string }) => {
    const [dataset, setDataset] = useState("");
+   const [loading, setLoading] = useState(false);
 
    const fetchDataset = async () => {
-      setDataset(csvToHTML((await axios.get(data_link)).data));
+      try {
+         setLoading(true);
+         setDataset(csvToHTML((await axios.get(data_link)).data));
+      } catch (error) {
+         console.log(error);
+      } finally {
+         setLoading(false);
+      }
    };
 
    useEffect(() => {
       fetchDataset();
    }, []);
 
-   return (
+   return loading ? (
+      <div className="w-full h-full grid place-items-center">
+         <CircularProgress />
+      </div>
+   ) : (
       <div
          className={cn(
             Roboto.className,

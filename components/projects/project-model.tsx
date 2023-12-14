@@ -7,7 +7,6 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import tech from "@/public/tech.json";
 import projectData from "@/public/project-data.json";
-import { Slider } from "@/components/ui/slider";
 import ModelInput from "./model-input";
 import Notebook from "./model-notebook";
 import Dataset from "./model-dataset";
@@ -187,6 +186,7 @@ const ModelPage = ({ project }: { project: Project }) => {
                inputs={project.inputs}
                examples={project.examples}
                api={project.api}
+               name={project.name}
             />
          )}
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>

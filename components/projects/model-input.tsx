@@ -6,26 +6,38 @@ import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import axios from "axios";
+import CircularProgress from "../ui/spinner";
 
 const ModelInput = ({
    inputs,
    examples,
    api,
+   name,
 }: {
    inputs: InputType[];
    examples: { [key: string]: string | number }[];
    api: string;
+   name: string;
 }) => {
    let defaultValue: { [key: string]: string | number } = {};
    const [value, setValue] = useState(defaultValue);
-   const [result, setResult] = useState(undefined);
+   const [result, setResult] = useState<any>(undefined);
+   const [loading, setLoading] = useState(false);
 
    inputs.forEach((parameter) => {
       defaultValue[parameter.name] = parameter.default || 0;
    });
 
    const onRun = async () => {
-      setResult(await axios.post(api, value));
+      try {
+         setLoading(true);
+         setResult((await axios.post(api, value)).data.result);
+      } catch (error) {
+         setResult("Something went wrong!");
+         console.log(error);
+      } finally {
+         setLoading(false);
+      }
    };
 
    const onReset = () => {
@@ -49,6 +61,7 @@ const ModelInput = ({
                   <Button
                      className="font-semibold bg-custom-accent"
                      onClick={onRun}
+                     disabled={loading}
                   >
                      Run
                   </Button>
@@ -104,10 +117,19 @@ const ModelInput = ({
                   </Button>
                ))}
             </div>
-            <div className="p-6 bg-foreground text-background grid place-items-center rounded-lg text-2xl flex-1">
-               {result === undefined
-                  ? "Click Run for Results"
-                  : JSON.stringify(result)}
+            <div className="p-6 bg-foreground text-background grid place-items-center rounded-lg text-2xl flex-1 relative">
+               {loading ? (
+                  <CircularProgress />
+               ) : result === undefined ? (
+                  "Click Run for Results"
+               ) : (
+                  <>
+                     <span className="absolute top-2 text-lg text-muted-foreground">
+                        {name}:
+                     </span>
+                     {JSON.stringify(result)}
+                  </>
+               )}
             </div>
          </div>
       </div>

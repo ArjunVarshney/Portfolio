@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { ipynbToHTML } from "@/lib/ipynbToHTML";
 import { cn } from "@/lib/utils";
+import CircularProgress from "../ui/spinner";
 
 const Roboto = Roboto_Mono({
    subsets: ["latin"],
@@ -12,16 +13,29 @@ const Roboto = Roboto_Mono({
 
 const Notebook = ({ nb }: { nb: string }) => {
    const [notebook, setNotebook] = useState("");
+   const [loading, setLoading] = useState(false);
 
    const fetchNotebook = async () => {
-      setNotebook(ipynbToHTML((await axios.get(nb)).data));
+      try {
+         setLoading(true);
+         setNotebook(ipynbToHTML((await axios.get(nb)).data));
+      } catch (error) {
+         setNotebook("Something went wrong!");
+         console.log(error);
+      } finally {
+         setLoading(false);
+      }
    };
 
    useEffect(() => {
       fetchNotebook();
    }, []);
 
-   return (
+   return loading ? (
+      <div className="w-full h-full grid place-items-center">
+         <CircularProgress />
+      </div>
+   ) : (
       <div
          className={cn(
             Roboto.className,
