@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const LandingPage = () => {
    return (
-      <div className="container w-full h-[calc(100vh-100px)] flex flex-col-reverse lg:flex-row items-center justify-center !px-10 md:!px-28 !pt-0">
+      <div className="container w-full lg:min-h-[calc(100vh-100px)] h-max flex flex-col-reverse lg:flex-row items-center justify-center !px-10 md:!px-28 !pt-0 !pb-10">
          <div className="w-full text-4xl md:text-7xl lg:pr-16 text-center lg:text-left mb-10">
             <span className="text-custom-accent">Hi</span>, I am
             <span className="block font-bold">Arjun Varshney</span>
