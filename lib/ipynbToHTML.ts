@@ -12,7 +12,9 @@ export const ipynbToHTML = (nb: any) => {
             cell.source.join("\n")
          )}</div>`;
       } else if (cell.cell_type === "code") {
-         html += `<div class="code">${cell.source.join("<br>")}</div>`;
+         html += `<div class="code-parent"><div class="code">${cell.source.join(
+            "<br>"
+         )}</div></div>`;
 
          for (let j = 0; j < cell.outputs.length; j++) {
             const output = cell.outputs[j];
@@ -22,12 +24,6 @@ export const ipynbToHTML = (nb: any) => {
                   output.text?.join("<br>") || ""
                }</pre>`;
             } else if (output.output_type === "execute_result") {
-               console.log(
-                  `<div class="output">${
-                     output.data?.["text/html"]?.join("") ||
-                     `<pre>${output.data?.["text/plain"]?.join("")}</pre>`
-                  }</div>`
-               );
                html += `<div class="output">${
                   output.data?.["text/html"]?.join("") ||
                   `<pre>${output.data?.["text/plain"]?.join("")}</pre>`

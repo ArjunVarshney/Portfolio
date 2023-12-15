@@ -39,7 +39,7 @@ const Dataset = ({ data_link }: { data_link: string }) => {
       <div
          className={cn(
             Roboto.className,
-            "bg-white text-black p-8 pb-10 w-[calc(90vw-3rem)] rounded h-[calc(90vh-3rem)] overflow-auto"
+            "bg-white text-black p-2 lg:p-8 pb-10 w-[calc(90vw-3rem)] rounded h-[calc(90vh-3rem)] overflow-auto text-xs lg:text-base"
          )}
          dangerouslySetInnerHTML={{ __html: dataset }}
       />

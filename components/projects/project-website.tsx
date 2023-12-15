@@ -7,6 +7,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import tech from "@/public/tech.json";
 import projectData from "@/public/project-data.json";
+import markdown from "@wcj/markdown-to-html";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -20,7 +21,7 @@ const techData: {
 const Website = ({ project }: { project: Project }) => {
    return (
       <>
-         <div className="flex gap-1 flex-wrap mt-3">
+         <div className="flex gap-1 flex-wrap mt-4">
             {project.tags.level &&
                project.tags.level.map((level: string) => (
                   <Badge
@@ -68,9 +69,10 @@ const Website = ({ project }: { project: Project }) => {
                   </Badge>
                ))}
          </div>
-         <div className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px]">
-            {project.description}
-         </div>
+         <div
+            className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px] markdown"
+            dangerouslySetInnerHTML={{ __html: markdown(project.description) }}
+         />
          <div className="flex items-center justify-between mt-5">
             <h2 className="text-2xl font-bold">Links:</h2>
             <div className="flex gap-2">
@@ -119,7 +121,7 @@ const Website = ({ project }: { project: Project }) => {
                                  height={500}
                                  width={500}
                                  alt="image"
-                                 className="h-[500px] rounded-lg w-fit"
+                                 className="h-[200px] sm:h-[350px] md:h-[500px] rounded-lg w-fit"
                                  key={image}
                               />
                            </DialogTrigger>
@@ -159,12 +161,12 @@ const Website = ({ project }: { project: Project }) => {
             {project.type === "website" &&
                Object.entries(project.tech_stack).map(([key, value]) => (
                   <ul className="mt-2" key={key}>
-                     <li className="flex justify-between items-center py-2.5 px-3 background-parent rounded-lg">
+                     <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-2.5 px-3 background-parent rounded-lg">
                         <div className="background bg-custom-accent !opacity-30 dark:!opacity-10" />
                         <h3 className="text-lg font-semibold capitalize">
                            {key}
                         </h3>
-                        <ul className="flex gap-2">
+                        <div className="flex flex-wrap sm:flex-nowrap mt-1 sm:mt-0 gap-2">
                            {value.map((tech) => {
                               const technology = techData.filter((t) =>
                                  tech
@@ -197,14 +199,14 @@ const Website = ({ project }: { project: Project }) => {
                                  </div>
                               );
                            })}
-                        </ul>
+                        </div>
                      </li>
                   </ul>
                ))}
          </div>
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>
          <div>
-            <ul className="mt-2 flex gap-2">
+            <div className="mt-2 flex flex-wrap gap-2">
                {project.type === "website" &&
                   project.most_used_packages.map((module) => {
                      const technology = techData.filter(
@@ -212,7 +214,7 @@ const Website = ({ project }: { project: Project }) => {
                      )[0];
                      return technology ? (
                         <div
-                           className="px-3 py-1 text-white rounded-lg capitalize font-medium flex flex-col items-center justify-center text-lg"
+                           className="min-w-[100px] px-3 py-1 text-white rounded-lg capitalize font-medium flex flex-col items-center justify-center text-lg"
                            style={{
                               background: technology.color,
                            }}
@@ -238,10 +240,10 @@ const Website = ({ project }: { project: Project }) => {
                         </div>
                      );
                   })}
-            </ul>
+            </div>
          </div>
          <div className="text-2xl font-bold mt-8">Other Projects</div>
-         <div className="grid grid-cols-3 gap-5 mt-3">
+         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
             {data
                .filter(
                   (p) =>

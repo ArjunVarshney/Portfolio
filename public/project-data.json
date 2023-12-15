@@ -546,7 +546,7 @@
    },
    {
       "name": "Wine Quality Prediction",
-      "description": "Machine learning model to predict the quality of the wine based of various parameters like acidity, sugar, density, etc.",
+      "description": "The Wine Quality Prediction Model is built using machine learning techniques to classify wines as good or bad based on various input parameters. It utilizes a dataset containing features like acidity levels, residual sugar, pH, alcohol content, etc. to train a machine learning algorithm.\n - Algorithm used: `Random Forest Classifier`\n - Accuracy: `93%`\n\n The dataset is preprocessed by handling missing values, feature scaling, and possibly feature engineering to improve the model's accuracy. After training on historical wine data, the model is capable of predicting the quality of new wines it hasn't seen before.",
       "project_url": "wine-quality-prediction",
       "feature_description": {
          "volatile acidity": "Volatile acidity is the gaseous acids present in wine.",
@@ -573,8 +573,9 @@
       "git_link": [
          "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/wine-quality-prediction/model.ipynb"
       ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/yasserh/wine-quality-dataset",
       "api": "https://ml-model-7la3.onrender.com/wine-quality",
-      "most_used_packages": ["Scikit-learn", "Matplotlib", "Pickle"],
+      "most_used_packages": ["Scikit-learn", "Matplotlib", "Pandas", "Pickle"],
       "inputs": [
          {
             "name": "fixed acidity",
@@ -697,6 +698,29 @@
       ]
    },
    {
+      "name": "Sonar Rock Detection",
+      "description": "The Sonar Data-based Rock Presence Prediction Model is developed using machine learning methodologies to determine the presence of a rock or a mine by analyzing sonar data. This model utilizes a dataset containing various acoustic attributes or frequencies emitted by sonar equipment and their corresponding responses, indicating the presence a rock or a mine. \n - Algorithm used: `Logistic Regression`\n - Accuracy: `85%`\n\nThe dataset is processed by handling missing values to enhance the model's predictive performance. Post-training on historical sonar data, the model effectively predicts the likelihood of a mine's presence based on unseen sonar readings",
+      "project_url": "sonar-rock-detection",
+      "feature_description": {
+         "Columns 1 to 60": "It contains various data column which consist sonar data.",
+         "Last column": "It tells if the sonar is hitting a rock of a mine."
+      },
+      "featured_image": "/ai/sonar-rock.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Data analysis"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/sonar-rock-model/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/mayurdalvi/sonar-mine-dataset",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy"]
+   },
+   {
       "name": "Zomato Data Analysis",
       "description": "This is my analysis on the zomato india dataset in which there are few good insights of the state of resturants linked with zomato in india.",
       "project_url": "zomato-data-analysis",
@@ -726,5 +750,51 @@
          "https://github.com/ArjunVarshney/zomato-data-analysis/tree/main"
       ],
       "most_used_packages": ["Scikit-learn", "Matplotlib", "Pickle"]
+   },
+   {
+      "name": "Movie Recommender",
+      "description": "The Movie Recommender System employs content-based filtering techniques to suggest movies tailored to users' preferences. By taking a user's favorite movie as input, the system leverages a dataset encompassing user ratings, movie attributes (genres, keywords, cast, director), and content-based filtering algorithms. Utilizing similarities between movies or users, it generates a curated list of movie recommendations for individuals, enhancing their movie-watching experience.",
+      "project_url": "movie-recommender",
+      "feature_description": {
+         "budget": "The allocated financial resources for creating the movie.",
+         "genres": "Different categories or types of the movie.",
+         "keywords": "Specific words or phrases representing the movie's essence.",
+         "title": "Name given to the movie.",
+         "overview": "Brief synopsis or summary of the movie's plot.",
+         "popularity": "Measure of the movie's popularity or public interest.",
+         "production_companies": "Companies involved in producing the movie.",
+         "production_countries": "Countries where the movie was primarily produced.",
+         "revenue": "Total earnings or income generated by the movie.",
+         "runtime": "Duration of the movie in minutes.",
+         "spoken_language": "Primary language spoken in the movie.",
+         "tagline": "Catchphrase or slogan associated with the movie.",
+         "vote_average": "Average rating given to the movie by viewers.",
+         "vote_count": "Total count of votes or ratings received by the movie.",
+         "crew": "The group of people involved in making the movie.",
+         "director": "The person responsible for guiding the movie's artistic aspects."
+      },
+      "featured_image": "/ai/movie-recommendation.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Data analysis"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/movie-recommendation/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy"],
+      "api": "https://ml-model-7la3.onrender.com/movie-recommendation",
+      "inputs": [
+         {
+            "name": "movie_name",
+            "type": "text",
+            "placeholder": "Write the name of your favorite hollywood movie"
+         }
+      ],
+      "examples": [{ "movie_name": "Spider-man" }]
    }
 ]

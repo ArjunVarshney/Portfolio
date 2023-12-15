@@ -9,10 +9,10 @@ const AboutPage = () => {
    const about_description = data.about_description;
 
    return (
-      <div className="container min-h-[calc(100vh-100px)] w-full flex flex-col items-center !px-28 !pt-24 mb-12">
+      <div className="container min-h-[calc(100vh-100px)] w-full flex flex-col items-center lg:!px-28 !pt-24 mb-12">
          <Heading title="About" />
-         <div className="flex pt-6">
-            <p className="text-[24px] w-full mt-5 leading-9 pr-5">
+         <div className="flex flex-col-reverse items-center lg:flex-row lg:items-end lg:h-[280px] pt-6">
+            <p className="text-xl lg:text-[24px] w-full mt-10 lg:mt-5 leading-8 lg:leading-9 lg:pr-5">
                {about_description}
             </p>
             <div className="w-full bg-custom-accent rounded-lg py-5">
@@ -34,7 +34,7 @@ const AboutPage = () => {
                ))}
             </div>
          </div>
-         <h3 className="font-semibold block w-full text-3xl pt-3 pb-1 border-b-2 border-foreground">
+         <h3 className="font-semibold block w-full text-3xl pt-8 xl:pt-5 pb-1 border-b-2 border-foreground">
             Skills
          </h3>
 

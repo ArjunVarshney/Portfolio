@@ -19,7 +19,7 @@ const ProjectPage = ({
       (project) => project.project_url === params.project_url
    )[0];
    return (
-      <div className="container !px-28 !pt-16 mb-12">
+      <div className="container lg:!px-28 !pt-16 mb-12">
          <Heading title={project.name} />
          {project.type === "website" && <Website project={project} />}
          {project.type === "package" && <PackagePage project={project} />}

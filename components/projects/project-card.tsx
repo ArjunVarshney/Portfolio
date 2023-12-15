@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <a href={"/projects/" + project.project_url}>
          <Link href={"/projects/" + project.project_url}>
             <Card>
-               <CardHeader>
+               <CardHeader className="p-4 sm:p-6">
                   <CardTitle className="mb-2 flex justify-between">
                      <span className="truncate pb-0.5">{project.name}</span>
                      <Badge
@@ -81,7 +81,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                         height={500}
                         width={500}
                         alt={"project-image"}
-                        className="rounded-lg mt-2 border dark:border-none aspect-video object-cover"
+                        className="rounded-lg mt-2 border dark:border-none aspect-video object-cover w-full"
                      />
                      <div className="flex justify-between mt-3">
                         <a href={"/projects/" + project.project_url}>

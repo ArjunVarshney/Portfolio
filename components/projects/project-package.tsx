@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import tech from "@/public/tech.json";
 import projectData from "@/public/project-data.json";
 import { cn } from "@/lib/utils";
+import markdown from "@wcj/markdown-to-html";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -21,7 +22,7 @@ const techData: {
 const PackagePage = ({ project }: { project: Project }) => {
    return (
       <>
-         <div className="flex gap-1 flex-wrap mt-3">
+         <div className="flex gap-1 flex-wrap mt-4">
             {project.tags.level &&
                project.tags.level.map((level: string) => (
                   <Badge
@@ -69,9 +70,10 @@ const PackagePage = ({ project }: { project: Project }) => {
                   </Badge>
                ))}
          </div>
-         <div className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px]">
-            {project.description}
-         </div>
+         <div
+            className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px] markdown"
+            dangerouslySetInnerHTML={{ __html: markdown(project.description) }}
+         />
          <div className="flex items-center justify-between mt-5">
             <h2 className="text-2xl font-bold">Links:</h2>
             <div className="flex gap-2">
@@ -111,7 +113,7 @@ const PackagePage = ({ project }: { project: Project }) => {
          {(project.type === "package" || project.type === "utility") && (
             <ScrollArea className="mt-3">
                <div className="flex gap-2">
-                  {project.images[0].reverse().map((image) => (
+                  {[...project.images[0].reverse()].map((image) => (
                      <Dialog key={image}>
                         <DialogTrigger
                            className={cn(
@@ -121,13 +123,12 @@ const PackagePage = ({ project }: { project: Project }) => {
                         >
                            <Image
                               src={image}
-                              height={2000}
-                              width={2000}
+                              height={500}
+                              width={500}
                               alt="image"
                               className={cn(
-                                 "h-[500px] rounded-lg w-fit",
-                                 project.images[0].length == 1 &&
-                                    "w-full object-cover"
+                                 "h-[200px] sm:h-[350px] md:h-[500px] rounded-lg w-fit object-cover",
+                                 project.images[0].length == 1 && "w-full"
                               )}
                               key={image}
                            />
@@ -208,7 +209,7 @@ const PackagePage = ({ project }: { project: Project }) => {
             )}
          </div>
          <div className="text-2xl font-bold mt-8">Other Projects</div>
-         <div className="grid grid-cols-3 gap-5 mt-3">
+         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
             {data
                .filter(
                   (p) =>

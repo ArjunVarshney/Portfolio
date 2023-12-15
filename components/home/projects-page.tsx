@@ -17,9 +17,9 @@ const ProjectsPage = () => {
    }
 
    return (
-      <div className="container !px-28 my-24">
+      <div className="container lg:!px-28 my-24">
          <Heading title="Projects" />
-         <div className="grid grid-cols-3 gap-5 my-8">
+         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 my-8">
             {featuredProjects.map((project) => (
                <ProjectCard project={project} key={project.project_url} />
             ))}

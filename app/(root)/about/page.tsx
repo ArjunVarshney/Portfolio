@@ -13,13 +13,13 @@ const AboutPage = () => {
    const field_skills = data.field_skills;
 
    return (
-      <div className="container w-full flex flex-col items-center !px-28 !pt-16 mb-12">
+      <div className="container w-full flex flex-col items-center lg:!px-28 !pt-16 mb-12">
          <Heading title="About" />
-         <div className="flex items-end h-[280px] pt-6">
-            <p className="text-[24px] w-full mt-5 leading-9 pr-5">
+         <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start lg:h-[250px] xl:h-[300px] 2xl:h-[280px] 2xl:pt-6">
+            <p className="text-xl xl:text-[24px] w-full mt-5 leading-8 xl:leading-9 lg:pr-5">
                {about_description}
             </p>
-            <div className="w-full max-w-[400px] flex items-end justify-center h-full">
+            <div className="w-full max-w-[300px] xl:max-w-[400px] items-end justify-center h-full hidden lg:flex">
                <Image
                   height={500}
                   width={500}
@@ -29,7 +29,7 @@ const AboutPage = () => {
                />
             </div>
          </div>
-         <div className="w-full mt-16">
+         <div className="w-full mt-8 lg:mt-16">
             <div className="w-full bg-custom-accent rounded-lg py-5">
                <h3 className="font-bold ml-5 mb-2 text-2xl text-background">
                   Education
@@ -61,9 +61,9 @@ const AboutPage = () => {
                   />
                ))}
             </div>
-            <div className="flex w-full gap-8">
+            <div className="flex flex-col lg:flex-row w-full gap-8 mt-10 lg:mt-0">
                {Object.keys(skills).map((skillHead) => (
-                  <div className="w-full rounded-lg py-5" key={skillHead}>
+                  <div className="w-full rounded-lg lg:py-5" key={skillHead}>
                      <h3 className="font-bold text-2xl capitalize pb-1 border-b-2 border-black/80 dark:border-white/80">
                         {skillHead}
                      </h3>

@@ -9,16 +9,16 @@ const data: Project[] = projectData;
 
 const ProjectsPage = () => {
    return (
-      <div className="container !px-28 !pt-16 mb-12">
+      <div className="container lg:!px-28 !pt-16 mb-12">
          <Heading title="Projects" />
          <Tabs defaultValue="All" className="w-full mt-5 flex flex-col mb-5">
-            <TabsList className="mr-auto gap-2 h-[unset] p-2 pl-20 relative bg-muted-foreground/10">
-               <div className="font-semibold text-lg text-foreground absolute top-0 bottom-0 left-0 bg-foreground/10 p-3 px-4 flex items-center justify-center rounded-l">
+            <TabsList className="mr-auto gap-2 h-[unset] p-2 sm:pl-20 relative bg-muted-foreground/10 grid grid-cols-2 w-full sm:flex sm:w-fit">
+               <div className="font-semibold text-lg text-foreground absolute top-0 bottom-0 left-0 bg-foreground/10 p-3 px-4 hidden sm:flex items-center justify-center rounded-l">
                   Filter
                </div>
                <TabsTrigger
                   value="All"
-                  className="border-2 px-4 py-1"
+                  className="border-2 sm:px-4 py-1"
                   style={{
                      borderColor: color["utility"],
                      backgroundColor: color["utility"],
@@ -58,14 +58,14 @@ const ProjectsPage = () => {
                </TabsTrigger>
             </TabsList>
             <TabsContent value="All">
-               <div className="grid grid-cols-3 gap-5 my-2">
+               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
                   {data.map((project) => (
                      <ProjectCard project={project} key={project.project_url} />
                   ))}
                </div>
             </TabsContent>
             <TabsContent value="Website">
-               <div className="grid grid-cols-3 gap-5 my-2">
+               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
                   {data
                      .filter((project) => project.type === "website")
                      .map((project) => (
@@ -77,7 +77,7 @@ const ProjectsPage = () => {
                </div>
             </TabsContent>
             <TabsContent value="Packages/Utility">
-               <div className="grid grid-cols-3 gap-5 my-2">
+               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
                   {data
                      .filter(
                         (project) =>
@@ -93,7 +93,7 @@ const ProjectsPage = () => {
                </div>
             </TabsContent>
             <TabsContent value="Models/Analysis">
-               <div className="grid grid-cols-3 gap-5 my-2">
+               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
                   {data
                      .filter(
                         (project) =>

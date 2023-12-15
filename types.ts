@@ -54,7 +54,11 @@ interface SliderInput {
    step?: number;
 }
 
-export type InputType = BasicInput & SliderInput;
+interface TextInput {
+   type: "text";
+}
+
+export type InputType = BasicInput & (SliderInput | TextInput);
 
 interface Model {
    type: "model";
@@ -62,6 +66,7 @@ interface Model {
    ipynb_json: string;
    dataset: string;
    git_link: string[];
+   kaggle_dataset?: string;
    api?: string;
    most_used_packages: string[];
    inputs?: InputType[];
@@ -76,6 +81,7 @@ interface Analysis {
    ipynb_json: string;
    dataset: string;
    git_link: string[];
+   kaggle_dataset?: string;
    most_used_packages: string[];
 }
 

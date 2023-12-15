@@ -35,7 +35,7 @@
       },
       {
          "icon": "/icons/web-dev.svg",
-         "name": "Full stack web development",
+         "name": "Full stack",
          "level": 4
       }
    ],
@@ -111,7 +111,7 @@
             "icon": "/icons/github.svg"
          },
          {
-            "name": "Visual Studio Code",
+            "name": "VS Code",
             "level": 4,
             "icon": "/icons/vscode.svg"
          },

@@ -10,6 +10,7 @@ import projectData from "@/public/project-data.json";
 import ModelInput from "./model-input";
 import Notebook from "./model-notebook";
 import Dataset from "./model-dataset";
+import markdown from "@wcj/markdown-to-html";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -23,7 +24,7 @@ const techData: {
 const ModelPage = ({ project }: { project: Project }) => {
    return (
       <>
-         <div className="flex gap-1 flex-wrap mt-3">
+         <div className="flex gap-1 flex-wrap mt-4">
             {project.tags.level &&
                project.tags.level.map((level: string) => (
                   <Badge
@@ -71,9 +72,10 @@ const ModelPage = ({ project }: { project: Project }) => {
                   </Badge>
                ))}
          </div>
-         <div className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px]">
-            {project.description}
-         </div>
+         <div
+            className="mt-5 leading-6 text-lg tracking-wide [word-spacing:4px] markdown"
+            dangerouslySetInnerHTML={{ __html: markdown(project.description) }}
+         />
          <div className="flex items-center justify-between mt-5">
             <h2 className="text-2xl font-bold">Links:</h2>
             <div className="flex gap-2">
@@ -91,6 +93,23 @@ const ModelPage = ({ project }: { project: Project }) => {
                   />
                   Github
                </Link>
+               {(project.type === "model" || project.type === "analysis") &&
+                  project.kaggle_dataset && (
+                     <Link
+                        href={project.kaggle_dataset}
+                        className="btn !rounded-full !bg-sky-500 !text-white"
+                        target="_blank"
+                     >
+                        <Image
+                           src={"/icons/kaggle.svg"}
+                           height={50}
+                           width={50}
+                           alt={"giticon"}
+                           className="h-5 w-5 grayscale-0 mr-2"
+                        />
+                        Dataset
+                     </Link>
+                  )}
             </div>
          </div>
          {(project.type === "model" || project.type === "analysis") && (
@@ -192,7 +211,7 @@ const ModelPage = ({ project }: { project: Project }) => {
          )}
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>
          <div>
-            <ul className="mt-2 flex gap-2">
+            <div className="mt-2 flex flex-wrap gap-2">
                {(project.type === "model" || project.type === "analysis") &&
                   project.most_used_packages.map((module) => {
                      const technology = techData.filter(
@@ -200,7 +219,7 @@ const ModelPage = ({ project }: { project: Project }) => {
                      )[0];
                      return technology ? (
                         <div
-                           className="px-3 py-1 text-white rounded-lg capitalize font-medium flex flex-col items-center justify-center text-lg"
+                           className="min-w-[100px] px-3 py-1 text-white rounded-lg capitalize font-medium flex flex-col items-center justify-center text-lg"
                            style={{
                               background: technology.color,
                            }}
@@ -226,10 +245,10 @@ const ModelPage = ({ project }: { project: Project }) => {
                         </div>
                      );
                   })}
-            </ul>
+            </div>
          </div>
          <div className="text-2xl font-bold mt-8">Other Projects</div>
-         <div className="grid grid-cols-3 gap-5 mt-3">
+         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 my-2">
             {data
                .filter(
                   (p) =>

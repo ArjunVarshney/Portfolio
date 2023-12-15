@@ -10,7 +10,7 @@ body,
 }
 
 .container {
-   @apply max-w-3xl lg:max-w-none xl:max-w-[1400px] mx-auto p-2 sm:p-4 pt-6;
+   @apply max-w-3xl lg:max-w-none xl:max-w-[1400px] mx-auto p-2 px-4 sm:p-4 pt-6;
 }
 
 .background-parent {
@@ -40,8 +40,20 @@ body,
    @apply text-xl pt-8;
 }
 
+.markdown ul {
+   @apply flex flex-col gap-2 my-2 list-disc ml-5;
+}
+
+.markdown code {
+   @apply bg-foreground text-background rounded py-0.5 px-1;
+}
+
+.code-parent {
+   @apply max-w-full overflow-x-auto;
+}
+
 .code {
-   @apply border border-gray-300 bg-gray-100 mt-5 p-3 w-full;
+   @apply border border-gray-300 bg-gray-100 mt-5 p-3 min-w-full w-max;
 }
 
 .output {
@@ -56,7 +68,7 @@ table.dataset thead tr th,
 table.dataset tbody tr td,
 .output thead tr th,
 .output tbody tr td {
-   @apply border border-black/20 text-left;
+   @apply border border-black/20 text-left p-1 max-w-lg truncate;
 }
 
 .output thead tr th,
