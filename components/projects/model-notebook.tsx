@@ -18,9 +18,11 @@ const Notebook = ({ nb }: { nb: string }) => {
    const fetchNotebook = async () => {
       try {
          setLoading(true);
-         setNotebook(ipynbToHTML((await axios.get(nb)).data));
+         // setNotebook(ipynbToHTML((await axios.get(nb)).data));
+         setNotebook(JSON.stringify((await axios.get(nb)).data));
       } catch (error) {
-         setNotebook("Something went wrong!");
+         // setNotebook("Something went wrong!");
+         setNotebook(JSON.stringify(error));
          console.log(error);
       } finally {
          setLoading(false);

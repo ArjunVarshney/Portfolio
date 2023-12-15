@@ -43,7 +43,7 @@ const MobileNav = ({ routes }: MainNav) => {
             </Button>
             <div className="flex flex-col space-y-5 w-full h-full items-start justify-center px-14">
                {routes.map((route) => (
-                  <a href={route.href}>
+                  <a href={route.href} key={route.href}>
                      <Link
                         key={route.href}
                         href={route.href}

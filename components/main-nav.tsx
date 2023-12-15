@@ -23,7 +23,7 @@ const MainNav = ({ routes, className, ...props }: MainNavProps) => {
          )}
       >
          {routes.map((route) => (
-            <a href={route.href}>
+            <a href={route.href} key={route.href}>
                <Link
                   key={route.href}
                   href={route.href}

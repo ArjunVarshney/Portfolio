@@ -18,8 +18,10 @@ const Dataset = ({ data_link }: { data_link: string }) => {
    const fetchDataset = async () => {
       try {
          setLoading(true);
-         setDataset(csvToHTML((await axios.get(data_link)).data));
+         // setDataset(csvToHTML((await axios.get(data_link)).data));
+         setDataset(JSON.stringify((await axios.get(data_link)).data));
       } catch (error) {
+         setDataset(JSON.stringify(error));
          console.log(error);
       } finally {
          setLoading(false);
