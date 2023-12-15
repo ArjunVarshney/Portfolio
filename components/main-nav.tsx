@@ -23,18 +23,20 @@ const MainNav = ({ routes, className, ...props }: MainNavProps) => {
          )}
       >
          {routes.map((route) => (
-            <Link
-               key={route.href}
-               href={route.href}
-               className={cn(
-                  "text-sm font-medium transition-colors p-2 rounded-lg hover:text-primary hover:bg-neutral-100 dark:hover:bg-gray-900",
-                  route.active
-                     ? "text-black dark:text-white"
-                     : "text-muted-foreground"
-               )}
-            >
-               {route.label}
-            </Link>
+            <a href={route.href}>
+               <Link
+                  key={route.href}
+                  href={route.href}
+                  className={cn(
+                     "text-sm font-medium transition-colors p-2 rounded-lg hover:text-primary hover:bg-neutral-100 dark:hover:bg-gray-900",
+                     route.active
+                        ? "text-black dark:text-white"
+                        : "text-muted-foreground"
+                  )}
+               >
+                  {route.label}
+               </Link>
+            </a>
          ))}
       </nav>
    );

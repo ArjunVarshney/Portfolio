@@ -93,6 +93,7 @@ const Website = ({ project }: { project: Project }) => {
                )}
                <Link
                   href={project.git_link[0]}
+                  target="_blank"
                   className="btn-outline !rounded-full"
                >
                   <Image

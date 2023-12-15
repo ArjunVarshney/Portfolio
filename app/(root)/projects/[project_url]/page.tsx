@@ -25,6 +25,7 @@ const ProjectPage = ({
          {project.type === "package" && <PackagePage project={project} />}
          {project.type === "utility" && <PackagePage project={project} />}
          {project.type === "model" && <ModelPage project={project} />}
+         {project.type === "analysis" && <ModelPage project={project} />}
       </div>
    );
 };

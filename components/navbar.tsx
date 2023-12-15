@@ -65,21 +65,24 @@ const Navbar = () => {
       >
          <div className="flex items-center w-full animate-enter-top">
             <div className="flex gap-x-6">
-               <Link
-                  href={"/"}
-                  className="text-md font-semibold flex gap-x-2 py-2 px-2 items-center"
-               >
-                  <div
-                     className={`bg-black text-white dark:bg-white dark:text-black py-1 px-2 text-[16px] rounded-lg font-bold ${mono.className}`}
+               <a href={"/"}>
+                  <Link
+                     href={"/"}
+                     className="text-md font-semibold flex gap-x-2 py-2 px-2 items-center"
                   >
-                     AV
-                  </div>
-                  <div className="hidden xs:block">Arjun Varshney</div>
-               </Link>
+                     <div
+                        className={`bg-black text-white dark:bg-white dark:text-black py-1 px-2 text-[16px] rounded-lg font-bold ${mono.className}`}
+                     >
+                        AV
+                     </div>
+                     <div className="hidden xs:block">Arjun Varshney</div>
+                  </Link>
+               </a>
                <MainNav routes={routes} />
             </div>
             <div className="flex items-center space-x-4 ml-auto">
                <Link
+                  target="_blank"
                   href="https://github.com/ArjunVarshney/Portfolio"
                   className="p-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 hidden sm:block"
                >

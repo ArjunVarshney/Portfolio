@@ -1,55 +1,12 @@
-import { cn } from "@/lib/utils";
 import Heading from "../ui/heading";
-import { Button } from "../ui/button";
-import Link from "next/link";
 import Skill from "../skill";
 import KnowMore from "../ui/know-more-btn";
+import data from "@/public/personal-data.json";
 
 const AboutPage = () => {
-   const education_status = [
-      {
-         name: "High School",
-         from: "The Modern School",
-         start: "2017",
-         end: "2019",
-         grades: "94%",
-      },
-      {
-         name: "Intermediate",
-         from: "The Modern School",
-         start: "2019",
-         end: "2021",
-         grades: "93%",
-      },
-      {
-         name: "Graduation (B.Tech CSE)",
-         from: "SRMCEM",
-         start: "2021",
-         end: "2025",
-         grades: "8.2cgpa",
-      },
-   ];
-
-   const field_skills = [
-      {
-         icon: "/icons/machine-learning.svg",
-         name: "Machine learning",
-         level: 4,
-      },
-      {
-         icon: "/icons/deep-learning.svg",
-         name: "Deep learning",
-         level: 3,
-      },
-      {
-         icon: "/icons/web-dev.svg",
-         name: "Full stack web development",
-         level: 4,
-      },
-   ];
-
-   const about_description =
-      "Passionate about both machine learning and full-stack web development, I'm a versatile tech enthusiast dedicated to crafting innovative solutions. With a foundation in machine learning algorithms and a flair for front-end and back-end technologies, I thrive on blending data-driven insights with seamless user experiences. My aim is to create impactful applications that transcend boundaries and simplify complexities.";
+   const education_status = data.education_status;
+   const field_skills = data.field_skills;
+   const about_description = data.about_description;
 
    return (
       <div className="container min-h-[calc(100vh-100px)] w-full flex flex-col items-center !px-28 !pt-24 mb-12">

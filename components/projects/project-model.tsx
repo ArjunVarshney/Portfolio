@@ -80,6 +80,7 @@ const ModelPage = ({ project }: { project: Project }) => {
                <Link
                   href={project.git_link[0]}
                   className="btn-outline !rounded-full"
+                  target="_blank"
                >
                   <Image
                      src={"/icons/github.svg"}
@@ -92,7 +93,7 @@ const ModelPage = ({ project }: { project: Project }) => {
                </Link>
             </div>
          </div>
-         {project.type === "model" && (
+         {(project.type === "model" || project.type === "analysis") && (
             <ScrollArea className="mt-3">
                <div className="flex gap-2">
                   <Dialog>
@@ -123,7 +124,7 @@ const ModelPage = ({ project }: { project: Project }) => {
          )}
          <div className="text-2xl font-bold mt-8">Feature Description</div>
          <ul className="mt-2 ml-5 leading-6 text-lg tracking-wide [word-spacing:4px]">
-            {project.type === "model" &&
+            {(project.type === "model" || project.type === "analysis") &&
                Object.entries(project.feature_description).map(
                   ([key, value]) => (
                      <li className="mt-2 list-disc" key={key}>
@@ -133,7 +134,7 @@ const ModelPage = ({ project }: { project: Project }) => {
                   )
                )}
          </ul>
-         {project.type === "model" && (
+         {(project.type === "model" || project.type === "analysis") && (
             <div className="mt-5">
                <div className="flex justify-between items-center py-2.5 px-3 background-parent rounded-lg">
                   <div className="background bg-custom-accent !opacity-30 dark:!opacity-10" />
@@ -192,7 +193,7 @@ const ModelPage = ({ project }: { project: Project }) => {
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>
          <div>
             <ul className="mt-2 flex gap-2">
-               {project.type === "model" &&
+               {(project.type === "model" || project.type === "analysis") &&
                   project.most_used_packages.map((module) => {
                      const technology = techData.filter(
                         (t) => t.name.toLowerCase() === module.toLowerCase()

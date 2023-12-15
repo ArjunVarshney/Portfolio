@@ -1,29 +1,53 @@
+function parseCSVRow(rowString: string) {
+   let result = [];
+   let insideQuotes = false;
+   let currentValue = "";
+
+   for (let char of rowString) {
+      if (char === '"') {
+         insideQuotes = !insideQuotes;
+      } else if (char === "," && !insideQuotes) {
+         result.push(currentValue.trim());
+         currentValue = "";
+      } else {
+         currentValue += char;
+      }
+   }
+
+   if (currentValue !== "") {
+      result.push(currentValue.trim());
+   }
+
+   return result;
+}
+
 export const csvToHTML = (csv: string) => {
    let html = "";
    const rows: string[] = csv.split("\n");
    const header = `
    <thead>
       <tr>
-   ${[
-      `<th></th>`,
-      ...rows[0].split(",").map((head: string) => `<th>${head}</th>`),
-   ].join("")}</tr>
+   ${[...rows[0].split(",").map((head: string) => `<th>${head}</th>`)].join(
+      ""
+   )}</tr>
    </thead>`;
    const body = `
    <tbody>
    ${[
-      ...Object.entries(rows.slice(1).slice(0, 251)).map(([index, row]) => {
-         return `<tr>${[
-            `<td>${index}</td>`,
-            ...row.split(",").map((data) => {
-               return `<td>${
-                  !isNaN(parseFloat(data))
-                     ? Math.round(Number(data) * 10000) / 10000
-                     : data
-               }</td>`;
-            }),
-         ].join("")}<tr/>`;
-      }),
+      ...rows
+         .slice(1)
+         .slice(0, 251)
+         .map((row) => {
+            return `<tr>${[
+               ...parseCSVRow(row).map((data) => {
+                  return `<td>${
+                     !isNaN(parseFloat(data))
+                        ? Math.round(Number(data) * 10000) / 10000
+                        : data
+                  }</td>`;
+               }),
+            ].join("")}<tr/>`;
+         }),
    ].join("")}
    </tbody>`;
 
