@@ -76,6 +76,14 @@ table.dataset thead tr th {
    @apply bg-gray-200;
 }
 
+[data-mime-type="text/markdown"] {
+   @apply !text-foreground;
+}
+
+.jp-notebook pre {
+   @apply dark:!bg-slate-900 !p-3 !text-foreground;
+}
+
 @layer base {
    :root {
       --background: 0 0% 100%;

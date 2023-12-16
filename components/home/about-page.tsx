@@ -11,8 +11,8 @@ const AboutPage = () => {
    return (
       <div className="container min-h-[calc(100vh-100px)] w-full flex flex-col items-center lg:!px-28 !pt-24 mb-12">
          <Heading title="About" />
-         <div className="flex flex-col-reverse items-center lg:flex-row lg:items-end lg:h-[280px] pt-6">
-            <p className="text-xl lg:text-[24px] w-full mt-10 lg:mt-5 leading-8 lg:leading-9 lg:pr-5">
+         <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start pt-6">
+            <p className="text-xl 2xl:text-[24px] w-full mt-10 lg:mt-5 leading-8 2xl:leading-9 lg:pr-5">
                {about_description}
             </p>
             <div className="w-full bg-custom-accent rounded-lg py-5">
@@ -25,10 +25,10 @@ const AboutPage = () => {
                      key={edu.name}
                   >
                      <h4 className="font-semibold">{edu.name}</h4>
-                     <span className="block">{edu.from}</span>
-                     <span className="absolute right-3 top-3">
+                     <span className="sm:absolute right-3 top-3">
                         {edu.start}-{edu.end}
                      </span>
+                     <span className="block">{edu.from}</span>
                      <span className="block">Grades: {edu.grades}</span>
                   </div>
                ))}

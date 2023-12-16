@@ -75,7 +75,9 @@ const Navbar = () => {
                      >
                         AV
                      </div>
-                     <div className="hidden xs:block">Arjun Varshney</div>
+                     <div className="hidden !text-foreground text-lg xs:block">
+                        Arjun Varshney
+                     </div>
                   </Link>
                </a>
                <MainNav routes={routes} />
@@ -86,7 +88,7 @@ const Navbar = () => {
                   href="https://github.com/ArjunVarshney/Portfolio"
                   className="p-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 hidden sm:block"
                >
-                  <Code2 size={20} />
+                  <Code2 size={20} className="text-foreground" />
                </Link>
                <ModeToggle />
                <MobileNav

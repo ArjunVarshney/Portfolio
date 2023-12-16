@@ -21,7 +21,7 @@ const MobileNav = ({ routes }: MainNav) => {
       <>
          <Button
             size="icon"
-            className="flex sm:hidden"
+            className="flex sm:hidden !text-foreground"
             variant="ghost"
             onClick={() => setOpen(true)}
          >
@@ -35,7 +35,7 @@ const MobileNav = ({ routes }: MainNav) => {
          >
             <Button
                variant="ghost"
-               className="absolute top-5 right-5"
+               className="absolute top-5 right-5 !text-foreground"
                size="icon"
                onClick={() => setOpen(false)}
             >
