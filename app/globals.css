@@ -80,8 +80,43 @@ table.dataset thead tr th {
    @apply !text-foreground;
 }
 
+.jp-MarkdownOutput {
+   @apply !p-0;
+}
+
 .jp-notebook pre {
-   @apply dark:!bg-slate-900 !p-3 !text-foreground;
+   @apply dark:!bg-slate-900 !p-3 !text-foreground overflow-x-auto;
+}
+
+.jp-notebook div:has(> img) {
+   @apply bg-white;
+}
+
+.jp-notebook table {
+   @apply bg-gray-200 !ml-0;
+}
+
+.latex {
+   letter-spacing: 2px;
+   word-spacing: 3px;
+   font-family: math;
+   @apply flex items-center w-full h-max p-2 sm:p-4 text-[10px] xs:text-[16px] sm:text-[18px] bg-foreground text-background rounded;
+}
+
+.latex .text-large {
+   @apply md:text-[32px];
+}
+
+.latex .over {
+   @apply inline-flex flex-col items-center justify-center my-auto;
+}
+
+.latex .over span {
+   @apply border border-background w-full;
+}
+
+.latex span {
+   @apply inline-flex items-center justify-center mx-1;
 }
 
 @layer base {

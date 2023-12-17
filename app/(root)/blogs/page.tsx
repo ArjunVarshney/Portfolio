@@ -1,5 +1,6 @@
 "use client";
 
+import { latexToHTML } from "@/lib/latexToHTML";
 import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -8,7 +9,15 @@ const BlogsPage = () => {
    const [blog, setBlog] = useState("");
 
    const fetchAndSetBlog = async () => {
-      setBlog((await axios.get("/blogs/linear-regression.html")).data);
+      let html = (await axios.get("/blogs/linear-regression.html")).data;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      const paras = doc.querySelectorAll("p");
+      for (let i = 0; i < paras.length; i++) {
+         paras[i].innerHTML = latexToHTML(paras[i].innerText);
+      }
+      console.log(doc.querySelectorAll("p")[2].innerHTML);
+      setBlog(doc.querySelector("html")?.innerHTML!);
    };
 
    useEffect(() => {
