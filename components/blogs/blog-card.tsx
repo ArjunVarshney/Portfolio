@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const BlogCard = ({ blog }: { blog: Blog }) => {
    return (
-      <a href={"/blogs/" + blog.blog_url}>
+      <a href={"/blogs/" + blog.blog_url} className="!min-w-0">
          <Link href={"/blogs/" + blog.blog_url}>
             <Card>
                <CardHeader className="p-4 sm:p-6">
@@ -45,7 +45,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                         <a href={"/blogs/" + blog.blog_url}>
                            <Link
                               href={"/blogs/" + blog.blog_url}
-                              className="btn !bg-custom-accent !text-white"
+                              className="btn mt-3"
                            >
                               <Image
                                  src={"/icons/view.svg"}

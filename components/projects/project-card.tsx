@@ -13,7 +13,7 @@ import { color } from "@/constants/colors";
 
 const ProjectCard = ({ project }: { project: Project }) => {
    return (
-      <a href={"/projects/" + project.project_url}>
+      <a href={"/projects/" + project.project_url} className="min-w-0">
          <Link href={"/projects/" + project.project_url}>
             <Card>
                <CardHeader className="p-4 sm:p-6">

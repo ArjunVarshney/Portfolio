@@ -1,5 +1,6 @@
 "use client";
 
+import { Badge } from "@/components/ui/badge";
 import Heading from "@/components/ui/heading";
 import CircularProgress from "@/components/ui/spinner";
 import { latexToHTML } from "@/lib/latexToHTML";
@@ -50,7 +51,22 @@ const BlogsPage = ({ params }: { params: { blogUrl: string } }) => {
                {head.show_title && (
                   <>
                      <Heading title={head.title} />
-                     <div className="py-5 text-lg">{head.description}</div>
+                     <div className="flex gap-1 mt-3 flex-wrap">
+                        {head.tags.map((tag) => (
+                           <Badge
+                              key={tag}
+                              variant={"outline"}
+                              className="background-parent border-0"
+                           >
+                              {tag}
+                              <div className="background bg-custom-accent !opacity-25" />
+                              <div className="background bg-background/5" />
+                           </Badge>
+                        ))}
+                     </div>
+                     <div className="pt-3 pb-5 text-base font-sans">
+                        {head.description}
+                     </div>
                   </>
                )}
                <Image
