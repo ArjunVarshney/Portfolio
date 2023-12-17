@@ -9,7 +9,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { color } from "@/constants/colors";
 
 const ProjectCard = ({ project }: { project: Project }) => {

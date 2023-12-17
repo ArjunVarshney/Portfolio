@@ -1,5 +1,18 @@
-{
-   "title": "Linear Regression from Scratch",
-   "html": "/blogs/linear-regression.html",
-   "featured_image": "/blogs/linear-regression.png"
-}
+[
+   {
+      "title": "Linear Regression from Scratch",
+      "description": "Discover the fundamental concepts of Linear Regression from scratch in my latest blog. I delve into the core principles, showcasing step-by-step implementation in Python. Uncover the basics of this essential machine learning algorithm, empowering you to comprehend its inner workings and application in predictive modeling.",
+      "fetch_url": "/blogs/linear-regression.html",
+      "blog_url": "linear-regression-from-scratch",
+      "type": "html",
+      "show_title": false,
+      "featured_image": "/blogs/linear-regression.png",
+      "tags": [
+         "machine learning",
+         "linear regression",
+         "scikit learn",
+         "gradient descent",
+         "maths"
+      ]
+   }
+]

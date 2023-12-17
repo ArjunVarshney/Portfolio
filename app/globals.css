@@ -84,6 +84,11 @@ table.dataset thead tr th {
    @apply !p-0;
 }
 
+.jp-InputPrompt.jp-InputArea-prompt,
+.jp-OutputPrompt.jp-OutputArea-prompt {
+   @apply hidden;
+}
+
 .jp-notebook pre {
    @apply dark:!bg-slate-900 !p-3 !text-foreground overflow-x-auto;
 }

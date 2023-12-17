@@ -87,3 +87,14 @@ interface Analysis {
 
 export type Project = BasicInfo &
    (Website | Package | Utility | Model | Analysis);
+
+export type Blog = {
+   title: string;
+   description: "";
+   show_title: boolean;
+   fetch_url: string;
+   blog_url: string;
+   type: "html";
+   featured_image: string;
+   tags: string[];
+};

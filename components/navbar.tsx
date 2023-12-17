@@ -29,6 +29,11 @@ const Navbar = () => {
          label: "Projects",
          active: pathname === "/projects",
       },
+      {
+         href: "/blogs",
+         label: "Blogs",
+         active: pathname === "/blogs",
+      },
    ];
 
    const [show, setShow] = useState(true);

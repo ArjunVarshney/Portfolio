@@ -35,7 +35,7 @@ const CircularProgress: React.FC<
    CircularProgressProps & React.SVGProps<SVGSVGElement>
 > = ({
    className = "",
-   color = "#0d6efd",
+   color = "var(--custom-accent)",
    width = "3rem",
    height = "3rem",
    style = {},
