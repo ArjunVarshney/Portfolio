@@ -673,27 +673,27 @@
          },
          {
             "fixed acidity": 8.5,
-            "volatile acidity": 0.47,
-            "citric acid": 0.27,
-            "chlorides": 0.058,
-            "free sulfur dioxide": 18.0,
-            "total sulfur dioxide": 38.0,
-            "density": 0.99518,
-            "pH": 3.16,
-            "sulphates": 0.85,
-            "alcohol": 11.1
+            "volatile acidity": 0.28,
+            "citric acid": 0.56,
+            "chlorides": 0.092,
+            "free sulfur dioxide": 35.0,
+            "total sulfur dioxide": 103.0,
+            "density": 0.99695,
+            "pH": 3.3,
+            "sulphates": 0.75,
+            "alcohol": 10.5
          },
          {
-            "fixed acidity": 8.5,
-            "volatile acidity": 0.47,
-            "citric acid": 0.27,
-            "chlorides": 0.058,
-            "free sulfur dioxide": 18.0,
-            "total sulfur dioxide": 38.0,
-            "density": 0.99518,
-            "pH": 3.16,
-            "sulphates": 0.85,
-            "alcohol": 11.1
+            "fixed acidity": 8.3,
+            "volatile acidity": 0.675,
+            "citric acid": 0.26,
+            "chlorides": 0.084,
+            "free sulfur dioxide": 11.0,
+            "total sulfur dioxide": 43.0,
+            "density": 0.99765,
+            "pH": 3.31,
+            "sulphates": 0.53,
+            "alcohol": 9.2
          }
       ]
    },
@@ -776,9 +776,9 @@
       "featured_image": "/ai/movie-recommendation.webp",
       "type": "model",
       "tags": {
-         "based-on": ["Machine learning", "Data analysis"],
+         "based-on": ["Machine learning", "Recommender system"],
          "language": ["Python"],
-         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+         "other": ["Scikit-learn", "Difflib", "Pandas"]
       },
       "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/model.ipynb",
       "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/dataset.csv",
@@ -795,6 +795,10 @@
             "placeholder": "Write the name of your favorite hollywood movie"
          }
       ],
-      "examples": [{ "movie_name": "Spider-man" }]
+      "examples": [
+         { "movie_name": "Spider-man" },
+         { "movie_name": "Avengers" },
+         { "movie_name": "Transformers" }
+      ]
    }
 ]

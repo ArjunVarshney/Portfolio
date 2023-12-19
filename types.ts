@@ -47,6 +47,14 @@ interface BasicInput {
    placeholder?: string;
 }
 
+interface ColorInput {
+   type: "color";
+}
+
+interface UrlInput {
+   type: "url";
+}
+
 interface SliderInput {
    type: "slider";
    min?: number;
@@ -58,7 +66,8 @@ interface TextInput {
    type: "text";
 }
 
-export type InputType = BasicInput & (SliderInput | TextInput);
+export type InputType = BasicInput &
+   (SliderInput | TextInput | ColorInput | UrlInput);
 
 interface Model {
    type: "model";
