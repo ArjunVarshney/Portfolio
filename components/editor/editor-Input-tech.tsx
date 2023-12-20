@@ -4,7 +4,7 @@ import { InputType } from "@/types";
 import { Slider } from "../ui/slider";
 import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import axios from "axios";
 import { Input } from "../ui/input";
 import Image from "next/image";
@@ -26,8 +26,9 @@ const EditorInput = ({
    const [value, setValue] = useState(defaultValue);
    const [loading, setLoading] = useState(false);
 
-   const onRun = async () => {
+   const onRun = async (e: FormEvent<HTMLFormElement>) => {
       try {
+         e.preventDefault();
          setLoading(true);
          if (patch) await axios.patch(api, value);
          else await axios.post(api, value);
@@ -128,7 +129,10 @@ const EditorInput = ({
                   </div>
                </div>
             </div>
-            <form className="flex flex-col p-3 gap-3 background-parent rounded-lg">
+            <form
+               className="flex flex-col p-3 gap-3 background-parent rounded-lg"
+               onSubmit={(e) => onRun(e)}
+            >
                <div className="background bg-custom-accent"></div>
                {inputs.map((input) => (
                   <>
@@ -185,6 +189,7 @@ const EditorInput = ({
                                     return dPrev;
                                  });
                               }}
+                              required={input.required || false}
                            />
                         </div>
                      )}
@@ -213,6 +218,7 @@ const EditorInput = ({
                                     return dPrev;
                                  });
                               }}
+                              required={input.required || false}
                            />
                         </div>
                      )}
@@ -241,32 +247,33 @@ const EditorInput = ({
                                     return dPrev;
                                  });
                               }}
+                              required={input.required || false}
                            />
                         </div>
                      )}
                   </>
                ))}
+               <div className="flex justify-center items-center gap-3 w-full ml-auto mt-3 p-3 bg-background rounded-lg">
+                  <Button className="font-semibold px-5" onClick={onReset}>
+                     Reset
+                  </Button>
+                  <Button
+                     className="font-semibold px-5"
+                     type="submit"
+                     disabled={loading}
+                  >
+                     Submit
+                  </Button>
+                  <Button
+                     className="font-semibold px-5"
+                     variant={"destructive"}
+                     onClick={onDelete}
+                     disabled={loading}
+                  >
+                     Delete
+                  </Button>
+               </div>
             </form>
-            <div className="flex justify-center items-center gap-3 w-full ml-auto mt-3">
-               <Button className="font-semibold px-5" onClick={onReset}>
-                  Reset
-               </Button>
-               <Button
-                  className="font-semibold px-5"
-                  onClick={onRun}
-                  disabled={loading}
-               >
-                  Submit
-               </Button>
-               <Button
-                  className="font-semibold px-5"
-                  variant={"destructive"}
-                  onClick={onDelete}
-                  disabled={loading}
-               >
-                  Delete
-               </Button>
-            </div>
          </div>
       </div>
    );

@@ -21,7 +21,7 @@ const ModelInput = ({
    api: string;
    name: string;
 }) => {
-   let defaultValue: { [key: string]: string | number } = {};
+   let defaultValue: { [key: string]: string | number | boolean | string[] } = {};
    const [value, setValue] = useState(defaultValue);
    const [result, setResult] = useState<any>(undefined);
    const [loading, setLoading] = useState(false);

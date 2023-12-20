@@ -1,5 +1,5 @@
 "use client";
-import EditorInput from "@/components/editor/editor-Input";
+import EditorInput from "@/components/editor/editor-Input-tech";
 import { InputType } from "@/types";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -24,14 +24,17 @@ const TechPage = ({ params }: { params: { name: string } }) => {
       {
          type: "text",
          name: "name",
+         required: true,
       },
       {
          type: "color",
          name: "color",
+         required: true,
       },
       {
-         type: "url",
+         type: "text",
          name: "logo",
+         required: true,
       },
    ];
 

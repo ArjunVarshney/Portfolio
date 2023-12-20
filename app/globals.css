@@ -124,6 +124,18 @@ table.dataset thead tr th {
    @apply inline-flex items-center justify-center mx-1;
 }
 
+.react-tagsinput {
+   @apply rounded-md !border-input;
+}
+
+.react-tagsinput-tag {
+   @apply !rounded-md !border-blue-500 !bg-blue-500 !text-white !text-sm !px-2 !py-1;
+}
+
+.react-tagsinput-input {
+   @apply w-max;
+}
+
 @layer base {
    :root {
       --background: 0 0% 100%;

@@ -43,8 +43,9 @@ interface Utility {
 
 interface BasicInput {
    name: string;
-   default?: string | number;
+   default?: string | number | boolean | string[];
    placeholder?: string;
+   required?: boolean;
 }
 
 interface ColorInput {
@@ -53,6 +54,18 @@ interface ColorInput {
 
 interface UrlInput {
    type: "url";
+}
+
+interface TextAreaInput {
+   type: "textarea";
+}
+
+interface CheckboxInput {
+   type: "checkbox";
+}
+
+interface TextArrayInput {
+   type: "text-array";
 }
 
 interface SliderInput {
@@ -67,7 +80,15 @@ interface TextInput {
 }
 
 export type InputType = BasicInput &
-   (SliderInput | TextInput | ColorInput | UrlInput);
+   (
+      | SliderInput
+      | TextInput
+      | ColorInput
+      | UrlInput
+      | TextAreaInput
+      | CheckboxInput
+      | TextArrayInput
+   );
 
 interface Model {
    type: "model";
