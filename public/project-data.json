@@ -39,23 +39,21 @@
          "Query-string"
       ],
       "images": [
-         [
-            "/project-screenshots/body-works/1.png",
-            "/project-screenshots/body-works/2.png",
-            "/project-screenshots/body-works/3.png",
-            "/project-screenshots/body-works/4.png",
-            "/project-screenshots/body-works/5.png",
-            "/project-screenshots/body-works/6.png",
-            "/project-screenshots/body-works/7.png",
-            "/project-screenshots/body-works/8.png",
-            "/project-screenshots/body-works/9.png",
-            "/project-screenshots/body-works/10.png",
-            "/project-screenshots/body-works/11.png",
-            "/project-screenshots/body-works/12.png",
-            "/project-screenshots/body-works/13.png",
-            "/project-screenshots/body-works/14.png",
-            "/project-screenshots/body-works/15.png"
-         ]
+         "/project-screenshots/body-works/1.png",
+         "/project-screenshots/body-works/2.png",
+         "/project-screenshots/body-works/3.png",
+         "/project-screenshots/body-works/4.png",
+         "/project-screenshots/body-works/5.png",
+         "/project-screenshots/body-works/6.png",
+         "/project-screenshots/body-works/7.png",
+         "/project-screenshots/body-works/8.png",
+         "/project-screenshots/body-works/9.png",
+         "/project-screenshots/body-works/10.png",
+         "/project-screenshots/body-works/11.png",
+         "/project-screenshots/body-works/12.png",
+         "/project-screenshots/body-works/13.png",
+         "/project-screenshots/body-works/14.png",
+         "/project-screenshots/body-works/15.png"
       ]
    },
    {
@@ -105,19 +103,17 @@
          "Query-string"
       ],
       "images": [
-         [
-            "/project-screenshots/discord-clone/1.png",
-            "/project-screenshots/discord-clone/2.png",
-            "/project-screenshots/discord-clone/3.png",
-            "/project-screenshots/discord-clone/4.png",
-            "/project-screenshots/discord-clone/5.png",
-            "/project-screenshots/discord-clone/6.png",
-            "/project-screenshots/discord-clone/7.png",
-            "/project-screenshots/discord-clone/8.png",
-            "/project-screenshots/discord-clone/9.png",
-            "/project-screenshots/discord-clone/10.png",
-            "/project-screenshots/discord-clone/11.png"
-         ]
+         "/project-screenshots/discord-clone/1.png",
+         "/project-screenshots/discord-clone/2.png",
+         "/project-screenshots/discord-clone/3.png",
+         "/project-screenshots/discord-clone/4.png",
+         "/project-screenshots/discord-clone/5.png",
+         "/project-screenshots/discord-clone/6.png",
+         "/project-screenshots/discord-clone/7.png",
+         "/project-screenshots/discord-clone/8.png",
+         "/project-screenshots/discord-clone/9.png",
+         "/project-screenshots/discord-clone/10.png",
+         "/project-screenshots/discord-clone/11.png"
       ]
    },
    {
@@ -169,27 +165,23 @@
          "Stripe"
       ],
       "images": [
-         [
-            "/project-screenshots/everything-store-admin/1.png",
-            "/project-screenshots/everything-store-admin/2.png",
-            "/project-screenshots/everything-store-admin/3.png",
-            "/project-screenshots/everything-store-admin/4.png",
-            "/project-screenshots/everything-store-admin/5.png",
-            "/project-screenshots/everything-store-admin/6.png",
-            "/project-screenshots/everything-store-admin/7.png",
-            "/project-screenshots/everything-store-admin/8.png",
-            "/project-screenshots/everything-store-admin/9.png",
-            "/project-screenshots/everything-store-admin/10.png",
-            "/project-screenshots/everything-store-admin/11.png"
-         ],
-         [
-            "/project-screenshots/everything-store-client/1.png",
-            "/project-screenshots/everything-store-client/2.png",
-            "/project-screenshots/everything-store-client/3.png",
-            "/project-screenshots/everything-store-client/4.png",
-            "/project-screenshots/everything-store-client/5.png",
-            "/project-screenshots/everything-store-client/6.png"
-         ]
+         "/project-screenshots/everything-store-admin/1.png",
+         "/project-screenshots/everything-store-admin/2.png",
+         "/project-screenshots/everything-store-admin/3.png",
+         "/project-screenshots/everything-store-admin/4.png",
+         "/project-screenshots/everything-store-admin/5.png",
+         "/project-screenshots/everything-store-admin/6.png",
+         "/project-screenshots/everything-store-admin/7.png",
+         "/project-screenshots/everything-store-admin/8.png",
+         "/project-screenshots/everything-store-admin/9.png",
+         "/project-screenshots/everything-store-admin/10.png",
+         "/project-screenshots/everything-store-admin/11.png",
+         "/project-screenshots/everything-store-client/1.png",
+         "/project-screenshots/everything-store-client/2.png",
+         "/project-screenshots/everything-store-client/3.png",
+         "/project-screenshots/everything-store-client/4.png",
+         "/project-screenshots/everything-store-client/5.png",
+         "/project-screenshots/everything-store-client/6.png"
       ]
    },
    {
@@ -219,10 +211,8 @@
          "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
       ],
       "images": [
-         [
-            "/project-screenshots/jsontohtml-render/1.png",
-            "/project-screenshots/jsontohtml-render/2.png"
-         ]
+         "/project-screenshots/jsontohtml-render/1.png",
+         "/project-screenshots/jsontohtml-render/2.png"
       ]
    },
    {
@@ -248,10 +238,8 @@
          "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
       ],
       "images": [
-         [
-            "/project-screenshots/pdf-ops/1.png",
-            "/project-screenshots/pdf-ops/2.png"
-         ]
+         "/project-screenshots/pdf-ops/1.png",
+         "/project-screenshots/pdf-ops/2.png"
       ]
    },
    {
@@ -291,13 +279,11 @@
          "Query-string"
       ],
       "images": [
-         [
-            "/project-screenshots/pdfz/1.png",
-            "/project-screenshots/pdfz/2.png",
-            "/project-screenshots/pdfz/3.png",
-            "/project-screenshots/pdfz/4.png",
-            "/project-screenshots/pdfz/5.png"
-         ]
+         "/project-screenshots/pdfz/1.png",
+         "/project-screenshots/pdfz/2.png",
+         "/project-screenshots/pdfz/3.png",
+         "/project-screenshots/pdfz/4.png",
+         "/project-screenshots/pdfz/5.png"
       ]
    },
    {
@@ -331,13 +317,11 @@
       },
       "most_used_packages": ["Next js", "Tailwind", "Axios", "Query-string"],
       "images": [
-         [
-            "/project-screenshots/pdfz/1.png",
-            "/project-screenshots/pdfz/2.png",
-            "/project-screenshots/pdfz/3.png",
-            "/project-screenshots/pdfz/4.png",
-            "/project-screenshots/pdfz/5.png"
-         ]
+         "/project-screenshots/pdfz/1.png",
+         "/project-screenshots/pdfz/2.png",
+         "/project-screenshots/pdfz/3.png",
+         "/project-screenshots/pdfz/4.png",
+         "/project-screenshots/pdfz/5.png"
       ]
    },
    {
@@ -366,7 +350,7 @@
          "languages": ["HTML", "CSS", "Javascript"]
       },
       "most_used_packages": ["No Packages Used"],
-      "images": [["/project-screenshots/auto-racer/1.png"]]
+      "images": ["/project-screenshots/auto-racer/1.png"]
    },
    {
       "name": "College-portal-scraper",
@@ -394,7 +378,7 @@
          "languages": ["Javascript"]
       },
       "most_used_packages": ["Puppeteer", "notionhq"],
-      "images": [["/project-screenshots/college-portal-scraper/1.png"]]
+      "images": ["/project-screenshots/college-portal-scraper/1.png"]
    },
    {
       "name": "Your-Norm",
@@ -428,17 +412,15 @@
       },
       "most_used_packages": ["React", "Quill", "Express", "mongoose"],
       "images": [
-         [
-            "/project-screenshots/your-norm/1.png",
-            "/project-screenshots/your-norm/2.png",
-            "/project-screenshots/your-norm/3.png",
-            "/project-screenshots/your-norm/4.png",
-            "/project-screenshots/your-norm/5.png",
-            "/project-screenshots/your-norm/6.png",
-            "/project-screenshots/your-norm/7.png",
-            "/project-screenshots/your-norm/8.png",
-            "/project-screenshots/your-norm/9.png"
-         ]
+         "/project-screenshots/your-norm/1.png",
+         "/project-screenshots/your-norm/2.png",
+         "/project-screenshots/your-norm/3.png",
+         "/project-screenshots/your-norm/4.png",
+         "/project-screenshots/your-norm/5.png",
+         "/project-screenshots/your-norm/6.png",
+         "/project-screenshots/your-norm/7.png",
+         "/project-screenshots/your-norm/8.png",
+         "/project-screenshots/your-norm/9.png"
       ]
    },
    {
@@ -471,10 +453,8 @@
       },
       "most_used_packages": ["React", "Quill"],
       "images": [
-         [
-            "/project-screenshots/text-editor/1.png",
-            "/project-screenshots/text-editor/2.png"
-         ]
+         "/project-screenshots/text-editor/1.png",
+         "/project-screenshots/text-editor/2.png"
       ]
    },
    {
@@ -505,10 +485,8 @@
       },
       "most_used_packages": ["No Packages Used"],
       "images": [
-         [
-            "/project-screenshots/snake-game/1.png",
-            "/project-screenshots/snake-game/2.png"
-         ]
+         "/project-screenshots/snake-game/1.png",
+         "/project-screenshots/snake-game/2.png"
       ]
    },
    {
@@ -536,12 +514,10 @@
       },
       "most_used_packages": ["No Packages Used"],
       "images": [
-         [
-            "/project-screenshots/photography-website/1.png",
-            "/project-screenshots/photography-website/2.png",
-            "/project-screenshots/photography-website/3.png",
-            "/project-screenshots/photography-website/4.png"
-         ]
+         "/project-screenshots/photography-website/1.png",
+         "/project-screenshots/photography-website/2.png",
+         "/project-screenshots/photography-website/3.png",
+         "/project-screenshots/photography-website/4.png"
       ]
    },
    {

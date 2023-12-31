@@ -112,7 +112,7 @@ const Website = ({ project }: { project: Project }) => {
          {project.type === "website" && (
             <ScrollArea className="mt-3">
                <div className="flex gap-2">
-                  {[project.featured_image, ...project.images[0].reverse()].map(
+                  {[project.featured_image, ...project.images.reverse()].map(
                      (image) => (
                         <Dialog key={image}>
                            <DialogTrigger className="w-max">

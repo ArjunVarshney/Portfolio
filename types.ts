@@ -19,7 +19,7 @@ interface Website {
    features: string[];
    tech_stack: { [key: string]: string[] };
    most_used_packages: string[];
-   images: [string[]];
+   images: [string];
 }
 
 interface Package {
@@ -28,7 +28,7 @@ interface Package {
    git_link: string[];
    commits: string[];
    features: string[];
-   images: [string[]];
+   images: [string];
 }
 
 interface Utility {
@@ -38,7 +38,7 @@ interface Utility {
    features: string[];
    tech_stack: { [key: string]: string[] };
    most_used_packages: string[];
-   images: [string[]];
+   images: [string];
 }
 
 interface BasicInput {
@@ -79,6 +79,39 @@ interface TextInput {
    type: "text";
 }
 
+interface InputGroup {
+   type: "inputs";
+   inputs: InputType[];
+}
+
+interface SelectInput {
+   type: "select";
+   values: string[];
+}
+
+interface ConditionalInput {
+   type: "conditional-input";
+   name: "NA";
+   switch: string;
+   inputs: { [key: string]: InputType[] };
+}
+
+interface ObjectArrayInput {
+   type: "object-array";
+}
+
+interface ObjectStringInput {
+   type: "object-string";
+}
+
+interface InputInput {
+   type: "input-input";
+}
+
+interface JSONInput {
+   type: "json";
+}
+
 export type InputType = BasicInput &
    (
       | SliderInput
@@ -88,6 +121,13 @@ export type InputType = BasicInput &
       | TextAreaInput
       | CheckboxInput
       | TextArrayInput
+      | SelectInput
+      | InputGroup
+      | ConditionalInput
+      | ObjectArrayInput
+      | ObjectStringInput
+      | InputInput
+      | JSONInput
    );
 
 interface Model {

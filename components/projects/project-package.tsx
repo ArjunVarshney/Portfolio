@@ -113,40 +113,42 @@ const PackagePage = ({ project }: { project: Project }) => {
          {(project.type === "package" || project.type === "utility") && (
             <ScrollArea className="mt-3">
                <div className="flex gap-2">
-                  {[...project.images[0].reverse()].map((image) => (
-                     <Dialog key={image}>
-                        <DialogTrigger
-                           className={cn(
-                              "w-max",
-                              project.images[0].length == 1 && "w-full"
-                           )}
-                        >
-                           <Image
-                              src={image}
-                              height={500}
-                              width={500}
-                              alt="image"
+                  {[project.featured_image, ...project.images.reverse()].map(
+                     (image) => (
+                        <Dialog key={image}>
+                           <DialogTrigger
                               className={cn(
-                                 "h-[200px] sm:h-[350px] md:h-[500px] rounded-lg w-fit object-cover",
+                                 "w-max",
                                  project.images[0].length == 1 && "w-full"
                               )}
-                              key={image}
-                           />
-                        </DialogTrigger>
-                        <DialogContent className="w-[90vw] max-w-none h-[90vh]">
-                           <ScrollArea className="h-full rounded">
+                           >
                               <Image
                                  src={image}
-                                 height={2000}
-                                 width={2000}
+                                 height={500}
+                                 width={500}
                                  alt="image"
-                                 className="w-full"
+                                 className={cn(
+                                    "h-[200px] sm:h-[350px] md:h-[500px] rounded-lg w-fit object-cover",
+                                    project.images[0].length == 1 && "w-full"
+                                 )}
                                  key={image}
                               />
-                           </ScrollArea>
-                        </DialogContent>
-                     </Dialog>
-                  ))}
+                           </DialogTrigger>
+                           <DialogContent className="w-[90vw] max-w-none h-[90vh]">
+                              <ScrollArea className="h-full rounded">
+                                 <Image
+                                    src={image}
+                                    height={2000}
+                                    width={2000}
+                                    alt="image"
+                                    className="w-full"
+                                    key={image}
+                                 />
+                              </ScrollArea>
+                           </DialogContent>
+                        </Dialog>
+                     )
+                  )}
                </div>
                <ScrollBar orientation="horizontal" />
             </ScrollArea>

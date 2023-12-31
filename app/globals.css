@@ -125,7 +125,7 @@ table.dataset thead tr th {
 }
 
 .react-tagsinput {
-   @apply rounded-md !border-input;
+   @apply rounded-md !border-input w-full;
 }
 
 .react-tagsinput-tag {
@@ -134,6 +134,10 @@ table.dataset thead tr th {
 
 .react-tagsinput-input {
    @apply w-max;
+}
+
+nextjs-portal {
+  /* display: none; */
 }
 
 @layer base {
