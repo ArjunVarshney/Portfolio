@@ -137,7 +137,7 @@ table.dataset thead tr th {
 }
 
 nextjs-portal {
-  /* display: none; */
+  display: none;
 }
 
 @layer base {
