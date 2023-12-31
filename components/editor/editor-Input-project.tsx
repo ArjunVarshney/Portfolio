@@ -5,7 +5,7 @@ import { InputType } from "@/types";
 import { Slider } from "../ui/slider";
 import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "../ui/input";
 import { useRouter } from "next/navigation";
 import { Textarea } from "../ui/textarea";
@@ -23,6 +23,7 @@ import {
 import ViewProject from "./project-view";
 import MultiArrayInput from "../ui/multip-array-input";
 import MultiStringObjectInput from "../ui/multip-string-object-input";
+import axios from "axios";
 
 const EditorInputProject = ({
    inputs,
@@ -70,16 +71,20 @@ const EditorInputProject = ({
       setValue(defaultValue);
    };
 
+   useEffect(() => {
+      setValue(defaults);
+   }, [defaults]);
+
    return (
       <div className="flex flex-col xl:flex-row xl:gap-5">
          <div className="mt-5 p-4 w-full rounded-lg">
             <div className="flex items-center justify-around gap-3 mb-5 w-full">
                <div className="w-[350px]">
-                  <ProjectCard project={value} />
+                  {value.name && <ProjectCard project={value} />}
                </div>
                <div className="w-[70%]">
                   <ScrollArea className="h-[550px] border rounded-lg">
-                     <ViewProject defaults={value} />
+                     {value.name && <ViewProject defaults={value} />}
                   </ScrollArea>
                </div>
             </div>
@@ -305,7 +310,7 @@ const EditorInputProject = ({
                            </div>
                            <TagsInput
                               // @ts-ignore
-                              value={value[input.name]}
+                              value={value[input.name] || []}
                               onChange={(tags) => {
                                  setValue((prev) => {
                                     const dPrev = { ...prev };
@@ -342,7 +347,9 @@ const EditorInputProject = ({
                                        </div>
                                        <TagsInput
                                           // @ts-ignore
-                                          value={value[input.name][ip.name]}
+                                          value={
+                                             value[input.name]?.[ip.name] || []
+                                          }
                                           onChange={(tags) => {
                                              setValue((prev) => {
                                                 const dPrev = { ...prev };
@@ -360,7 +367,7 @@ const EditorInputProject = ({
                      )}
                      {input.type === "conditional-input" && (
                         <div className="flex-col flex gap-3">
-                           {input.inputs[value[input.switch]].map((ip) => (
+                           {input.inputs[value[input.switch]]?.map((ip) => (
                               <>
                                  {ip.type === "text-array" && (
                                     <div className="px-4 p-3 bg-background rounded-lg border">

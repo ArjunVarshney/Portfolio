@@ -16,6 +16,7 @@ const mono = Roboto_Mono({
 });
 
 const Navbar = () => {
+   const isDevelopment = process.env.NODE_ENV === "development";
    const pathname = usePathname();
 
    const routes: { href: string; active: boolean; label: string }[] = [
@@ -35,6 +36,13 @@ const Navbar = () => {
          active: pathname === "/blogs",
       },
    ];
+
+   if (isDevelopment)
+      routes.push({
+         href: "/editor",
+         label: "Editor",
+         active: pathname === "/editor",
+      });
 
    const [show, setShow] = useState(true);
    const [lastScrollY, setLastScrollY] = useState(0);
