@@ -4,7 +4,7 @@ import { InputType } from "@/types";
 import { Slider } from "../ui/slider";
 import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
-import { FormEvent, useState } from "react";
+import { FormEvent, Fragment, useState } from "react";
 import axios from "axios";
 import { Input } from "../ui/input";
 import Image from "next/image";
@@ -135,7 +135,7 @@ const EditorInput = ({
             >
                <div className="background bg-custom-accent"></div>
                {inputs.map((input) => (
-                  <>
+                  <Fragment key={input.name}>
                      {input.type === "slider" && (
                         <div className="bg-foreground/10 p-3 rounded-lg">
                            <div className="flex justify-between items-center">
@@ -251,7 +251,7 @@ const EditorInput = ({
                            />
                         </div>
                      )}
-                  </>
+                  </Fragment>
                ))}
                <div className="flex justify-center items-center gap-3 w-full ml-auto mt-3 p-3 bg-background rounded-lg">
                   <Button className="font-semibold px-5" onClick={onReset}>
