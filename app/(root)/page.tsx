@@ -15,8 +15,6 @@ export default function Home() {
          <ProjectsPage />
          <Separator />
          <BlogPage />
-         <Separator />
-         <ContactPage />
       </main>
    );
 }
