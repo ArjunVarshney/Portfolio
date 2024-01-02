@@ -9,6 +9,14 @@ import axios from "axios";
 import CircularProgress from "../ui/spinner";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
+import {
+   Select,
+   SelectContent,
+   SelectItem,
+   SelectTrigger,
+   SelectValue,
+} from "../ui/select";
+import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 
 const ModelInput = ({
    inputs,
@@ -21,7 +29,8 @@ const ModelInput = ({
    api: string;
    name: string;
 }) => {
-   let defaultValue: { [key: string]: string | number | boolean | string[] } = {};
+   let defaultValue: { [key: string]: string | number | boolean | string[] } =
+      {};
    const [value, setValue] = useState(defaultValue);
    const [result, setResult] = useState<any>(undefined);
    const [loading, setLoading] = useState(false);
@@ -35,6 +44,17 @@ const ModelInput = ({
    const onRun = async () => {
       try {
          setLoading(true);
+         for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].required && value[inputs[i].name] !== 0) {
+               if (!value[inputs[i].name]) {
+                  window.alert(
+                     "All the fields should be filled before making a prediction"
+                  );
+
+                  return;
+               }
+            }
+         }
          setResult((await axios.post(api, value)).data.result);
       } catch (error) {
          setResult("Something went wrong!");
@@ -64,7 +84,7 @@ const ModelInput = ({
                   </Button>
                   <Button
                      className="font-semibold bg-custom-accent px-5"
-                     onClick={onRun}
+                     onClick={() => onRun()}
                      disabled={loading}
                   >
                      Run
@@ -133,7 +153,139 @@ const ModelInput = ({
                                     return dPrev;
                                  });
                               }}
+                              required={input.required || false}
                            />
+                        </div>
+                     )}
+                     {input.type === "number" && (
+                        <div className="bg-background px-4 p-3 rounded-lg">
+                           <div className="flex justify-between items-center">
+                              <Label
+                                 htmlFor={input.name}
+                                 className="capitalize text-lg font-medium"
+                              >
+                                 {input.name.replaceAll("_", " ")}
+                              </Label>
+                           </div>
+                           <Input
+                              defaultValue={String(input.default) || ""}
+                              name={input.name}
+                              placeholder={String(input.placeholder || "")}
+                              type="number"
+                              className="my-2"
+                              value={[String(value[input.name])]}
+                              onChange={(e) => {
+                                 const curr = e.target.value;
+                                 setValue((prev) => {
+                                    const dPrev = { ...prev };
+                                    dPrev[input.name] = parseInt(curr) || "";
+                                    return dPrev;
+                                 });
+                              }}
+                              required={input.required || false}
+                           />
+                        </div>
+                     )}
+                     {input.type === "select" && (
+                        <div className="px-4 p-3 rounded-lg flex flex-col w-full bg-background gap-2">
+                           <Label
+                              htmlFor={input.name}
+                              className="capitalize text-lg font-medium"
+                           >
+                              {input.name.replaceAll("_", " ")}
+                           </Label>
+                           <Select
+                              name={input.name}
+                              onValueChange={(value) => {
+                                 const curr = value;
+                                 setValue((prev) => {
+                                    const dPrev = { ...prev };
+                                    dPrev[input.name] = curr || "";
+                                    return dPrev;
+                                 });
+                              }}
+                              value={String(value[input.name])}
+                              required={input.required || false}
+                           >
+                              <SelectTrigger className="w-full">
+                                 <SelectValue placeholder="Type" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                 {input.values.map((value) => (
+                                    <SelectItem value={value} key={value}>
+                                       {value}
+                                    </SelectItem>
+                                 ))}
+                              </SelectContent>
+                           </Select>
+                        </div>
+                     )}
+                     {input.type === "radio" && (
+                        <div className="px-4 p-3 rounded-lg flex flex-col w-full bg-background gap-2">
+                           <Label
+                              htmlFor={input.name}
+                              className="capitalize text-lg font-medium"
+                           >
+                              {input.name.replaceAll("_", " ")}
+                           </Label>
+                           <RadioGroup
+                              onValueChange={(value) => {
+                                 const curr = value;
+                                 setValue((prev) => {
+                                    const dPrev = { ...prev };
+                                    dPrev[input.name] = curr || "";
+                                    return dPrev;
+                                 });
+                              }}
+                              value={String(value[input.name])}
+                              required={input.required || false}
+                           >
+                              {input.values.map((value) => (
+                                 <div
+                                    className="flex items-center space-x-2"
+                                    key={value}
+                                 >
+                                    <RadioGroupItem value={value} id={value} />
+                                    <Label
+                                       htmlFor={value}
+                                       className="capitalize"
+                                    >
+                                       {value}
+                                    </Label>
+                                 </div>
+                              ))}
+                           </RadioGroup>
+                        </div>
+                     )}
+                     {input.type === "checkbox" && (
+                        <div className="px-4 p-3 bg-background rounded-lg">
+                           <div className="flex flex-col gap-1.5 justify-between">
+                              <Label
+                                 htmlFor={input.name}
+                                 className="capitalize text-lg font-medium"
+                              >
+                                 {input.name.replaceAll("_", " ")}
+                              </Label>
+                              <div className="flex gap-3 items-start">
+                                 <div>{input.placeholder}</div>
+                                 <input
+                                    type="checkbox"
+                                    name={input.name}
+                                    className="my-2"
+                                    checked={Boolean(value[input.name])}
+                                    onChange={() => {
+                                       setValue((prev) => {
+                                          const dPrev = { ...prev };
+                                          dPrev[input.name] = !dPrev[input.name]
+                                             ? 1
+                                             : 0;
+                                          return dPrev;
+                                       });
+                                    }}
+                                    required={input.required || false}
+                                 />
+                              </div>
+                           </div>
                         </div>
                      )}
                   </>

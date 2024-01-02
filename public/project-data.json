@@ -1,1 +1,1016 @@
-[{"name":"Body Works","description":"A website with an expansive fitness-oriented website featuring a diverse assortment of exercises and workout routines harvested through meticulous web scraping techniques. This platform offers an extensive collection tailored for various fitness levels. Additionally, facilitated API access with limitless requests, allowing seamless integration for fitness applications and research initiatives.","featured_image":"/project-screenshots/body-works/11.png","project_url":"body-works","type":"website","tags":{"based-on":["Web-scraping","Fullstack"],"language":["Typescript","Nextjs"],"other":["Content Website"]},"website_link":["https://body-works.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Body-works"],"commits":["https://api.github.com/repos/ArjunVarshney/Body-works/commits"],"features":["Comprehensive Exercise Database: Curated a vast collection of exercises and workout routines from the web.","API Accessibility: Enabled API access for developers to integrate exercise data into other applications.","Responsive and Fast Performance: Ensured responsive design and optimized performance across devices for swift user interaction.","Search and Filtering: Integrated robust search functionality and filtering options, enabling users to quickly find specific exercises or routines according to their preferences.","Categorized Content: Organized exercises into categories (such as strength, cardio, flexibility) and levels (beginner, intermediate, advanced) for easy browsing and selection.","Interactive UI/UX Design: Developed an intuitive, user-friendly interface for seamless exploration."],"tech_stack":{"data-collection":["Puppeteer"],"data-processing":["Javascript"],"frontend":["Next js","tailwind","shadcn"],"backend":["Node js","Next js","JSON database","Clerk"],"languages":["Typescript","JSON"]},"most_used_packages":["Next js","Tailwind","Zustand","Puppeteer","Axios","Query-string"],"images":["/project-screenshots/body-works/1.png","/project-screenshots/body-works/2.png","/project-screenshots/body-works/3.png","/project-screenshots/body-works/4.png","/project-screenshots/body-works/5.png","/project-screenshots/body-works/6.png","/project-screenshots/body-works/7.png","/project-screenshots/body-works/8.png","/project-screenshots/body-works/9.png","/project-screenshots/body-works/10.png","/project-screenshots/body-works/11.png","/project-screenshots/body-works/12.png","/project-screenshots/body-works/13.png","/project-screenshots/body-works/14.png","/project-screenshots/body-works/15.png"]},{"name":"Discord Clone","description":"This project mirrors the functionality of Discord, offering seamless text, voice, and video chat functionalities along with channels, server management, and user authentication. Leveraged technologies to ensure a fully operational and user-friendly platform, demonstrating expertise in modern web development, APIs, and user-interface design. (Some functionality may not work as I used free tier for some services like video call and voice call from livekit and authentication using clerk)","project_url":"discord-clone","featured_image":"/project-screenshots/discord-clone/5.png","type":"website","tags":{"based-on":["Fullstack"],"language":["Typescript","MySQL","Nextjs"],"other":["Socket IO","Clone Website"]},"website_link":["https://discord-clone-production-731f.up.railway.app/"],"git_link":["https://github.com/ArjunVarshney/discord-clone"],"commits":["https://api.github.com/repos/ArjunVarshney/discord-clone/commits"],"features":["Text, Voice, and Video Chat: Offers both real-time text and voice chat functionalities, along with video calling capabilities for a diverse range of communication options.","Servers and Channels: Organizes communication into servers, which contain multiple channels for specific topics, discussions, or interests, allowing users to navigate conversations easily.","Direct Messaging: Facilitates one-on-one direct messaging between users, enabling private conversations separate from the server channels.","Role and Permission Management: Provides server administrators with tools to assign roles, manage permissions, and customize user access within servers and channels.","File Sharing and Media Embedding: Enables file sharing and embedding of media files (images, videos, links) directly within chat channels for easy sharing and viewing.","Screen Sharing and Streaming: Allows users to share their screen or stream games and other content in real-time to others in the voice channels.","Community and Server Features: Provides community features like emojis, reactions, server discovery, and server boosting to enhance engagement within communities."],"tech_stack":{"frontend":["Next js","tailwind","shadcn","emoji-mart"],"backend":["Node js","Next js","MySQL","Prisma","Socket IO","Livekit","Clerk"],"languages":["Typescript"]},"most_used_packages":["Next js","Tailwind","Zustand","Socket IO","Axios","Query-string"],"images":["/project-screenshots/discord-clone/1.png","/project-screenshots/discord-clone/2.png","/project-screenshots/discord-clone/3.png","/project-screenshots/discord-clone/4.png","/project-screenshots/discord-clone/5.png","/project-screenshots/discord-clone/6.png","/project-screenshots/discord-clone/7.png","/project-screenshots/discord-clone/8.png","/project-screenshots/discord-clone/9.png","/project-screenshots/discord-clone/10.png","/project-screenshots/discord-clone/11.png"]},{"name":"Everything Store","description":"Crafted a sophisticated e-commerce ecosystem encompassing separate client and admin applications. The client app delivers seamless shopping experiences, intuitive product browsing, secure transactions, and personalized user accounts. Meanwhile, the admin app provides robust inventory management, order processing, analytics, and user management functionalities. This comprehensive solution exhibits expertise in full-stack development, emphasizing user-centric design, scalability, and efficient backend administration for a thriving e-commerce venture.","featured_image":"/project-screenshots/everything-store-client/3.png","project_url":"everything-store","type":"website","tags":{"based-on":["Fullstack"],"language":["Typescript","MySQL","Nextjs"],"other":["Ecommerce Website"]},"website_link":["https://everything-store-admin.vercel.app/","https://ever-store.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Everything-Store-admin","https://github.com/ArjunVarshney/Everything-store-client"],"commits":["https://api.github.com/repos/ArjunVarshney/Everything-Store-admin/commits","https://api.github.com/repos/ArjunVarshney/Everything-store-client/commits"],"features":["Intuitive User Interface (UI): Offers a clean and user-friendly interface, enabling easy navigation and seamless browsing of products and categories.","Mobile Responsiveness: Ensures the website is optimized for mobile devices, providing a consistent and enjoyable shopping experience across various screen sizes.","Product Search and Filtering: Implements robust search functionality and filtering options, allowing customers to easily find products based on categories, brands, price range, sizes, and other attributes.","Store Management: Allows easy management of multiple stores from a centralized dashboard, enabling administrators to oversee different storefronts efficiently.","Category Management: Provides tools to create, edit, and organize product categories, streamlining the navigation and structure of the website.","Product and Variants Management: Enables the addition, editing, and removal of products and their variants (sizes, colors, etc.) with ease, ensuring updated and comprehensive offerings.","Inventory Tracking: Facilitates inventory management, displaying stock levels, alerts for low inventory, and restocking options to avoid product shortages.","Order Processing: Displays order details, status updates, and allows for easy order fulfillment","Sales Analytics: Provides insights into sales performance, revenue trends, and popular products through interactive charts and graphs.","Promotional Billboards: Offers customizable sections on the website to highlight promotions, new arrivals, or featured products, attracting customer attention and increasing sales."],"tech_stack":{"frontend":["Next js","tailwind","shadcn"],"backend":["Node js","Next js","MySQL","Prisma","Clerk"],"languages":["Typescript"]},"most_used_packages":["Next js","Tailwind","Zustand","Axios","Query-string","Stripe"],"images":["/project-screenshots/everything-store-admin/1.png","/project-screenshots/everything-store-admin/2.png","/project-screenshots/everything-store-admin/3.png","/project-screenshots/everything-store-admin/4.png","/project-screenshots/everything-store-admin/5.png","/project-screenshots/everything-store-admin/6.png","/project-screenshots/everything-store-admin/7.png","/project-screenshots/everything-store-admin/8.png","/project-screenshots/everything-store-admin/9.png","/project-screenshots/everything-store-admin/10.png","/project-screenshots/everything-store-admin/11.png","/project-screenshots/everything-store-client/1.png","/project-screenshots/everything-store-client/2.png","/project-screenshots/everything-store-client/3.png","/project-screenshots/everything-store-client/4.png","/project-screenshots/everything-store-client/5.png","/project-screenshots/everything-store-client/6.png"]},{"name":"Jsontohtml-render","description":"Convert JSON into HTML with ease using the \"jsontohtml-render\" npm package. This lightweight library allows you to transform JSON data into HTML tags and structures, making it simple to generate dynamic HTML to preview a json or any object in your JavaScript applications.","project_url":"jsontohtml-render","featured_image":"/project-screenshots/jsontohtml-render/2.png","type":"package","tags":{"based-on":["Package development"],"language":["Typescript"],"other":["Utility"]},"npm_link":["https://www.npmjs.com/package/jsontohtml-render"],"git_link":["https://github.com/ArjunVarshney/jsontohtml-render"],"commits":["https://api.github.com/repos/ArjunVarshney/jsontohtml-render/commits"],"features":["Customizable Rendering: Allows full customization of HTML output including colors, background, and indentation, tailoring the display to user preferences.","Interactive Styling Options: Enables users to personalize various elements like text colors, background colors, font size and font styles for enhanced readability and aesthetics.","Configurable Line Numbers: Offers the flexibility to toggle line numbers on/off, providing a cleaner or more informative rendering based on user choice.","Retraction Functionality: Provides retractable sections or objects, allowing collapsible content for improved organization and readability of nested structures.","Versatile Object Rendering: Capable of rendering complex JavaScript objects, arrays, and nested data structures into HTML for clear visualization and comprehension.","Framework Compatibility: Seamlessly integrates with popular frameworks like React, Vue.js, Angular, and others, ensuring cross-framework support for rendering JS objects to HTML.","Vanilla HTML and CSS Support: Works efficiently with traditional HTML and CSS setups, providing flexibility for developers working without frameworks","Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."],"images":["/project-screenshots/jsontohtml-render/1.png","/project-screenshots/jsontohtml-render/2.png"]},{"name":"pdf-ops","description":"This node js package is able to perform various pdf tasks as desired and is able to save the resultant pdf as a new file or return a file Buffer.","project_url":"pdf-ops","featured_image":"/project-screenshots/pdf-ops/1.png","type":"package","tags":{"based-on":["Package development"],"language":["Typescript"],"other":["Utility"]},"npm_link":["https://www.npmjs.com/package/pdf-ops"],"git_link":["https://github.com/ArjunVarshney/pdf-ops"],"commits":["https://api.github.com/repos/ArjunVarshney/pdf-ops/commits"],"features":["Multi-functional PDF Operations: Conduct various PDF operations including splitting, merging, rotating, resizing, margin addition, and image-to-PDF conversion, offering diverse functionalities for PDF manipulation.","Versatile PDF Source Compatibility: Accepts various input sources such as File, Blob, PdfDocument (pdf-lib), Uint8Array, or ArrayBuffer, ensuring compatibility with multiple file formats and structures.","User-Friendly Interface:Simple API and methods for smooth integration and usage, ensuring accessibility for developers across different skill levels.","Clearance and Reset Capability:Provides functionality to clear and reinitialize stored PDFs in the object, ensuring a clean slate for new operations or reinitialization when required.","Efficient Client-Side Processing:Enables rapid PDF processing directly on the client-side, minimizing network latency and ensuring swift operations, thereby enhancing user experience and responsiveness during PDF manipulation.","Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."],"images":["/project-screenshots/pdf-ops/1.png","/project-screenshots/pdf-ops/2.png"]},{"name":"PDFz","description":"Pdfz is a powerful and user-friendly web application built on top of the \"pdf-ops\" npm package, designed to streamline PDF operations effortlessly on the client side. With Pdfz, you can easily perform a wide range of PDF-related tasks, from merging and splitting to rotating and converting images to pdfs. Whether you're a developer looking for an easy way to integrate PDF functionality into your project or a non-technical user in need of a simple PDF tool, Pdfz has you covered.","project_url":"pdfz","featured_image":"/project-screenshots/pdfz/5.png","type":"website","tags":{"based-on":["Fullstack"],"language":["Typescript","Nextjs"],"other":["Utility Website"]},"website_link":["https://pdfz-phi.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/PDFz"],"commits":["https://api.github.com/repos/ArjunVarshney/PDFz/commits"],"features":["Split PDFs: Slit pdfs into single or range specified pages","Merge PDFs: Merge complete pdfs or with range specifications","Rotate PDFs: Rotate the whole pdf or selected pages of that pdf","Resize PDFs: Change the page size of the whole pdf or of selected pages","Add Margin to the PDFs: Add margin on all side or on a selected side of the pdf","Convert images to Pdf: Droping images directly into the input box converts them into pdfs providing seamless experience","User-Friendly Interface: Pdfz offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website","Developer-Friendly: Developers can also use the functionality provided by Pdfz programmatically through the \"pdf-ops\" npm package."],"tech_stack":{"frontend":["Next js","tailwind","daisyUI"],"backend":["Node js","Next js"],"languages":["Typescript"]},"most_used_packages":["Next js","pdf-ops","Tailwind","Axios","Query-string"],"images":["/project-screenshots/pdfz/1.png","/project-screenshots/pdfz/2.png","/project-screenshots/pdfz/3.png","/project-screenshots/pdfz/4.png","/project-screenshots/pdfz/5.png"]},{"name":"Speed-type","description":"Speed-type is a web-based typing practice tool designed to improve typing speed and accuracy. Offering a user-friendly interface, it provides various customizable tests, including words, and sentences. Users can track their performance metrics, such as words per minute (WPM), accuracy, and keystrokes, allowing for focused practice sessions.","project_url":"speed-type","featured_image":"/project-screenshots/pdfz/5.png","type":"website","tags":{"based-on":["Fullstack"],"language":["Typescript","Nextjs"],"other":["Utility Website"]},"website_link":["https://speed-type-mu.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Speed-Type"],"commits":["https://api.github.com/repos/ArjunVarshney/Speed-Type/commits"],"features":["Versatile Typing Tests: Offers various typing tests including words, sentences, and quotes, catering to different skill levels and preferences.","Customizable Settings: Allows customization of test duration, difficulty levels, and themes, enabling users to tailor practice sessions according to their proficiency and preferences.","Real-Time Performance Metrics: Provides real-time statistics on words per minute (WPM), accuracy percentage, and keystrokes, aiding in tracking progress and identifying areas for improvement.","User-Friendly Interface: Speed-Type offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website","Responsive Design: Optimized for various devices and screen sizes, allowing users to practice typing seamlessly on desktops, laptops, tablets, or smartphones.","Progress Tracking: Saves user history and progress, enabling users to review past performance and monitor improvement over time."],"tech_stack":{"frontend":["Next js","tailwind","daisyUI"],"backend":["Node js","Next js"],"languages":["Typescript"]},"most_used_packages":["Next js","Tailwind","Axios","Query-string"],"images":["/project-screenshots/pdfz/1.png","/project-screenshots/pdfz/2.png","/project-screenshots/pdfz/3.png","/project-screenshots/pdfz/4.png","/project-screenshots/pdfz/5.png"]},{"name":"Auto-racer","description":"I developed a browser-based game leveraging HTML, CSS, and JavaScript, allowing users to play against an AI opponent. The AI was trained using a neural network, crafted entirely from scratch without external libraries. This project not only showcases the game's interactive features but also highlights my development skills in creating an independent AI system.","project_url":"auto-racer","featured_image":"/project-screenshots/auto-racer/1.png","type":"website","tags":{"based-on":["Artificial intelligence","Reinforcement learning"],"language":["HTML","CSS","Javascript"],"other":["Canvas","Game Website"]},"website_link":["https://auto-racer.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Self-Driving-Car"],"commits":["https://api.github.com/repos/ArjunVarshney/Self-Driving-Car/commits"],"features":["Gameplay Against AI: Offers users the opportunity to play an engaging game against an AI opponent directly on the website.","Handcrafted Neural Network: Utilizes a neural network developed from scratch, showcasing your expertise in AI and neural network design without relying on existing libraries.","HTML, CSS, JS Implementation: Built entirely using HTML, CSS, and JavaScript, demonstrating proficiency in front-end web development technologies.","Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones."],"tech_stack":{"languages":["HTML","CSS","Javascript"]},"most_used_packages":["No Packages Used"],"images":["/project-screenshots/auto-racer/1.png"]},{"name":"College-portal-scraper","description":"We all are familiar with the user friendliness that our college portal provides us (it sucks)😐. Therefore, I made a program to scrape the portal and display it onto a notion page that solves the problem of clicking an endless stream of pointless buttons and navigating our way through the menus to see our attendance and view our marks.","project_url":"college-portal-scraper","featured_image":"/project-screenshots/college-portal-scraper/1.png","type":"utility","tags":{"based-on":["Web-scraping"],"language":["Javascript"],"other":["Utility","Automation Hack","Notion API"]},"git_link":["https://github.com/ArjunVarshney/College-Portal-Scraper"],"commits":["https://api.github.com/repos/ArjunVarshney/College-Portal-Scraper/commits"],"features":["Automated Data Retrieval: Scrapes and extracts attendance records and marks from the college portal automatically, eliminating the need for manual navigation through the portal.","Notion Integration: Integrates seamlessly with Notion, a popular productivity tool, allowing users to display the extracted data directly onto a Notion page for easy access and visualization.","Easy Setup Process: Provides a step-by-step guide for setup, including cloning the repository, installing necessary npm modules, and configuring the Notion integration and page structure.","Data Export: Generates a data.json file containing the extracted data, enabling users to utilize this data for other purposes if needed."],"tech_stack":{"frameworks":["Puppeteer"],"languages":["Javascript"]},"most_used_packages":["Puppeteer","notionhq"],"images":["/project-screenshots/college-portal-scraper/1.png"]},{"name":"Your-Norm","description":"This is a complex blog application which allows user to post content, comment on it and also update or delete it. This platform offers an extensive range of features, including user-friendly editing tools, interactive commenting systems, and seamless sharing options. This also provides a responsive design ensures an optimal reading experience across all devices.","project_url":"your-norm","featured_image":"/project-screenshots/your-norm/2.png","type":"website","tags":{"based-on":["Fullstack"],"language":["React","CSS","Javascript"],"other":["Content Website","Docker","Google_auth"]},"git_link":["https://github.com/ArjunVarshney/YOUR-NORM"],"commits":["https://api.github.com/repos/ArjunVarshney/YOUR-NORM/commits"],"features":["Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for commenting, writing posts and also customizing their about section.","Text-to-speech: Enables users to convert written text into speech with customizable voices, language support, and speed controls, fostering accessibility and convenience.","User Profiles:Displays user profiles, including detailed information about each user, enabling public visibility and interaction among users within the platform.","Save for later: Permits users to save blog posts for future reference or reading through a bookmark or save feature, ensuring easy access to preferred content at a later time.","Activity monitoring: Presents a comprehensive overview of user activity, consolidating likes, comments, and other interactions in a centralized location for easy tracking and review.","Security Measures: Implements robust security measures to protect user data and ensure a safe browsing experience.","Responsive Design: Ensures an optimal reading experience on all devices, including mobile phones, tablets, and desktops."],"tech_stack":{"frontend":["React"],"backend":["Express","MongoDB","Nodejs"],"containerization":["Docker"],"languages":["HTML","CSS","Javascript"]},"most_used_packages":["React","Quill","Express","mongoose"],"images":["/project-screenshots/your-norm/1.png","/project-screenshots/your-norm/2.png","/project-screenshots/your-norm/3.png","/project-screenshots/your-norm/4.png","/project-screenshots/your-norm/5.png","/project-screenshots/your-norm/6.png","/project-screenshots/your-norm/7.png","/project-screenshots/your-norm/8.png","/project-screenshots/your-norm/9.png"]},{"name":"Text-editor","description":"This is a basic text editor which can be used to take notes and print it also. I have used quill in this application for formatting the text in the editor box. The text stores in the local storage in realtime hence when reloaded, the data restores. I find this editor very usefull for my- self as it acts as a notepad to write my ideas and it is very minimal as well.","project_url":"text-editor","featured_image":"/project-screenshots/text-editor/1.png","type":"website","tags":{"level":["Basic"],"based-on":["Frontend"],"language":["React","HTML","CSS","Javascript"],"other":["Utility Website"]},"website_link":["https://text-editr.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Text-Editor"],"commits":["https://api.github.com/repos/ArjunVarshney/Text-Editor/commits"],"features":["Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for better note organization.","Local Storage: Saves notes in real-time to the local storage, ensuring that data persists even after page reloads or when revisiting the website, allowing users to resume their work seamlessly.","Minimalistic Design: Features a minimalist user interface, keeping distractions at bay and focusing solely on the note-taking aspect, providing a clutter-free environment for writing.","Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones.","Print Functionality: Provides the option to print the notes directly from the editor, enabling users to produce physical copies of their written content if required."],"tech_stack":{"frontend":["React"],"languages":["HTML","CSS","Javascript"]},"most_used_packages":["React","Quill"],"images":["/project-screenshots/text-editor/1.png","/project-screenshots/text-editor/2.png"]},{"name":"Snake Game","description":"My rendition of the classic Snake game brings back nostalgic fun while offering a modern twist. With sleek graphics and smooth controls, this game challenges players to navigate a hungry snake through a pixelated world.","project_url":"snake-game","featured_image":"/project-screenshots/snake-game/1.png","type":"website","tags":{"level":["Basic"],"based-on":["Frontend"],"language":["HTML","CSS","Javascript"],"other":["Game Website"]},"website_link":["https://growing-snake.vercel.app/"],"git_link":["https://github.com/ArjunVarshney/Snake-game"],"commits":["https://api.github.com/repos/ArjunVarshney/Snake-game/commits"],"features":["Intuitive Controls: Easily maneuver the snake with simple controls for an immersive gaming experience.","Addictive Gameplay: Enjoy an engaging game that progressively gets more challenging as the snake grows longer.","Vibrant Visuals: Explore a vibrant, retro-themed environment that adds a touch of nostalgia to the gaming experience.","Compatibility: Play across multiple platforms, whether it's on a web browser or mobile device, ensuring accessibility for all users."],"tech_stack":{"languages":["HTML","CSS","Javascript"]},"most_used_packages":["No Packages Used"],"images":["/project-screenshots/snake-game/1.png","/project-screenshots/snake-game/2.png"]},{"name":"Photography website","description":"Basic static website that is a photography website","project_url":"photography-website","featured_image":"/project-screenshots/photography-website/2.png","type":"website","tags":{"level":["Basic"],"based-on":["Frontend"],"language":["HTML","CSS","Javascript"],"other":["Content Website"]},"website_link":["https://arjunvarshney.github.io/Photography-website/"],"git_link":["https://github.com/ArjunVarshney/Photography-website"],"commits":["https://api.github.com/repos/ArjunVarshney/Photography-website/commits"],"features":["This is a static website that I made in my initial web development journey to practice HTML, CSS, JS."],"tech_stack":{"languages":["HTML","CSS","Javascript"]},"most_used_packages":["No Packages Used"],"images":["/project-screenshots/photography-website/1.png","/project-screenshots/photography-website/2.png","/project-screenshots/photography-website/3.png","/project-screenshots/photography-website/4.png"]},{"name":"Wine Quality Prediction","description":"The Wine Quality Prediction Model is built using machine learning techniques to classify wines as good or bad based on various input parameters. It utilizes a dataset containing features like acidity levels, residual sugar, pH, alcohol content, etc. to train a machine learning algorithm.\n - Algorithm used: `Random Forest Classifier`\n - Accuracy: `93%`\n\n The dataset is preprocessed by handling missing values, feature scaling, and possibly feature engineering to improve the model's accuracy. After training on historical wine data, the model is capable of predicting the quality of new wines it hasn't seen before.","project_url":"wine-quality-prediction","feature_description":{"volatile acidity":"Volatile acidity is the gaseous acids present in wine.","fixed acidity":"Primary fixed acids found in wine are tartaric, succinic, citric, and malic","residual sugar":"Amount of sugar left after fermentation.","citric acid":"It is weak organic acid, found in citrus fruits naturally.","chlorides":"Amount of salt present in wine.","free sulfur dioxide":"So2 is used for prevention of wine by oxidation and microbial spoilage.","total sulfur dioxide":"Total So2 present in the alcohol.","pH":"In wine pH is used for checking acidity.","density":"The weight of the alcohol per ml.","sulphates":"Added sulfites preserve freshness and protect wine from oxidation, and bacteria.","alcohol":"Percent of alcohol present in wine."},"featured_image":"/ai/wine-quality-prediction.png","type":"model","tags":{"based-on":["Machine learning","Data analysis"],"language":["Python"],"other":["Scikit-learn","RandomForestClassifier","Matplotlib"]},"ipynb_json":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/wine-quality-prediction/model.ipynb","dataset":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/wine-quality-prediction/dataset.csv","git_link":["https://github.com/ArjunVarshney/Machine-learning-files/blob/main/wine-quality-prediction/model.ipynb"],"kaggle_dataset":"https://www.kaggle.com/datasets/yasserh/wine-quality-dataset","api":"https://ml-model-7la3.onrender.com/wine-quality","most_used_packages":["Scikit-learn","Matplotlib","Pandas"],"inputs":[{"name":"fixed acidity","type":"slider","min":0,"max":14,"step":0.01,"placeholder":"A number between 0 and 14"},{"name":"volatile acidity","type":"slider","min":0,"max":1.4,"step":0.01,"placeholder":"A number between 0 and 1.4"},{"name":"citric acid","type":"slider","min":0,"max":1,"step":0.01,"placeholder":"A number between 0 and 1"},{"name":"chlorides","type":"slider","min":0,"max":1,"step":0.01,"placeholder":"A number between 0 and 1"},{"name":"free sulfur dioxide","type":"slider","min":1,"max":70,"step":0.1,"placeholder":"A number between 1 and 70"},{"name":"total sulfur dioxide","type":"slider","min":1,"max":300,"step":0.1,"placeholder":"A number between 1 and 300"},{"name":"density","type":"slider","min":0.95,"max":1,"step":0.00001,"placeholder":"A number between 0.95 and 1"},{"name":"pH","type":"slider","min":2.5,"max":5,"step":0.01,"placeholder":"A number between 2.5 and 5"},{"name":"sulphates","type":"slider","min":0.3,"max":2,"step":0.01,"placeholder":"A number between 0.3 and 2"},{"name":"alcohol","type":"slider","min":5,"max":25,"step":0.1,"placeholder":"A number between 5 and 25"}],"examples":[{"fixed acidity":8.5,"volatile acidity":0.47,"citric acid":0.27,"chlorides":0.058,"free sulfur dioxide":18,"total sulfur dioxide":38,"density":0.99518,"pH":3.16,"sulphates":0.85,"alcohol":11.1},{"fixed acidity":8.5,"volatile acidity":0.28,"citric acid":0.56,"chlorides":0.092,"free sulfur dioxide":35,"total sulfur dioxide":103,"density":0.99695,"pH":3.3,"sulphates":0.75,"alcohol":10.5},{"fixed acidity":8.3,"volatile acidity":0.675,"citric acid":0.26,"chlorides":0.084,"free sulfur dioxide":11,"total sulfur dioxide":43,"density":0.99765,"pH":3.31,"sulphates":0.53,"alcohol":9.2}]},{"name":"Sonar Rock Detection","description":"The Sonar Data-based Rock Presence Prediction Model is developed using machine learning methodologies to determine the presence of a rock or a mine by analyzing sonar data. This model utilizes a dataset containing various acoustic attributes or frequencies emitted by sonar equipment and their corresponding responses, indicating the presence a rock or a mine. \n - Algorithm used: `Logistic Regression`\n - Accuracy: `85%`\n\nThe dataset is processed by handling missing values to enhance the model's predictive performance. Post-training on historical sonar data, the model effectively predicts the likelihood of a mine's presence based on unseen sonar readings","project_url":"sonar-rock-detection","feature_description":{"Columns 1 to 60":"It contains various data column which consist sonar data.","Last column":"It tells if the sonar is hitting a rock of a mine."},"featured_image":"/ai/sonar-rock.webp","type":"model","tags":{"based-on":["Machine learning","Data analysis"],"language":["Python"],"other":["Scikit-learn","RandomForestClassifier","Matplotlib"]},"ipynb_json":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/model.ipynb","dataset":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/dataset.csv","git_link":["https://github.com/ArjunVarshney/Machine-learning-files/blob/main/sonar-rock-model/model.ipynb"],"kaggle_dataset":"https://www.kaggle.com/datasets/mayurdalvi/sonar-mine-dataset","most_used_packages":["Scikit-learn","Pandas","Numpy"]},{"name":"Movie Recommender","description":"The Movie Recommender System employs content-based filtering techniques to suggest movies tailored to users' preferences. By taking a user's favorite movie as input, the system leverages a dataset encompassing user ratings, movie attributes (genres, keywords, cast, director), and content-based filtering algorithms. Utilizing similarities between movies or users, it generates a curated list of movie recommendations for individuals, enhancing their movie-watching experience.","project_url":"movie-recommender","feature_description":{"budget":"The allocated financial resources for creating the movie.","genres":"Different categories or types of the movie.","keywords":"Specific words or phrases representing the movie's essence.","title":"Name given to the movie.","overview":"Brief synopsis or summary of the movie's plot.","popularity":"Measure of the movie's popularity or public interest.","production_companies":"Companies involved in producing the movie.","production_countries":"Countries where the movie was primarily produced.","revenue":"Total earnings or income generated by the movie.","runtime":"Duration of the movie in minutes.","spoken_language":"Primary language spoken in the movie.","tagline":"Catchphrase or slogan associated with the movie.","vote_average":"Average rating given to the movie by viewers.","vote_count":"Total count of votes or ratings received by the movie.","crew":"The group of people involved in making the movie.","director":"The person responsible for guiding the movie's artistic aspects."},"featured_image":"/ai/movie-recommendation.webp","type":"model","tags":{"based-on":["Machine learning","Recommender system"],"language":["Python"],"other":["Scikit-learn","Difflib","Pandas"]},"ipynb_json":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/model.ipynb","dataset":"https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/dataset.csv","git_link":["https://github.com/ArjunVarshney/Machine-learning-files/blob/main/movie-recommendation/model.ipynb"],"kaggle_dataset":"https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv","most_used_packages":["Scikit-learn","Pandas","Numpy"],"api":"https://ml-model-7la3.onrender.com/movie-recommendation","inputs":[{"name":"movie_name","type":"text","placeholder":"Write the name of your favorite hollywood movie"}],"examples":[{"movie_name":"Spider-man"},{"movie_name":"Avengers"},{"movie_name":"Transformers"}]},{"name":"Zomato Data Analysis","description":"This is my analysis on the zomato india dataset in which there are few good insights of the state of resturants linked with zomato in india.","project_url":"zomato-data-analysis","feature_description":{"volatile acidity":"Volatile acidity is the gaseous acids present in wine.","fixed acidity":"Primary fixed acids found in wine are tartaric, succinic, citric, and malic","residual sugar":"Amount of sugar left after fermentation.","citric acid":"It is weak organic acid, found in citrus fruits naturally.","chlorides":"Amount of salt present in wine.","free sulfur dioxide":"So2 is used for prevention of wine by oxidation and microbial spoilage.","total sulfur dioxide":"Total So2 present in the alcohol.","pH":"In wine pH is used for checking acidity.","density":"The weight of the alcohol per ml.","sulphates":"Added sulfites preserve freshness and protect wine from oxidation, and bacteria.","alcohol":"Percent of alcohol present in wine."},"featured_image":"/ai/zomato.png","type":"analysis","tags":{"based-on":["Data analysis"],"language":["Python"],"other":["Scikit-learn","RandomForestClassifier","Matplotlib"]},"ipynb_json":"https://raw.githubusercontent.com/ArjunVarshney/zomato-data-analysis/main/zomato-analysis.ipynb","dataset":"https://raw.githubusercontent.com/ArjunVarshney/zomato-data-analysis/main/data/zomato-data.csv","git_link":["https://github.com/ArjunVarshney/zomato-data-analysis/tree/main"],"most_used_packages":["Scikit-learn","Matplotlib"],"kaggle_dataset":"https://www.kaggle.com/datasets/ronidas39/zomato-india-data-set"}]
+[
+   {
+      "name": "Body Works",
+      "description": "A website with an expansive fitness-oriented website featuring a diverse assortment of exercises and workout routines harvested through meticulous web scraping techniques. This platform offers an extensive collection tailored for various fitness levels. Additionally, facilitated API access with limitless requests, allowing seamless integration for fitness applications and research initiatives.",
+      "featured_image": "/project-screenshots/body-works/11.png",
+      "project_url": "body-works",
+      "type": "website",
+      "tags": {
+         "based-on": ["Web-scraping", "Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "other": ["Content Website"]
+      },
+      "website_link": ["https://body-works.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Body-works"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Body-works/commits"
+      ],
+      "features": [
+         "Comprehensive Exercise Database: Curated a vast collection of exercises and workout routines from the web.",
+         "API Accessibility: Enabled API access for developers to integrate exercise data into other applications.",
+         "Responsive and Fast Performance: Ensured responsive design and optimized performance across devices for swift user interaction.",
+         "Search and Filtering: Integrated robust search functionality and filtering options, enabling users to quickly find specific exercises or routines according to their preferences.",
+         "Categorized Content: Organized exercises into categories (such as strength, cardio, flexibility) and levels (beginner, intermediate, advanced) for easy browsing and selection.",
+         "Interactive UI/UX Design: Developed an intuitive, user-friendly interface for seamless exploration."
+      ],
+      "tech_stack": {
+         "data-collection": ["Puppeteer"],
+         "data-processing": ["Javascript"],
+         "frontend": ["Next js", "tailwind", "shadcn"],
+         "backend": ["Node js", "Next js", "JSON database", "Clerk"],
+         "languages": ["Typescript", "JSON"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Puppeteer",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         "/project-screenshots/body-works/1.png",
+         "/project-screenshots/body-works/2.png",
+         "/project-screenshots/body-works/3.png",
+         "/project-screenshots/body-works/4.png",
+         "/project-screenshots/body-works/5.png",
+         "/project-screenshots/body-works/6.png",
+         "/project-screenshots/body-works/7.png",
+         "/project-screenshots/body-works/8.png",
+         "/project-screenshots/body-works/9.png",
+         "/project-screenshots/body-works/10.png",
+         "/project-screenshots/body-works/11.png",
+         "/project-screenshots/body-works/12.png",
+         "/project-screenshots/body-works/13.png",
+         "/project-screenshots/body-works/14.png",
+         "/project-screenshots/body-works/15.png"
+      ]
+   },
+   {
+      "name": "Discord Clone",
+      "description": "This project mirrors the functionality of Discord, offering seamless text, voice, and video chat functionalities along with channels, server management, and user authentication. Leveraged technologies to ensure a fully operational and user-friendly platform, demonstrating expertise in modern web development, APIs, and user-interface design. (Some functionality may not work as I used free tier for some services like video call and voice call from livekit and authentication using clerk)",
+      "project_url": "discord-clone",
+      "featured_image": "/project-screenshots/discord-clone/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "MySQL", "Nextjs"],
+         "other": ["Socket IO", "Clone Website"]
+      },
+      "website_link": ["https://discord-clone-production-731f.up.railway.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/discord-clone"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/discord-clone/commits"
+      ],
+      "features": [
+         "Text, Voice, and Video Chat: Offers both real-time text and voice chat functionalities, along with video calling capabilities for a diverse range of communication options.",
+         "Servers and Channels: Organizes communication into servers, which contain multiple channels for specific topics, discussions, or interests, allowing users to navigate conversations easily.",
+         "Direct Messaging: Facilitates one-on-one direct messaging between users, enabling private conversations separate from the server channels.",
+         "Role and Permission Management: Provides server administrators with tools to assign roles, manage permissions, and customize user access within servers and channels.",
+         "File Sharing and Media Embedding: Enables file sharing and embedding of media files (images, videos, links) directly within chat channels for easy sharing and viewing.",
+         "Screen Sharing and Streaming: Allows users to share their screen or stream games and other content in real-time to others in the voice channels.",
+         "Community and Server Features: Provides community features like emojis, reactions, server discovery, and server boosting to enhance engagement within communities."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "shadcn", "emoji-mart"],
+         "backend": [
+            "Node js",
+            "Next js",
+            "MySQL",
+            "Prisma",
+            "Socket IO",
+            "Livekit",
+            "Clerk"
+         ],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Socket IO",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         "/project-screenshots/discord-clone/1.png",
+         "/project-screenshots/discord-clone/2.png",
+         "/project-screenshots/discord-clone/3.png",
+         "/project-screenshots/discord-clone/4.png",
+         "/project-screenshots/discord-clone/5.png",
+         "/project-screenshots/discord-clone/6.png",
+         "/project-screenshots/discord-clone/7.png",
+         "/project-screenshots/discord-clone/8.png",
+         "/project-screenshots/discord-clone/9.png",
+         "/project-screenshots/discord-clone/10.png",
+         "/project-screenshots/discord-clone/11.png"
+      ]
+   },
+   {
+      "name": "Everything Store",
+      "description": "Crafted a sophisticated e-commerce ecosystem encompassing separate client and admin applications. The client app delivers seamless shopping experiences, intuitive product browsing, secure transactions, and personalized user accounts. Meanwhile, the admin app provides robust inventory management, order processing, analytics, and user management functionalities. This comprehensive solution exhibits expertise in full-stack development, emphasizing user-centric design, scalability, and efficient backend administration for a thriving e-commerce venture.",
+      "featured_image": "/project-screenshots/everything-store-client/3.png",
+      "project_url": "everything-store",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "MySQL", "Nextjs"],
+         "other": ["Ecommerce Website"]
+      },
+      "website_link": [
+         "https://everything-store-admin.vercel.app/",
+         "https://ever-store.vercel.app/"
+      ],
+      "git_link": [
+         "https://github.com/ArjunVarshney/Everything-Store-admin",
+         "https://github.com/ArjunVarshney/Everything-store-client"
+      ],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Everything-Store-admin/commits",
+         "https://api.github.com/repos/ArjunVarshney/Everything-store-client/commits"
+      ],
+      "features": [
+         "Intuitive User Interface (UI): Offers a clean and user-friendly interface, enabling easy navigation and seamless browsing of products and categories.",
+         "Mobile Responsiveness: Ensures the website is optimized for mobile devices, providing a consistent and enjoyable shopping experience across various screen sizes.",
+         "Product Search and Filtering: Implements robust search functionality and filtering options, allowing customers to easily find products based on categories, brands, price range, sizes, and other attributes.",
+         "Store Management: Allows easy management of multiple stores from a centralized dashboard, enabling administrators to oversee different storefronts efficiently.",
+         "Category Management: Provides tools to create, edit, and organize product categories, streamlining the navigation and structure of the website.",
+         "Product and Variants Management: Enables the addition, editing, and removal of products and their variants (sizes, colors, etc.) with ease, ensuring updated and comprehensive offerings.",
+         "Inventory Tracking: Facilitates inventory management, displaying stock levels, alerts for low inventory, and restocking options to avoid product shortages.",
+         "Order Processing: Displays order details, status updates, and allows for easy order fulfillment",
+         "Sales Analytics: Provides insights into sales performance, revenue trends, and popular products through interactive charts and graphs.",
+         "Promotional Billboards: Offers customizable sections on the website to highlight promotions, new arrivals, or featured products, attracting customer attention and increasing sales."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "shadcn"],
+         "backend": ["Node js", "Next js", "MySQL", "Prisma", "Clerk"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "Tailwind",
+         "Zustand",
+         "Axios",
+         "Query-string",
+         "Stripe"
+      ],
+      "images": [
+         "/project-screenshots/everything-store-admin/1.png",
+         "/project-screenshots/everything-store-admin/2.png",
+         "/project-screenshots/everything-store-admin/3.png",
+         "/project-screenshots/everything-store-admin/4.png",
+         "/project-screenshots/everything-store-admin/5.png",
+         "/project-screenshots/everything-store-admin/6.png",
+         "/project-screenshots/everything-store-admin/7.png",
+         "/project-screenshots/everything-store-admin/8.png",
+         "/project-screenshots/everything-store-admin/9.png",
+         "/project-screenshots/everything-store-admin/10.png",
+         "/project-screenshots/everything-store-admin/11.png",
+         "/project-screenshots/everything-store-client/1.png",
+         "/project-screenshots/everything-store-client/2.png",
+         "/project-screenshots/everything-store-client/3.png",
+         "/project-screenshots/everything-store-client/4.png",
+         "/project-screenshots/everything-store-client/5.png",
+         "/project-screenshots/everything-store-client/6.png"
+      ]
+   },
+   {
+      "name": "Jsontohtml-render",
+      "description": "Convert JSON into HTML with ease using the \"jsontohtml-render\" npm package. This lightweight library allows you to transform JSON data into HTML tags and structures, making it simple to generate dynamic HTML to preview a json or any object in your JavaScript applications.",
+      "project_url": "jsontohtml-render",
+      "featured_image": "/project-screenshots/jsontohtml-render/2.png",
+      "type": "package",
+      "tags": {
+         "based-on": ["Package development"],
+         "language": ["Typescript"],
+         "other": ["Utility"]
+      },
+      "npm_link": ["https://www.npmjs.com/package/jsontohtml-render"],
+      "git_link": ["https://github.com/ArjunVarshney/jsontohtml-render"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/jsontohtml-render/commits"
+      ],
+      "features": [
+         "Customizable Rendering: Allows full customization of HTML output including colors, background, and indentation, tailoring the display to user preferences.",
+         "Interactive Styling Options: Enables users to personalize various elements like text colors, background colors, font size and font styles for enhanced readability and aesthetics.",
+         "Configurable Line Numbers: Offers the flexibility to toggle line numbers on/off, providing a cleaner or more informative rendering based on user choice.",
+         "Retraction Functionality: Provides retractable sections or objects, allowing collapsible content for improved organization and readability of nested structures.",
+         "Versatile Object Rendering: Capable of rendering complex JavaScript objects, arrays, and nested data structures into HTML for clear visualization and comprehension.",
+         "Framework Compatibility: Seamlessly integrates with popular frameworks like React, Vue.js, Angular, and others, ensuring cross-framework support for rendering JS objects to HTML.",
+         "Vanilla HTML and CSS Support: Works efficiently with traditional HTML and CSS setups, providing flexibility for developers working without frameworks",
+         "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
+      ],
+      "images": [
+         "/project-screenshots/jsontohtml-render/1.png",
+         "/project-screenshots/jsontohtml-render/2.png"
+      ]
+   },
+   {
+      "name": "pdf-ops",
+      "description": "This node js package is able to perform various pdf tasks as desired and is able to save the resultant pdf as a new file or return a file Buffer.",
+      "project_url": "pdf-ops",
+      "featured_image": "/project-screenshots/pdf-ops/1.png",
+      "type": "package",
+      "tags": {
+         "based-on": ["Package development"],
+         "language": ["Typescript"],
+         "other": ["Utility"]
+      },
+      "npm_link": ["https://www.npmjs.com/package/pdf-ops"],
+      "git_link": ["https://github.com/ArjunVarshney/pdf-ops"],
+      "commits": ["https://api.github.com/repos/ArjunVarshney/pdf-ops/commits"],
+      "features": [
+         "Multi-functional PDF Operations: Conduct various PDF operations including splitting, merging, rotating, resizing, margin addition, and image-to-PDF conversion, offering diverse functionalities for PDF manipulation.",
+         "Versatile PDF Source Compatibility: Accepts various input sources such as File, Blob, PdfDocument (pdf-lib), Uint8Array, or ArrayBuffer, ensuring compatibility with multiple file formats and structures.",
+         "User-Friendly Interface:Simple API and methods for smooth integration and usage, ensuring accessibility for developers across different skill levels.",
+         "Clearance and Reset Capability:Provides functionality to clear and reinitialize stored PDFs in the object, ensuring a clean slate for new operations or reinitialization when required.",
+         "Efficient Client-Side Processing:Enables rapid PDF processing directly on the client-side, minimizing network latency and ensuring swift operations, thereby enhancing user experience and responsiveness during PDF manipulation.",
+         "Extensive Documentation: Includes comprehensive documentation with examples, usage guidelines, ensuring ease of adoption and implementation."
+      ],
+      "images": [
+         "/project-screenshots/pdf-ops/1.png",
+         "/project-screenshots/pdf-ops/2.png"
+      ]
+   },
+   {
+      "name": "PDFz",
+      "description": "Pdfz is a powerful and user-friendly web application built on top of the \"pdf-ops\" npm package, designed to streamline PDF operations effortlessly on the client side. With Pdfz, you can easily perform a wide range of PDF-related tasks, from merging and splitting to rotating and converting images to pdfs. Whether you're a developer looking for an easy way to integrate PDF functionality into your project or a non-technical user in need of a simple PDF tool, Pdfz has you covered.",
+      "project_url": "pdfz",
+      "featured_image": "/project-screenshots/pdfz/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "other": ["Utility Website"]
+      },
+      "website_link": ["https://pdfz-phi.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/PDFz"],
+      "commits": ["https://api.github.com/repos/ArjunVarshney/PDFz/commits"],
+      "features": [
+         "Split PDFs: Slit pdfs into single or range specified pages",
+         "Merge PDFs: Merge complete pdfs or with range specifications",
+         "Rotate PDFs: Rotate the whole pdf or selected pages of that pdf",
+         "Resize PDFs: Change the page size of the whole pdf or of selected pages",
+         "Add Margin to the PDFs: Add margin on all side or on a selected side of the pdf",
+         "Convert images to Pdf: Droping images directly into the input box converts them into pdfs providing seamless experience",
+         "User-Friendly Interface: Pdfz offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website",
+         "Developer-Friendly: Developers can also use the functionality provided by Pdfz programmatically through the \"pdf-ops\" npm package."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "daisyUI"],
+         "backend": ["Node js", "Next js"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": [
+         "Next js",
+         "pdf-ops",
+         "Tailwind",
+         "Axios",
+         "Query-string"
+      ],
+      "images": [
+         "/project-screenshots/pdfz/1.png",
+         "/project-screenshots/pdfz/2.png",
+         "/project-screenshots/pdfz/3.png",
+         "/project-screenshots/pdfz/4.png",
+         "/project-screenshots/pdfz/5.png"
+      ]
+   },
+   {
+      "name": "Speed-type",
+      "description": "Speed-type is a web-based typing practice tool designed to improve typing speed and accuracy. Offering a user-friendly interface, it provides various customizable tests, including words, and sentences. Users can track their performance metrics, such as words per minute (WPM), accuracy, and keystrokes, allowing for focused practice sessions.",
+      "project_url": "speed-type",
+      "featured_image": "/project-screenshots/pdfz/5.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["Typescript", "Nextjs"],
+         "other": ["Utility Website"]
+      },
+      "website_link": ["https://speed-type-mu.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Speed-Type"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Speed-Type/commits"
+      ],
+      "features": [
+         "Versatile Typing Tests: Offers various typing tests including words, sentences, and quotes, catering to different skill levels and preferences.",
+         "Customizable Settings: Allows customization of test duration, difficulty levels, and themes, enabling users to tailor practice sessions according to their proficiency and preferences.",
+         "Real-Time Performance Metrics: Provides real-time statistics on words per minute (WPM), accuracy percentage, and keystrokes, aiding in tracking progress and identifying areas for improvement.",
+         "User-Friendly Interface: Speed-Type offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website",
+         "Responsive Design: Optimized for various devices and screen sizes, allowing users to practice typing seamlessly on desktops, laptops, tablets, or smartphones.",
+         "Progress Tracking: Saves user history and progress, enabling users to review past performance and monitor improvement over time."
+      ],
+      "tech_stack": {
+         "frontend": ["Next js", "tailwind", "daisyUI"],
+         "backend": ["Node js", "Next js"],
+         "languages": ["Typescript"]
+      },
+      "most_used_packages": ["Next js", "Tailwind", "Axios", "Query-string"],
+      "images": [
+         "/project-screenshots/pdfz/1.png",
+         "/project-screenshots/pdfz/2.png",
+         "/project-screenshots/pdfz/3.png",
+         "/project-screenshots/pdfz/4.png",
+         "/project-screenshots/pdfz/5.png"
+      ]
+   },
+   {
+      "name": "Auto-racer",
+      "description": "I developed a browser-based game leveraging HTML, CSS, and JavaScript, allowing users to play against an AI opponent. The AI was trained using a neural network, crafted entirely from scratch without external libraries. This project not only showcases the game's interactive features but also highlights my development skills in creating an independent AI system.",
+      "project_url": "auto-racer",
+      "featured_image": "/project-screenshots/auto-racer/1.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Artificial intelligence", "Reinforcement learning"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "other": ["Canvas", "Game Website"]
+      },
+      "website_link": ["https://auto-racer.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Self-Driving-Car"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Self-Driving-Car/commits"
+      ],
+      "features": [
+         "Gameplay Against AI: Offers users the opportunity to play an engaging game against an AI opponent directly on the website.",
+         "Handcrafted Neural Network: Utilizes a neural network developed from scratch, showcasing your expertise in AI and neural network design without relying on existing libraries.",
+         "HTML, CSS, JS Implementation: Built entirely using HTML, CSS, and JavaScript, demonstrating proficiency in front-end web development technologies.",
+         "Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones."
+      ],
+      "tech_stack": { "languages": ["HTML", "CSS", "Javascript"] },
+      "most_used_packages": ["No Packages Used"],
+      "images": ["/project-screenshots/auto-racer/1.png"]
+   },
+   {
+      "name": "College-portal-scraper",
+      "description": "We all are familiar with the user friendliness that our college portal provides us (it sucks)😐. Therefore, I made a program to scrape the portal and display it onto a notion page that solves the problem of clicking an endless stream of pointless buttons and navigating our way through the menus to see our attendance and view our marks.",
+      "project_url": "college-portal-scraper",
+      "featured_image": "/project-screenshots/college-portal-scraper/1.png",
+      "type": "utility",
+      "tags": {
+         "based-on": ["Web-scraping"],
+         "language": ["Javascript"],
+         "other": ["Utility", "Automation Hack", "Notion API"]
+      },
+      "git_link": ["https://github.com/ArjunVarshney/College-Portal-Scraper"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/College-Portal-Scraper/commits"
+      ],
+      "features": [
+         "Automated Data Retrieval: Scrapes and extracts attendance records and marks from the college portal automatically, eliminating the need for manual navigation through the portal.",
+         "Notion Integration: Integrates seamlessly with Notion, a popular productivity tool, allowing users to display the extracted data directly onto a Notion page for easy access and visualization.",
+         "Easy Setup Process: Provides a step-by-step guide for setup, including cloning the repository, installing necessary npm modules, and configuring the Notion integration and page structure.",
+         "Data Export: Generates a data.json file containing the extracted data, enabling users to utilize this data for other purposes if needed."
+      ],
+      "tech_stack": {
+         "frameworks": ["Puppeteer"],
+         "languages": ["Javascript"]
+      },
+      "most_used_packages": ["Puppeteer", "notionhq"],
+      "images": ["/project-screenshots/college-portal-scraper/1.png"]
+   },
+   {
+      "name": "Your-Norm",
+      "description": "This is a complex blog application which allows user to post content, comment on it and also update or delete it. This platform offers an extensive range of features, including user-friendly editing tools, interactive commenting systems, and seamless sharing options. This also provides a responsive design ensures an optimal reading experience across all devices.",
+      "project_url": "your-norm",
+      "featured_image": "/project-screenshots/your-norm/2.png",
+      "type": "website",
+      "tags": {
+         "based-on": ["Fullstack"],
+         "language": ["React", "CSS", "Javascript"],
+         "other": ["Content Website", "Docker", "Google_auth"]
+      },
+      "git_link": ["https://github.com/ArjunVarshney/YOUR-NORM"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/YOUR-NORM/commits"
+      ],
+      "features": [
+         "Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for commenting, writing posts and also customizing their about section.",
+         "Text-to-speech: Enables users to convert written text into speech with customizable voices, language support, and speed controls, fostering accessibility and convenience.",
+         "User Profiles:Displays user profiles, including detailed information about each user, enabling public visibility and interaction among users within the platform.",
+         "Save for later: Permits users to save blog posts for future reference or reading through a bookmark or save feature, ensuring easy access to preferred content at a later time.",
+         "Activity monitoring: Presents a comprehensive overview of user activity, consolidating likes, comments, and other interactions in a centralized location for easy tracking and review.",
+         "Security Measures: Implements robust security measures to protect user data and ensure a safe browsing experience.",
+         "Responsive Design: Ensures an optimal reading experience on all devices, including mobile phones, tablets, and desktops."
+      ],
+      "tech_stack": {
+         "frontend": ["React"],
+         "backend": ["Express", "MongoDB", "Nodejs"],
+         "containerization": ["Docker"],
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["React", "Quill", "Express", "mongoose"],
+      "images": [
+         "/project-screenshots/your-norm/1.png",
+         "/project-screenshots/your-norm/2.png",
+         "/project-screenshots/your-norm/3.png",
+         "/project-screenshots/your-norm/4.png",
+         "/project-screenshots/your-norm/5.png",
+         "/project-screenshots/your-norm/6.png",
+         "/project-screenshots/your-norm/7.png",
+         "/project-screenshots/your-norm/8.png",
+         "/project-screenshots/your-norm/9.png"
+      ]
+   },
+   {
+      "name": "Text-editor",
+      "description": "This is a basic text editor which can be used to take notes and print it also. I have used quill in this application for formatting the text in the editor box. The text stores in the local storage in realtime hence when reloaded, the data restores. I find this editor very usefull for my- self as it acts as a notepad to write my ideas and it is very minimal as well.",
+      "project_url": "text-editor",
+      "featured_image": "/project-screenshots/text-editor/1.png",
+      "type": "website",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["React", "HTML", "CSS", "Javascript"],
+         "other": ["Utility Website"]
+      },
+      "website_link": ["https://text-editr.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Text-Editor"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Text-Editor/commits"
+      ],
+      "features": [
+         "Text Formatting: Utilizes Quill, a powerful WYSIWYG editor, enabling users to format text with various styling options like bold, italics, underline, bullet points, and more for better note organization.",
+         "Local Storage: Saves notes in real-time to the local storage, ensuring that data persists even after page reloads or when revisiting the website, allowing users to resume their work seamlessly.",
+         "Minimalistic Design: Features a minimalist user interface, keeping distractions at bay and focusing solely on the note-taking aspect, providing a clutter-free environment for writing.",
+         "Accessible Across Devices: Designed to be accessible across various devices and screen sizes, enabling users to enjoy the game on desktops, laptops, tablets, or smartphones.",
+         "Print Functionality: Provides the option to print the notes directly from the editor, enabling users to produce physical copies of their written content if required."
+      ],
+      "tech_stack": {
+         "frontend": ["React"],
+         "languages": ["HTML", "CSS", "Javascript"]
+      },
+      "most_used_packages": ["React", "Quill"],
+      "images": [
+         "/project-screenshots/text-editor/1.png",
+         "/project-screenshots/text-editor/2.png"
+      ]
+   },
+   {
+      "name": "Snake Game",
+      "description": "My rendition of the classic Snake game brings back nostalgic fun while offering a modern twist. With sleek graphics and smooth controls, this game challenges players to navigate a hungry snake through a pixelated world.",
+      "project_url": "snake-game",
+      "featured_image": "/project-screenshots/snake-game/1.png",
+      "type": "website",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "other": ["Game Website"]
+      },
+      "website_link": ["https://growing-snake.vercel.app/"],
+      "git_link": ["https://github.com/ArjunVarshney/Snake-game"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Snake-game/commits"
+      ],
+      "features": [
+         "Intuitive Controls: Easily maneuver the snake with simple controls for an immersive gaming experience.",
+         "Addictive Gameplay: Enjoy an engaging game that progressively gets more challenging as the snake grows longer.",
+         "Vibrant Visuals: Explore a vibrant, retro-themed environment that adds a touch of nostalgia to the gaming experience.",
+         "Compatibility: Play across multiple platforms, whether it's on a web browser or mobile device, ensuring accessibility for all users."
+      ],
+      "tech_stack": { "languages": ["HTML", "CSS", "Javascript"] },
+      "most_used_packages": ["No Packages Used"],
+      "images": [
+         "/project-screenshots/snake-game/1.png",
+         "/project-screenshots/snake-game/2.png"
+      ]
+   },
+   {
+      "name": "Photography website",
+      "description": "Basic static website that is a photography website",
+      "project_url": "photography-website",
+      "featured_image": "/project-screenshots/photography-website/2.png",
+      "type": "website",
+      "tags": {
+         "level": ["Basic"],
+         "based-on": ["Frontend"],
+         "language": ["HTML", "CSS", "Javascript"],
+         "other": ["Content Website"]
+      },
+      "website_link": ["https://arjunvarshney.github.io/Photography-website/"],
+      "git_link": ["https://github.com/ArjunVarshney/Photography-website"],
+      "commits": [
+         "https://api.github.com/repos/ArjunVarshney/Photography-website/commits"
+      ],
+      "features": [
+         "This is a static website that I made in my initial web development journey to practice HTML, CSS, JS."
+      ],
+      "tech_stack": { "languages": ["HTML", "CSS", "Javascript"] },
+      "most_used_packages": ["No Packages Used"],
+      "images": [
+         "/project-screenshots/photography-website/1.png",
+         "/project-screenshots/photography-website/2.png",
+         "/project-screenshots/photography-website/3.png",
+         "/project-screenshots/photography-website/4.png"
+      ]
+   },
+   {
+      "name": "Wine Quality Prediction",
+      "description": "The Wine Quality Prediction Model is built using machine learning techniques to classify wines as good or bad based on various input parameters. It utilizes a dataset containing features like acidity levels, residual sugar, pH, alcohol content, etc. to train a machine learning algorithm.\n - Algorithm used: `Random Forest Classifier`\n - Accuracy: `93%`\n\n The dataset is preprocessed by handling missing values, feature scaling, and possibly feature engineering to improve the model's accuracy. After training on historical wine data, the model is capable of predicting the quality of new wines it hasn't seen before.",
+      "project_url": "wine-quality-prediction",
+      "feature_description": {
+         "volatile acidity": "Volatile acidity is the gaseous acids present in wine.",
+         "fixed acidity": "Primary fixed acids found in wine are tartaric, succinic, citric, and malic",
+         "residual sugar": "Amount of sugar left after fermentation.",
+         "citric acid": "It is weak organic acid, found in citrus fruits naturally.",
+         "chlorides": "Amount of salt present in wine.",
+         "free sulfur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
+         "total sulfur dioxide": "Total So2 present in the alcohol.",
+         "pH": "In wine pH is used for checking acidity.",
+         "density": "The weight of the alcohol per ml.",
+         "sulphates": "Added sulfites preserve freshness and protect wine from oxidation, and bacteria.",
+         "alcohol": "Percent of alcohol present in wine."
+      },
+      "featured_image": "/ai/wine-quality-prediction.png",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Data analysis"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/wine-quality-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/wine-quality-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/wine-quality-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/yasserh/wine-quality-dataset",
+      "api": "https://ml-model-7la3.onrender.com/wine-quality",
+      "most_used_packages": ["Scikit-learn", "Matplotlib", "Pandas"],
+      "inputs": [
+         {
+            "name": "fixed acidity",
+            "type": "slider",
+            "min": 0,
+            "max": 14,
+            "step": 0.01,
+            "placeholder": "A number between 0 and 14"
+         },
+         {
+            "name": "volatile acidity",
+            "type": "slider",
+            "min": 0,
+            "max": 1.4,
+            "step": 0.01,
+            "placeholder": "A number between 0 and 1.4"
+         },
+         {
+            "name": "citric acid",
+            "type": "slider",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "placeholder": "A number between 0 and 1"
+         },
+         {
+            "name": "chlorides",
+            "type": "slider",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "placeholder": "A number between 0 and 1"
+         },
+         {
+            "name": "free sulfur dioxide",
+            "type": "slider",
+            "min": 1,
+            "max": 70,
+            "step": 0.1,
+            "placeholder": "A number between 1 and 70"
+         },
+         {
+            "name": "total sulfur dioxide",
+            "type": "slider",
+            "min": 1,
+            "max": 300,
+            "step": 0.1,
+            "placeholder": "A number between 1 and 300"
+         },
+         {
+            "name": "density",
+            "type": "slider",
+            "min": 0.95,
+            "max": 1,
+            "step": 0.00001,
+            "placeholder": "A number between 0.95 and 1"
+         },
+         {
+            "name": "pH",
+            "type": "slider",
+            "min": 2.5,
+            "max": 5,
+            "step": 0.01,
+            "placeholder": "A number between 2.5 and 5"
+         },
+         {
+            "name": "sulphates",
+            "type": "slider",
+            "min": 0.3,
+            "max": 2,
+            "step": 0.01,
+            "placeholder": "A number between 0.3 and 2"
+         },
+         {
+            "name": "alcohol",
+            "type": "slider",
+            "min": 5,
+            "max": 25,
+            "step": 0.1,
+            "placeholder": "A number between 5 and 25"
+         }
+      ],
+      "examples": [
+         {
+            "fixed acidity": 8.5,
+            "volatile acidity": 0.47,
+            "citric acid": 0.27,
+            "chlorides": 0.058,
+            "free sulfur dioxide": 18,
+            "total sulfur dioxide": 38,
+            "density": 0.99518,
+            "pH": 3.16,
+            "sulphates": 0.85,
+            "alcohol": 11.1
+         },
+         {
+            "fixed acidity": 8.5,
+            "volatile acidity": 0.28,
+            "citric acid": 0.56,
+            "chlorides": 0.092,
+            "free sulfur dioxide": 35,
+            "total sulfur dioxide": 103,
+            "density": 0.99695,
+            "pH": 3.3,
+            "sulphates": 0.75,
+            "alcohol": 10.5
+         },
+         {
+            "fixed acidity": 8.3,
+            "volatile acidity": 0.675,
+            "citric acid": 0.26,
+            "chlorides": 0.084,
+            "free sulfur dioxide": 11,
+            "total sulfur dioxide": 43,
+            "density": 0.99765,
+            "pH": 3.31,
+            "sulphates": 0.53,
+            "alcohol": 9.2
+         }
+      ]
+   },
+   {
+      "name": "Sonar Rock Detection",
+      "description": "The Sonar Data-based Rock Presence Prediction Model is developed using machine learning methodologies to determine the presence of a rock or a mine by analyzing sonar data. This model utilizes a dataset containing various acoustic attributes or frequencies emitted by sonar equipment and their corresponding responses, indicating the presence a rock or a mine. \n - Algorithm used: `Logistic Regression`\n - Accuracy: `85%`\n\nThe dataset is processed by handling missing values to enhance the model's predictive performance. Post-training on historical sonar data, the model effectively predicts the likelihood of a mine's presence based on unseen sonar readings",
+      "project_url": "sonar-rock-detection",
+      "feature_description": {
+         "Columns 1 to 60": "It contains various data column which consist sonar data.",
+         "Last column": "It tells if the sonar is hitting a rock of a mine."
+      },
+      "featured_image": "/ai/sonar-rock.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Data analysis"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/sonar-rock-model/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/sonar-rock-model/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/mayurdalvi/sonar-mine-dataset",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy"]
+   },
+   {
+      "name": "Movie Recommender",
+      "description": "The Movie Recommender System employs content-based filtering techniques to suggest movies tailored to users' preferences. By taking a user's favorite movie as input, the system leverages a dataset encompassing user ratings, movie attributes (genres, keywords, cast, director), and content-based filtering algorithms. Utilizing similarities between movies or users, it generates a curated list of movie recommendations for individuals, enhancing their movie-watching experience.",
+      "project_url": "movie-recommender",
+      "feature_description": {
+         "budget": "The allocated financial resources for creating the movie.",
+         "genres": "Different categories or types of the movie.",
+         "keywords": "Specific words or phrases representing the movie's essence.",
+         "title": "Name given to the movie.",
+         "overview": "Brief synopsis or summary of the movie's plot.",
+         "popularity": "Measure of the movie's popularity or public interest.",
+         "production_companies": "Companies involved in producing the movie.",
+         "production_countries": "Countries where the movie was primarily produced.",
+         "revenue": "Total earnings or income generated by the movie.",
+         "runtime": "Duration of the movie in minutes.",
+         "spoken_language": "Primary language spoken in the movie.",
+         "tagline": "Catchphrase or slogan associated with the movie.",
+         "vote_average": "Average rating given to the movie by viewers.",
+         "vote_count": "Total count of votes or ratings received by the movie.",
+         "crew": "The group of people involved in making the movie.",
+         "director": "The person responsible for guiding the movie's artistic aspects."
+      },
+      "featured_image": "/ai/movie-recommendation.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Recommender system"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Difflib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/movie-recommendation/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/movie-recommendation/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy"],
+      "api": "https://ml-model-7la3.onrender.com/movie-recommendation",
+      "inputs": [
+         {
+            "name": "movie_name",
+            "type": "text",
+            "placeholder": "Write the name of your favorite hollywood movie"
+         }
+      ],
+      "examples": [
+         { "movie_name": "Spider-man" },
+         { "movie_name": "Avengers" },
+         { "movie_name": "Transformers" }
+      ]
+   },
+   {
+      "name": "Zomato Data Analysis",
+      "description": "This is my analysis on the zomato india dataset in which there are few good insights of the state of resturants linked with zomato in india.",
+      "project_url": "zomato-data-analysis",
+      "feature_description": {
+         "volatile acidity": "Volatile acidity is the gaseous acids present in wine.",
+         "fixed acidity": "Primary fixed acids found in wine are tartaric, succinic, citric, and malic",
+         "residual sugar": "Amount of sugar left after fermentation.",
+         "citric acid": "It is weak organic acid, found in citrus fruits naturally.",
+         "chlorides": "Amount of salt present in wine.",
+         "free sulfur dioxide": "So2 is used for prevention of wine by oxidation and microbial spoilage.",
+         "total sulfur dioxide": "Total So2 present in the alcohol.",
+         "pH": "In wine pH is used for checking acidity.",
+         "density": "The weight of the alcohol per ml.",
+         "sulphates": "Added sulfites preserve freshness and protect wine from oxidation, and bacteria.",
+         "alcohol": "Percent of alcohol present in wine."
+      },
+      "featured_image": "/ai/zomato.png",
+      "type": "analysis",
+      "tags": {
+         "based-on": ["Data analysis"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "RandomForestClassifier", "Matplotlib"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/zomato-data-analysis/main/zomato-analysis.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/zomato-data-analysis/main/data/zomato-data.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/zomato-data-analysis/tree/main"
+      ],
+      "most_used_packages": ["Scikit-learn", "Matplotlib"],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/ronidas39/zomato-india-data-set"
+   },
+   {
+      "name": "Medical Insurance Prediction",
+      "description": "The Medical Insurance Expenditure Prediction Model, crafted through Linear Regression, accurately estimates an individual's insurance costs based on key parameters. Leveraging features like age, BMI, number of children, region, and smoking habits, this model assesses the expected medical expenditure. By training on a dataset encompassing diverse individual profiles and their corresponding medical insurance costs, the model learns relationships between these variables to deliver precise predictions. Linear Regression serves as the core algorithm, employing a linear approach to comprehend the relationship between the input features and the medical expenditure. ",
+      "project_url": "medical-insurance-prediction",
+      "feature_description": {
+         "age": "The age of the customer",
+         "sex": "The gender of the customer",
+         "bmi": "The bmi of the customer",
+         "children": "The number of children the person has",
+         "smoker": "Does the customer smoke or not",
+         "region": "Which region of the country does the customer belong",
+         "charges": "the expenditure of the customer (the target variable)"
+      },
+      "featured_image": "/ai/medical-insurance.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Linear Regession"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/medical-insurance-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/medical-insurance-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/medical-insurance-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/harshsingh2209/medical-insurance-payout",
+      "most_used_packages": [
+         "Scikit-learn",
+         "Matplotlib",
+         "Pandas",
+         "Numpy",
+         "Seaborn"
+      ],
+      "api": "https://ml-model-7la3.onrender.com/medical-insurance",
+      "inputs": [
+         {
+            "name": "age",
+            "type": "number",
+            "placeholder": "What is your age",
+            "required": true
+         },
+         {
+            "name": "sex",
+            "type": "radio",
+            "values": ["male", "female"],
+            "required": true
+         },
+         {
+            "name": "bmi",
+            "type": "number",
+            "placeholder": "What is your bmi",
+            "required": true
+         },
+         {
+            "name": "children",
+            "type": "number",
+            "placeholder": "The number of children you have",
+            "required": true
+         },
+         {
+            "name": "smoker",
+            "type": "radio",
+            "values": ["yes", "no"],
+            "required": true
+         },
+         {
+            "name": "region",
+            "type": "select",
+            "values": ["southwest", "southeast", "northwest", "northeast"],
+            "required": true
+         }
+      ],
+      "examples": [
+         {
+            "age": 19,
+            "sex": "male",
+            "bmi": 27.9,
+            "children": 0,
+            "smoker": "yes",
+            "region": "southwest"
+         },
+         {
+            "age": 60,
+            "sex": "female",
+            "bmi": 36,
+            "children": 0,
+            "smoker": "no",
+            "region": "northeast"
+         },
+         {
+            "age": 44,
+            "sex": "male",
+            "bmi": 37.1,
+            "children": 2,
+            "smoker": "no",
+            "region": "southwest"
+         }
+      ]
+   },
+   {
+      "name": "Loan Status Prediction",
+      "description": "The Loan Approval Prediction Model, powered by Support Vector Machine (SVM), determines loan eligibility for customers based on essential parameters. Utilizing features such as property area, income, credit history, and number-of-dependents, the model evaluates the likelihood of a customer's loan approval. Employing SVM, the model creates a decision boundary to segregate loan approval categories, leveraging a kernel-based approach to classify customers into distinct loan approval classes.",
+      "project_url": "loan-status-prediction",
+      "feature_description": {
+         "Gender": "The gender of the customer",
+         "Married": "To know if the customer is married or not",
+         "Dependents": "The number of people dependent on the customer.",
+         "Education": "Is the customer a graduate or not",
+         "Self_Employed": "Is the customer self employed or not",
+         "ApplicantIncome": "The income of the applicant",
+         "CoapplicantIncome": "The income of the people living with the customer",
+         "LoanAmount": "The amount requested for loan",
+         "Loan_Amount_Term": "The time for which the loan is requested",
+         "Credit_History": "Does the customer have his/her credit history or not",
+         "Property_Area": "The region in which the property of the customer is localted"
+      },
+      "featured_image": "/ai/loan-status.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Support Vector Machine"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Seaborn", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/loan-status-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/loan-status-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/loan-status-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset?select=train_u6lujuX_CVtuZ9i.csv",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy", "Seaborn"],
+      "api": "https://ml-model-7la3.onrender.com/loan-status-prediction",
+      "inputs": [
+         {
+            "name": "Gender",
+            "type": "radio",
+            "values": ["Male", "Female"],
+            "required": true
+         },
+         {
+            "name": "Married",
+            "type": "radio",
+            "values": ["Yes", "No"],
+            "required": true
+         },
+         {
+            "name": "Dependents",
+            "type": "number",
+            "placeholder": "The number of people dependent on you",
+            "required": true
+         },
+         {
+            "name": "Education",
+            "type": "radio",
+            "values": ["Graduate", "Not Graduate"],
+            "required": true
+         },
+         {
+            "name": "Self_Employed",
+            "type": "radio",
+            "values": ["Yes", "No"],
+            "required": true
+         },
+         {
+            "name": "ApplicantIncome",
+            "type": "number",
+            "placeholder": "The income of the applicant",
+            "required": true
+         },
+         {
+            "name": "CoapplicantIncome",
+            "type": "number",
+            "placeholder": "The income of the people living with the applicant",
+            "required": true
+         },
+         {
+            "name": "LoanAmount",
+            "type": "number",
+            "placeholder": "The amount requested as loan",
+            "required": true
+         },
+         {
+            "name": "Loan_Amount_Term",
+            "type": "number",
+            "placeholder": "The time for which the amount is requested (in months)",
+            "required": true
+         },
+         {
+            "name": "Credit_History",
+            "type": "checkbox",
+            "placeholder": "Do you have your credit history ?",
+            "required": true
+         },
+         {
+            "name": "Property_Area",
+            "type": "select",
+            "values": ["Rural", "Semiurban", "Urban"],
+            "required": true
+         }
+      ],
+      "examples": [
+         {
+            "Gender": "Male",
+            "Married": "Yes",
+            "Dependents": 2,
+            "Education": "Graduate",
+            "Self_Employed": "No",
+            "ApplicantIncome": 3100,
+            "CoapplicantIncome": 1400,
+            "LoanAmount": 113,
+            "Loan_Amount_Term": 360,
+            "Credit_History": 1,
+            "Property_Area": "Urban"
+         },
+         {
+            "Gender": "Female",
+            "Married": "No",
+            "Dependents": 0,
+            "Education": "Graduate",
+            "Self_Employed": "No",
+            "ApplicantIncome": 3510,
+            "CoapplicantIncome": 0,
+            "LoanAmount": 76,
+            "Loan_Amount_Term": 360,
+            "Credit_History": 0,
+            "Property_Area": "Urban"
+         },
+         {
+            "Gender": "Male",
+            "Married": "No",
+            "Dependents": 1,
+            "Education": "Graduate",
+            "Self_Employed": "Yes",
+            "ApplicantIncome": 4692,
+            "CoapplicantIncome": 0,
+            "LoanAmount": 106,
+            "Loan_Amount_Term": 360,
+            "Credit_History": 1,
+            "Property_Area": "Rural"
+         }
+      ]
+   }
+]

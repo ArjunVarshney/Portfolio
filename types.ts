@@ -79,6 +79,10 @@ interface TextInput {
    type: "text";
 }
 
+interface NumberInput {
+   type: "number";
+}
+
 interface InputGroup {
    type: "inputs";
    inputs: InputType[];
@@ -86,6 +90,11 @@ interface InputGroup {
 
 interface SelectInput {
    type: "select";
+   values: string[];
+}
+
+interface RadioInput {
+   type: "radio";
    values: string[];
 }
 
@@ -116,12 +125,14 @@ export type InputType = BasicInput &
    (
       | SliderInput
       | TextInput
+      | NumberInput
       | ColorInput
       | UrlInput
       | TextAreaInput
       | CheckboxInput
       | TextArrayInput
       | SelectInput
+      | RadioInput
       | InputGroup
       | ConditionalInput
       | ObjectArrayInput
