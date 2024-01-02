@@ -53,6 +53,14 @@ const ModelInput = ({
 
                   return;
                }
+               if (
+                  // @ts-ignore
+                  !(typeof value[inputs[i].name] === "object") &&
+                  // @ts-ignore
+                  !isNaN(value[inputs[i].name])
+               ) {
+                  value[inputs[i].name] = Number(value[inputs[i].name]);
+               }
             }
          }
          setResult((await axios.post(api, value)).data.result);
@@ -101,7 +109,7 @@ const ModelInput = ({
                {inputs.map((input) => (
                   <>
                      {input.type === "slider" && (
-                        <div className="bg-background px-4 p-3 rounded-lg">
+                        <div className="bg-background px-4 p-3 rounded-lg flex flex-col justify-between">
                            <div className="flex justify-between items-center">
                               <Label
                                  htmlFor={input.name}
@@ -170,6 +178,7 @@ const ModelInput = ({
                            <Input
                               defaultValue={String(input.default) || ""}
                               name={input.name}
+                              step={.0001}
                               placeholder={String(input.placeholder || "")}
                               type="number"
                               className="my-2"
@@ -212,7 +221,10 @@ const ModelInput = ({
                               </SelectTrigger>
                               <SelectContent>
                                  {input.values.map((value) => (
-                                    <SelectItem value={value} key={value}>
+                                    <SelectItem
+                                       value={String(value)}
+                                       key={value}
+                                    >
                                        {value}
                                     </SelectItem>
                                  ))}

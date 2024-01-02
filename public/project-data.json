@@ -1012,5 +1012,552 @@
             "Property_Area": "Rural"
          }
       ]
+   },
+   {
+      "name": "Heart Disease Prediction",
+      "description": "The Heart Disease Prediction Model, employing Logistic Regression, is designed to assess the likelihood of an individual having heart disease based on crucial parameters. Utilizing factors like age, blood pressure, cholesterol levels, and exercise induced angima, the model evaluates the probability of an individual having a heart condition. Logistic Regression, a binary classification algorithm, efficiently models the relationship between these factors and the presence or absence of heart disease. By analyzing a dataset containing historical health records and corresponding health conditions, the model learns to predict the probability of heart disease occurrence in new cases.",
+      "project_url": "heart-disease-prediction",
+      "feature_description": {
+         "age": "The age of the person",
+         "sex": "The gendeer of the person",
+         "cp": "The type of chest pain (4 values)",
+         "trestbps": "The resting blood pressure of the person",
+         "chol": "The serum cholestoral in mg/dl of the person",
+         "fbs": "Is the fasting blood sugar > 120 mg/dl",
+         "restecg": "resting electrocardiographic results (values: 0,1,2)",
+         "thalach": "maximum heart rate achieved by the person",
+         "exang": "exercise induced angina of the person",
+         "oldpeak": "ST depression induced by exercise relative to rest of the person",
+         "slope": "the slope of the peak exercise ST segment of the person",
+         "ca": "number of major vessels (0-3) colored by flourosopy of the person",
+         "thal": "0 = normal; 1 = fixed defect; 2 = reversable defect"
+      },
+      "featured_image": "/ai/heart-disease.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Logistic Regression"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Seaborn", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/heart-disease-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/heart-disease-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/heart-disease-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy", "Seaborn"],
+      "api": "https://ml-model-7la3.onrender.com/heart-disease-prediction",
+      "inputs": [
+         {
+            "name": "age",
+            "type": "number",
+            "placeholder": "Age of the person",
+            "required": true
+         },
+         {
+            "name": "sex",
+            "type": "radio",
+            "values": ["male", "female"],
+            "required": true
+         },
+         {
+            "name": "cp",
+            "type": "select",
+            "values": [0, 1, 2, 3],
+            "required": true
+         },
+         {
+            "name": "trestbps",
+            "type": "number",
+            "placeholder": "Resting Blood pressure of the person",
+            "required": true
+         },
+         {
+            "name": "chol",
+            "type": "number",
+            "placeholder": "Cholestrol of the person",
+            "required": true
+         },
+         {
+            "name": "fbs",
+            "type": "radio",
+            "values": ["yes", "no"],
+            "required": true
+         },
+         {
+            "name": "restecg",
+            "type": "select",
+            "values": [0, 1, 2],
+            "required": true
+         },
+         {
+            "name": "thalach",
+            "type": "number",
+            "placeholder": "Maximum heart rate",
+            "required": true
+         },
+         {
+            "name": "exang",
+            "type": "radio",
+            "values": ["yes", "no"],
+            "required": true
+         },
+         {
+            "name": "oldpeak",
+            "type": "slider",
+            "min": 0,
+            "max": 6.5,
+            "step": 0.01,
+            "required": true
+         },
+         {
+            "name": "slope",
+            "type": "select",
+            "values": [0, 1, 2],
+            "required": true
+         },
+         {
+            "name": "ca",
+            "type": "select",
+            "values": [0, 1, 2, 3, 4],
+            "required": true
+         },
+         {
+            "name": "thal",
+            "type": "select",
+            "values": [0, 1, 2, 3],
+            "required": true
+         }
+      ],
+      "examples": [
+         {
+            "age": 52,
+            "sex": "male",
+            "cp": 0,
+            "trestbps": 125,
+            "chol": 212,
+            "fbs": "no",
+            "restecg": 1,
+            "thalach": 168,
+            "exang": "no",
+            "oldpeak": 1,
+            "slope": 2,
+            "ca": 2,
+            "thal": 3
+         },
+         {
+            "age": 45,
+            "sex": "male",
+            "cp": 0,
+            "trestbps": 104,
+            "chol": 208,
+            "fbs": "no",
+            "restecg": 0,
+            "thalach": 148,
+            "exang": "yes",
+            "oldpeak": 3,
+            "slope": 1,
+            "ca": 0,
+            "thal": 2
+         },
+         {
+            "age": 39,
+            "sex": "female",
+            "cp": 2,
+            "trestbps": 138,
+            "chol": 220,
+            "fbs": "no",
+            "restecg": 1,
+            "thalach": 152,
+            "exang": "no",
+            "oldpeak": 0,
+            "slope": 1,
+            "ca": 0,
+            "thal": 2
+         }
+      ]
+   },
+   {
+      "name": "Gold Price Prediction",
+      "description": "The Gold Price Prediction Model utilizes a Random Forest regressor to forecast gold prices based on diverse parameters such as stock market indices (SPX), silver prices (SLV), oil prices (USO), and currency exchange rates (EUR/USD). This model employs a Random Forest, a powerful ensemble learning technique, which combines multiple decision trees to predict gold prices. By training on historical data that includes variations in stock market indices, silver and oil prices, and currency exchange rates alongside gold price movements, the Random Forest model comprehends complex relationships among these factors. ",
+      "project_url": "gold-price-prediction",
+      "feature_description": {
+         "SPX": "Stock Market Indices",
+         "USO": "The oil (petrol) price",
+         "SLV": "The price of silver",
+         "EUR/USD": "The ratio between euro and US dollar"
+      },
+      "featured_image": "/ai/gold-price.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Random Forest Regressor"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Seaborn", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/gold-price-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/gold-price-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/gold-price-prediction/model.ipynb"
+      ],
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy", "Seaborn"],
+      "api": "https://ml-model-7la3.onrender.com/gold-price-prediction",
+      "inputs": [
+         {
+            "name": "SPX",
+            "type": "slider",
+            "min": 200,
+            "max": 3000,
+            "step": 0.01,
+            "required": true
+         },
+         {
+            "name": "USO",
+            "type": "slider",
+            "min": 50,
+            "max": 150,
+            "step": 0.001,
+            "required": true
+         },
+         {
+            "name": "SLV",
+            "type": "slider",
+            "min": 5,
+            "max": 50,
+            "step": 0.01,
+            "required": true
+         },
+         {
+            "name": "EUR/USD",
+            "type": "slider",
+            "min": 0.5,
+            "max": 3,
+            "step": 0.001,
+            "required": true
+         }
+      ],
+      "examples": [
+         { "SPX": 1447.16, "USO": 78.47, "SLV": 15.18, "EUR/USD": 1.4716 },
+         { "SPX": 1380.02, "USO": 78.92, "SLV": 19.133, "EUR/USD": 1.5118 },
+         { "SPX": 696.33, "USO": 25.39, "SLV": 12.65, "EUR/USD": 1.2532 }
+      ]
+   },
+   {
+      "name": "Diabetes Prediction",
+      "description": "The Diabetes Prediction Model is designed to ascertain the likelihood of an individual having diabetes by employing Support Vector Machine. This model utilizes various health parameters, including glucose levels, body mass index (BMI), blood pressure, and other diagnostic measurements, to make accurate predictions. Through the application of Support Vector Machine, the model effectively handles the complex relationships among different health factors to identify crucial predictors influencing diabetes.",
+      "project_url": "diabetes-prediction",
+      "feature_description": {
+         "Pregnancies": "The number of pregnencies the person has had",
+         "Glucose": "The glucose level of the person",
+         "BloodPressure": "The blood pressure of the person",
+         "SkinThickness": "The skin thickness of the person",
+         "Insulin": "The insulin levels of the person",
+         "BMI": "The BMI of the person",
+         "DiabetesPedigreeFunction": "Likely hood based on the persons family history",
+         "Age": "The age of the person"
+      },
+      "featured_image": "/ai/diabetes.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Support Vector Machine"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/diabetes-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/diabetes-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/diabetes-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy"],
+      "api": "https://ml-model-7la3.onrender.com/diabetes-prediction",
+      "inputs": [
+         {
+            "name": "Pregnancies",
+            "type": "slider",
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "Glucose",
+            "type": "slider",
+            "min": 0,
+            "max": 500,
+            "step": 0.01,
+            "required": true
+         },
+         {
+            "name": "BloodPressure",
+            "type": "slider",
+            "min": 20,
+            "max": 200,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "SkinThickness",
+            "type": "slider",
+            "min": 0,
+            "max": 80,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "Insulin",
+            "type": "slider",
+            "min": 0,
+            "max": 150,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "BMI",
+            "type": "slider",
+            "min": 5,
+            "max": 50,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "DiabetesPedigreeFunction",
+            "type": "slider",
+            "min": 0,
+            "max": 1,
+            "step": 0.0001,
+            "required": true
+         },
+         {
+            "name": "Age",
+            "type": "slider",
+            "min": 1,
+            "max": 150,
+            "step": 1,
+            "required": true
+         }
+      ],
+      "examples": [
+         {
+            "Pregnancies": 6,
+            "Glucose": 148,
+            "BloodPressure": 72,
+            "SkinThickness": 35,
+            "Insulin": 0,
+            "BMI": 33.6,
+            "DiabetesPedigreeFunction": 0.627,
+            "Age": 50
+         },
+         {
+            "Pregnancies": 13,
+            "Glucose": 126,
+            "BloodPressure": 90,
+            "SkinThickness": 0,
+            "Insulin": 0,
+            "BMI": 43.4,
+            "DiabetesPedigreeFunction": 0.583,
+            "Age": 42
+         },
+         {
+            "Pregnancies": 0,
+            "Glucose": 100,
+            "BloodPressure": 88,
+            "SkinThickness": 60,
+            "Insulin": 110,
+            "BMI": 46.8,
+            "DiabetesPedigreeFunction": 0.962,
+            "Age": 31
+         }
+      ]
+   },
+   {
+      "name": "Car Price Prediction",
+      "description": "The Car Price Prediction Model is a sophisticated tool designed to estimate the price of automobiles by leveraging both Linear and Lasso regression techniques. This model incorporates various attributes such as mileage, manufacturing year, engine capacity, brand, and other relevant features to predict the selling price of cars accurately. Employing Linear regression, the model establishes relationships between multiple input variables and the final car price, determining how each attribute contributes to the overall valuation.",
+      "project_url": "car-price-prediction",
+      "feature_description": {
+         "Year": "The year the car was purchased",
+         "Present_Price": "The present price of the car",
+         "Kms_Driven": "The number of kms driven by the car",
+         "Fuel_Type": "The fuel the car uses",
+         "Seller_Type": "Who sold the car",
+         "Transmission": "The transmission type",
+         "Owner": "The number of owners who owned the car previously"
+      },
+      "featured_image": "/ai/car-price.png",
+      "type": "model",
+      "tags": {
+         "based-on": [
+            "Machine learning",
+            "Linear Regession",
+            "Lasso Regression"
+         ],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/car-price-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/car-price-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/car-price-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho?select=car+data.csv",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy", "Matplotlib"],
+      "api": "https://ml-model-7la3.onrender.com/car-price-prediction",
+      "inputs": [
+         {
+            "name": "Year",
+            "type": "slider",
+            "min": 2000,
+            "max": 2020,
+            "step": 1,
+            "required": true
+         },
+         {
+            "name": "Present_Price",
+            "type": "slider",
+            "min": 0.2,
+            "max": 100,
+            "step": 0.0001,
+            "required": true
+         },
+         {
+            "name": "Kms_Driven",
+            "type": "slider",
+            "min": 300,
+            "max": 700000,
+            "step": 50,
+            "required": true
+         },
+         {
+            "name": "Fuel_Type",
+            "type": "select",
+            "values": ["Petrol", "Diesel", "CNG"],
+            "required": true
+         },
+         {
+            "name": "Seller_Type",
+            "type": "select",
+            "values": ["Dealer", "Individual"],
+            "required": true
+         },
+         {
+            "name": "Transmission",
+            "type": "select",
+            "values": ["Manual", "Automatic"],
+            "required": true
+         },
+         {
+            "name": "Owner",
+            "type": "slider",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "required": true
+         }
+      ],
+      "examples": [
+         {
+            "Year": 2014,
+            "Present_Price": 5.59,
+            "Kms_Driven": 27000,
+            "Fuel_Type": "Petrol",
+            "Seller_Type": "Dealer",
+            "Transmission": "Manual",
+            "Owner": 0
+         },
+         {
+            "Year": 2006,
+            "Present_Price": 23.73,
+            "Kms_Driven": 142000,
+            "Fuel_Type": "Petrol",
+            "Seller_Type": "Individual",
+            "Transmission": "Automatic",
+            "Owner": 3
+         },
+         {
+            "Year": 2016,
+            "Present_Price": 13.6,
+            "Kms_Driven": 35934,
+            "Fuel_Type": "Diesel",
+            "Seller_Type": "Dealer",
+            "Transmission": "Manual",
+            "Owner": 0
+         }
+      ]
+   },
+   {
+      "name": "Calories Burnt Prediction",
+      "description": "The Calorie Burn Prediction Model utilizes the XGBRegressor, a powerful machine learning algorithm, to estimate the number of calories burned by an individual during physical activity. The model takes into account various parameters such as gender, age, height, weight, duration of exercise, heart rate, and body temperature. Employing the XGBRegressor algorithm allows the model to handle complex relationships among the input parameters and predict the calorie expenditure accurately.",
+      "project_url": "calories-burnt-prediction",
+      "feature_description": {
+         "Gender": "The Gender of the person",
+         "Age": "The age of the person",
+         "Height": "The height of the person",
+         "Weight": "The weight of the person",
+         "Duration": "The duration for which exercise was done",
+         "Heart_Rate": "The heart rate after the exercise was done",
+         "Body_Temp": "The temperature of the body after the exercise was done"
+      },
+      "featured_image": "/ai/calorie-burnt.png",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "XGB Regressor"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/calorie-burnt-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/calorie-burnt-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/calorie-burnt-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemos",
+      "most_used_packages": ["Pandas", "Numpy", "Matplotlib"]
+   },
+   {
+      "name": "Credit Card Fraud Detection",
+      "description": "The Credit Card Fraud Detection model is designed to identify fraudulent transactions in credit card data. Using sophisticated machine learning techniques, this model leverages various features and patterns within the transactional data to distinguish between genuine and fraudulent activities. It applies logistic regression algorithms. The model aims to provide a robust and accurate system for financial institutions to prevent fraudulent transactions, safeguarding users' financial security and minimizing potential risks associated with unauthorized activities.",
+      "project_url": "credit-card-fraud-detection",
+      "feature_description": {
+         "Time": "Number of seconds elapsed between this transaction and the first transaction in the dataset",
+         "(v1-v28)": "may be result of a PCA Dimensionality reduction to protect user identities and sensitive features",
+         "Amount": "The amount taken as loan"
+      },
+      "featured_image": "/ai/credit-card-frauds.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Logistic Regression"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/credit-car-fraud-detection/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/credit-car-fraud-detection/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/credit-car-fraud-detection/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
+      "most_used_packages": ["Pandas", "Numpy", "Matplotlib", "Seaborn"]
+   },
+   {
+      "name": "Fake News Detection",
+      "description": "The Fake News Detection model employs logistic regression to discern between genuine and false information within textual data. It utilizes a range of linguistic and structural features from the news content to train the model. This includes analyzing word frequencies, topic modeling, and linguistic patterns to identify markers of deceptive or misleading content. The model aims to offer a reliable and automated system for filtering out fabricated news articles, assisting in maintaining the authenticity of news sources and minimizing the spread of misinformation.",
+      "project_url": "fake-news-detection",
+      "feature_description": {
+         "id": "Unique id for a news article",
+         "title": "The title of a news article",
+         "author": "Author of the news article",
+         "text": "The text of the article; could be incomplete"
+      },
+      "featured_image": "/ai/fake-news.webp",
+      "type": "model",
+      "tags": {
+         "based-on": ["Machine learning", "Logistic Regression"],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/fake-news-prediction/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/fake-news-prediction/dataset.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/fake-news-prediction/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/c/fake-news/data",
+      "most_used_packages": ["Pandas", "Numpy", "Matplotlib", "Seaborn"]
    }
 ]
