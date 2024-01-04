@@ -287,44 +287,6 @@
       ]
    },
    {
-      "name": "Speed-type",
-      "description": "Speed-type is a web-based typing practice tool designed to improve typing speed and accuracy. Offering a user-friendly interface, it provides various customizable tests, including words, and sentences. Users can track their performance metrics, such as words per minute (WPM), accuracy, and keystrokes, allowing for focused practice sessions.",
-      "project_url": "speed-type",
-      "featured_image": "/project-screenshots/pdfz/5.png",
-      "type": "website",
-      "tags": {
-         "based-on": ["Fullstack"],
-         "language": ["Typescript", "Nextjs"],
-         "other": ["Utility Website"]
-      },
-      "website_link": ["https://speed-type-mu.vercel.app/"],
-      "git_link": ["https://github.com/ArjunVarshney/Speed-Type"],
-      "commits": [
-         "https://api.github.com/repos/ArjunVarshney/Speed-Type/commits"
-      ],
-      "features": [
-         "Versatile Typing Tests: Offers various typing tests including words, sentences, and quotes, catering to different skill levels and preferences.",
-         "Customizable Settings: Allows customization of test duration, difficulty levels, and themes, enabling users to tailor practice sessions according to their proficiency and preferences.",
-         "Real-Time Performance Metrics: Provides real-time statistics on words per minute (WPM), accuracy percentage, and keystrokes, aiding in tracking progress and identifying areas for improvement.",
-         "User-Friendly Interface: Speed-Type offers an intuitive and easy-to-use web interface for seamless PDF operations. It also provides multiple themes to customize the look of the website",
-         "Responsive Design: Optimized for various devices and screen sizes, allowing users to practice typing seamlessly on desktops, laptops, tablets, or smartphones.",
-         "Progress Tracking: Saves user history and progress, enabling users to review past performance and monitor improvement over time."
-      ],
-      "tech_stack": {
-         "frontend": ["Next js", "tailwind", "daisyUI"],
-         "backend": ["Node js", "Next js"],
-         "languages": ["Typescript"]
-      },
-      "most_used_packages": ["Next js", "Tailwind", "Axios", "Query-string"],
-      "images": [
-         "/project-screenshots/pdfz/1.png",
-         "/project-screenshots/pdfz/2.png",
-         "/project-screenshots/pdfz/3.png",
-         "/project-screenshots/pdfz/4.png",
-         "/project-screenshots/pdfz/5.png"
-      ]
-   },
-   {
       "name": "Auto-racer",
       "description": "I developed a browser-based game leveraging HTML, CSS, and JavaScript, allowing users to play against an AI opponent. The AI was trained using a neural network, crafted entirely from scratch without external libraries. This project not only showcases the game's interactive features but also highlights my development skills in creating an independent AI system.",
       "project_url": "auto-racer",
