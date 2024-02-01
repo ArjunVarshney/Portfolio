@@ -51,8 +51,8 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                                  src={"/icons/view.svg"}
                                  height={50}
                                  width={50}
-                                 alt={"giticon"}
-                                 className="h-5 w-5 invert grayscale-0 mr-2 flex items-center"
+                                 alt={"view-icon"}
+                                 className="h-5 w-5 invert dark:filter-none grayscale-0 mr-2"
                               />
                               View Blog
                            </Link>
