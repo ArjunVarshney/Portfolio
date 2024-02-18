@@ -26,10 +26,12 @@ const LandingPage = () => {
                development, passionate about crafting innovative solutions.
             </p>
             <div className="flex flex-col md:flex-row justify-center lg:justify-between items-center gap-2 pt-8 opacity-0 animate-fadeIn fill-mode-forwards delay-1000">
-               <Button className="flex gap-1.5 items-center justify-center bg-custom-accent text-white hover:scale-95 active:scale-100 hover:bg-custom-accent font-bold">
-                  Resume
-                  <ExternalLink className="h-4 w-4" />
-               </Button>
+               <Link href="/resume.pdf" target="_blank">
+                  <Button className="flex gap-1.5 items-center justify-center bg-custom-accent text-white hover:scale-95 active:scale-100 hover:bg-custom-accent font-bold">
+                     Resume
+                     <ExternalLink className="h-4 w-4" />
+                  </Button>
+               </Link>
                <div className="flex gap-3">
                   <Link href={data.linkedin} className="btn-outline !p-0.5">
                      <div
