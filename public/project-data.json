@@ -1521,5 +1521,252 @@
       ],
       "kaggle_dataset": "https://www.kaggle.com/c/fake-news/data",
       "most_used_packages": ["Pandas", "Numpy", "Matplotlib", "Seaborn"]
+   },
+   {
+      "name": "Mental Health Analysis",
+      "description": "This project delves into the critical issue of mental health, leveraging two distinct datasets to gain insights into its various facets.<br/><br/>  **Dataset 1: Health, Lifestyle, and Socio-Economic Factors** <br/> This dataset explores the correlation between mental health and factors such as age, education, employment, marital status, income, and lifestyle choices. Through visualizations like bar charts and heatmaps, we uncover trends such as:  - Higher prevalence of depression among individuals with lower income and education levels. - The impact of lifestyle choices like smoking, alcohol consumption, diet, sleep, and physical activity on mental well-being.<br/><br/>  **Dataset 2: Country-wise Mental Health Prevalence**<br/>  This dataset provides a global perspective on mental health, analyzing the prevalence of various mental disorders across different countries and years. Time series plots reveal trends in the prevalence of disorders like schizophrenia, bipolar disorder, eating disorders, anxiety, and depression. Additionally, we identify countries with the highest and lowest overall mental disorder prevalence.<br/><br/>**Machine Learning for Prediction**<br/>To further our understanding, we employ machine learning algorithms to predict mental health outcomes. Using techniques like logistic regression, decision trees, and random forests, we assess the predictive power of different features. Notably, a Random Forest Regressor model demonstrates promising results in predicting mental fitness based on country-level data.<br/><br/>**Conclusion**<br/>This project sheds light on the multifaceted nature of mental health, highlighting the influence of individual and societal factors. By combining data analysis and machine learning, we aim to contribute to a better understanding of mental health and inform potential interventions.",
+      "project_url": "mental-health-analysis",
+      "feature_description": {
+         "Name": "The full name of the individual",
+         "Age": "The age of the individual in years",
+         "Marital Status": "The marital status of the individual. Possible values include Single, Married, Divorced, and Widowed",
+         "Education Level": "The highest level of education attained by the individual. Possible values include High School, Associate Degree, Bachelor's Degree, Master's Degree, and PhD",
+         "Number of Children": "The number of children the individual has",
+         "Smoking Status": "Indicates whether the individual is a smoker or not. Possible values are Smoker, Former and Non-smoker",
+         "Physical Activity Level": "The level of physical activity undertaken by the individual. Possible values include Sedentary, Moderate, and Active",
+         "Employment Status": "The employment status of the individual. Possible values include Employed and Unemployed",
+         "Income": "The annual income of the individual in USD",
+         "Alcohol Consumption": "The level of alcohol consumption. Possible values include Low, Moderate, and High",
+         "Dietary Habits": "The dietary habits of the individual. Possible values include Healthy, Moderate, and Unhealthy",
+         "Sleep Patterns": "The quality of sleep. Possible values include Good, Fair, and Poor",
+         "History of Mental Illness": "Whether the individual has a history of mental illness. Possible values are Yes and No",
+         "History of Substance Abuse": "Whether the individual has a history of substance abuse. Possible values are Yes and No",
+         "Family History of Depression": "Indicates if there is a family history of depression. Possible values are Yes and No",
+         "Chronic Medical Conditions": "Whether the individual has chronic medical conditions. Possible values are Yes and No"
+      },
+      "featured_image": "/ai/mental_health.jpg",
+      "type": "model",
+      "tags": {
+         "based-on": [
+            "Machine learning",
+            "Logistic Regression",
+            "Random Forest Regressor"
+         ],
+         "language": ["Python"],
+         "other": ["Scikit-learn", "Matplotlib", "Pandas"]
+      },
+      "ipynb_json": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/mental-health-analysis/model.ipynb",
+      "dataset": "https://raw.githubusercontent.com/ArjunVarshney/Machine-learning-files/main/mental-health-analysis/data.csv",
+      "git_link": [
+         "https://github.com/ArjunVarshney/Machine-learning-files/blob/main/mental-health-analysis/model.ipynb"
+      ],
+      "kaggle_dataset": "https://www.kaggle.com/c/fake-news/data",
+      "most_used_packages": ["Scikit-learn", "Pandas", "Numpy", "Matplotlib"],
+      "models": [
+         {
+            "title": "Random Forest Regressor",
+            "api": "https://ml-model-7la3.onrender.com/mental-health-prediction-rfr",
+            "inputs": [
+               {
+                  "name": "Year",
+                  "type": "slider",
+                  "min": 1990,
+                  "max": 2024,
+                  "step": 1,
+                  "required": true
+               },
+               {
+                  "name": "Schizophrenia",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 10,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Bipolar_disorder",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Eating_disorder",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 50,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Anxiety",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "drug_usage",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "depression",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "alcohol",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 70,
+                  "step": 0.01,
+                  "required": true
+               }
+            ],
+            "examples": [
+               {
+                  "Year": 2002,
+                  "Schizophrenia": 0.3,
+                  "Bipolar_disorder": 0.34,
+                  "Eating_disorder": 0.07,
+                  "Anxiety": 2.2,
+                  "drug_usage": 0.58,
+                  "depression": 2.62,
+                  "alcohol": 1.03
+               },
+               {
+                  "Year": 2018,
+                  "Schizophrenia": 0.3,
+                  "Bipolar_disorder": 0.58,
+                  "Eating_disorder": 0.15,
+                  "Anxiety": 3.57,
+                  "drug_usage": 0.46,
+                  "depression": 3.02,
+                  "alcohol": 2.12
+               },
+               {
+                  "Year": 2015,
+                  "Schizophrenia": 0.29,
+                  "Bipolar_disorder": 0.78,
+                  "Eating_disorder": 0.3,
+                  "Anxiety": 0.4,
+                  "drug_usage": 0.79,
+                  "depression": 3.72,
+                  "alcohol": 0.57
+               }
+            ]
+         },
+         {
+            "title": "Linear Regression",
+            "api": "https://ml-model-7la3.onrender.com/mental-health-prediction-lr",
+            "inputs": [
+               {
+                  "name": "Year",
+                  "type": "slider",
+                  "min": 1990,
+                  "max": 2024,
+                  "step": 1,
+                  "required": true
+               },
+               {
+                  "name": "Schizophrenia",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 10,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Bipolar_disorder",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Eating_disorder",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 50,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "Anxiety",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "drug_usage",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "depression",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 30,
+                  "step": 0.01,
+                  "required": true
+               },
+               {
+                  "name": "alcohol",
+                  "type": "slider",
+                  "min": 0,
+                  "max": 70,
+                  "step": 0.01,
+                  "required": true
+               }
+            ],
+            "examples": [
+               {
+                  "Year": 2002,
+                  "Schizophrenia": 0.3,
+                  "Bipolar_disorder": 0.34,
+                  "Eating_disorder": 0.07,
+                  "Anxiety": 2.2,
+                  "drug_usage": 0.58,
+                  "depression": 2.62,
+                  "alcohol": 1.03
+               },
+               {
+                  "Year": 2018,
+                  "Schizophrenia": 0.3,
+                  "Bipolar_disorder": 0.58,
+                  "Eating_disorder": 0.15,
+                  "Anxiety": 3.57,
+                  "drug_usage": 0.46,
+                  "depression": 3.02,
+                  "alcohol": 2.12
+               },
+               {
+                  "Year": 2015,
+                  "Schizophrenia": 0.29,
+                  "Bipolar_disorder": 0.78,
+                  "Eating_disorder": 0.3,
+                  "Anxiety": 0.4,
+                  "drug_usage": 0.79,
+                  "depression": 3.72,
+                  "alcohol": 0.57
+               }
+            ]
+         }
+      ]
    }
 ]

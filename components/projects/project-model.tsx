@@ -11,6 +11,7 @@ import ModelInput from "./model-input";
 import Notebook from "./model-notebook";
 import Dataset from "./model-dataset";
 import markdown from "@wcj/markdown-to-html";
+import React from "react";
 
 // @ts-ignore
 const data: Project[] = projectData;
@@ -208,6 +209,21 @@ const ModelPage = ({ project }: { project: Project }) => {
                api={project.api}
                name={project.name}
             />
+         )}
+         {project.type === "model" && project.models && (
+            <>
+               {project.models.map((model) => (
+                  <React.Fragment key={model.api}>
+                     <p className="mt-4 font-semibold text-xl ml-2">{model.title}</p>
+                     <ModelInput
+                        inputs={model.inputs}
+                        examples={model.examples}
+                        api={model.api}
+                        name={project.name}
+                     />
+                  </React.Fragment>
+               ))}
+            </>
          )}
          <div className="text-2xl font-bold mt-8">Most Used Packages</div>
          <div>

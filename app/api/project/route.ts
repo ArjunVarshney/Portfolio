@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import techData from "@/public/project-data.json";
 import fs from "fs";
 
-const tech_data_path = "E:/portfolio/public/project-data.json";
+const tech_data_path =
+   "/home/arjun-varshney/Documents/github/Portfolio/public/project-data.json";
 
 export async function GET() {
    return NextResponse.json(techData);

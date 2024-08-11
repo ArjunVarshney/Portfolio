@@ -154,6 +154,14 @@ interface Model {
    examples: {
       [key: string]: number | string;
    }[];
+   models?: {
+      api: string;
+      inputs: InputType[];
+      examples: {
+         [key: string]: number | string;
+      }[];
+      title: string;
+   }[];
 }
 
 interface Analysis {
