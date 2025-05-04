@@ -178,6 +178,7 @@ export type Project = BasicInfo &
    (Website | Package | Utility | Model | Analysis);
 
 export type Blog = {
+   id: string;
    title: string;
    description: "";
    show_title: boolean;
